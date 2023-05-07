@@ -1,0 +1,142 @@
+<style type="text/css">
+  .title{
+    border: 1px solid black;
+    width: 150px;
+    height: 30px;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    text-align: center;
+  }
+  .title.active{
+    border: 1.5px solid #007bff;
+    width: 150px;
+    height: 30px;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #f7fafc;
+  }
+  .cards {
+        -webkit-column-count: 6;
+        -moz-column-count: 6;
+        column-count: 6;
+        -webkit-column-gap: 1.25rem;
+        -moz-column-gap: 1.25rem;
+        column-gap: 1.25rem;
+        orphans: 1;
+        widows:1;
+        margin-bottom: 20px;
+    }
+
+    .cards .card {
+        display: inline-block;
+        width:100%
+    }
+    .card-columns {
+        -webkit-column-count: 4;
+        -moz-column-count: 4;
+        column-count: 4;
+        -webkit-column-gap: 1.1rem;
+        -moz-column-gap: 1.1rem;
+        column-gap: 1.1rem;
+        orphans: 1;
+        widows:1;
+    }
+
+    .card-columns .card {
+        display: inline-block;
+        width:100%
+    }
+
+</style>
+<div class="cards t-3">
+  {% for type in page.types %}
+  <div class="title" id="toggle{{type}}" >
+    {{type}}
+    <!-- <button class="but" id="toggle{{type}}" style="background-color: white;" flex="1">▾</button> -->
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      var t="{{type}}"
+      if(t!='Geom'){
+        $(".{{type}}").slideToggle();
+      }else{
+        var selected = document.getElementById('toggle{{type}}');
+        selected.classList.toggle('active');
+        localStorage.setItem('dis', "{{type}}");
+      }
+      
+      $("#toggle{{type}}").click(function() {
+        var selected = document.getElementById('toggle{{type}}');
+        selected.classList.toggle('active');
+        var info = localStorage.getItem('dis');
+        if(info!=""){
+          $("."+info).slideToggle();
+          var selected = document.getElementById('toggle'+info);
+          selected.classList.remove('active');
+        }
+        
+        if(info!="{{type}}"){
+          localStorage.setItem('dis', "{{type}}");
+          console.log(localStorage.getItem('dis'));
+          $(".{{type}}").slideToggle();
+        }else{
+          localStorage.setItem('dis', "");
+          console.log(localStorage.getItem('dis'));
+        }
+     
+      });
+    });
+  </script>
+  {% endfor %}
+</div>
+<br>
+{% for type in page.types %}
+  <div class="{{type}}">
+    <h4 class='text-center mt-6 mb-2'>{{type}}</h4>
+    <div class="card-columns m-5">
+      <!-- Local Projects -->
+        {% for project in site.hemesh %}
+          {%- if project.tags contains {{type}} -%}
+            {%- if project.navs contains "template" -%}
+            {%- else -%}
+              
+              {%- assign project_type  = "local" -%}
+              {%- assign project_id    = project.title | slugify -%}
+              {%- assign project_img   = project.image -%}
+              {%- assign project_name  = project.title -%}
+              {%- assign project_year  = project.year -%}
+              {%- assign project_location  = project.location -%}
+              {%- assign project_location_cn  = project.location_cn -%}
+              {%- assign project_desc  = project.description -%}
+              {%- assign project_tags = project.tags -%}
+              {%- assign project_team = project.team -%}
+              {%- if project.external_url -%}
+                {%- assign project_url = project.external_url -%}
+                {%- assign external    = true -%}
+              {%- else -%}
+                {%- assign project_url = project.url | relative_url -%}
+                {%- assign external    = false -%}
+              {%- endif -%}
+  
+              {%- if project.remote_project -%}
+                {%- assign project_type  = "remote" -%}
+                {%- assign project_img   = false -%}
+              {%- else -%}
+                {%- assign project_type  = "local" -%}
+              {%- endif -%}
+              {% include hemesh/project-card.html %}
+            {%- endif -%}
+          {%- endif -%}
+        {% endfor %}
+    </div>
+  </div>
+
+{% endfor %}
+
+

@@ -1,0 +1,70 @@
+
+
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="false">
+
+  <ol class="carousel-indicators">
+    {% for item in carousel_items %}
+        {%- if forloop.first -%}
+          <li data-target="#carouselExampleIndicators" data-slide-to="{{forloop.index0}}" class="active"></li>
+        {%- else -%}
+          <li data-target="#carouselExampleIndicators" data-slide-to="{{forloop.index0}}"></li>
+        {%- endif -%}
+    {% endfor %}
+  </ol>
+
+  <div class="carousel-inner">
+    {% for item in carousel_items %}
+      {%- if item.external_url -%}
+        {%- assign url = item.external_url -%}
+      {%- else -%}
+        {%- assign url = item.url | relative_url -%}
+      {%- endif -%}
+
+      {%- if forloop.first -%}
+        <div class="carousel-item active">
+          <a href="{{url}}" class="d-block w-100" style="aspect-ratio:16/9; overflow:hidden; object-fit: cover;" align-items="center"><img src="{{ item.image }}" class="d-block w-100" style="aspect-ratio:16/9; overflow:hidden; object-fit: cover;"></a>
+          
+        <p class="card-text small"> 
+            {{ item.title }}
+            <!-- {%- if item.short_description -%}
+            {{ item.short_description }}
+            {%- else -%}
+            {{ item.description | truncatewords: 15 }}
+            {%- endif -%}  -->
+            <a href="{{url}}" style="position:absolute; color:rgb(102, 99, 181); right:0px; z-index:10;"><b> more ></b></a>
+         </p>
+
+        </div>
+      {%- else -%}
+      
+        <div class="carousel-item">
+          <a href="{{url}}" class="d-block w-100" style="aspect-ratio:16/9; overflow:hidden; object-fit: cover;" align-items="center"><img src="{{ item.image }}" class="d-block w-100" style="aspect-ratio:16/9; overflow:hidden; object-fit: cover;"></a>
+        
+          <p class="card-text small"> 
+            {{ item.title }}
+            <!-- {%- if item.short_description -%}
+            {{ item.short_description }}
+            {%- else -%}
+            {{ item.description | truncatewords: 15 }}
+            {%- endif -%}  -->
+            <a href="{{url}}" style="position:absolute; color:rgb(102, 99, 181); right:0px; z-index:10"><b> more ></b></a>
+         </p>
+          
+        </div>
+      {%- endif -%}
+    {% endfor %}
+  </div>
+
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+
+</div>
+

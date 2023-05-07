@@ -1,0 +1,34 @@
+<!-- Collect tags from all publications -->
+{%- assign tags = blank -%}
+{%- for publication in site.publications -%}
+  {%- assign publication_tags = publication.tags | join:'|' | append:'|' -%}
+  {%- if publication_tags != '|' -%}
+    {%- assign tags = tags | append:publication_tags -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- assign tags = tags | split:'|' | uniq | sort -%}
+
+<!-- List tags & related publications -->
+{% for tag in tags %}
+{% if tag == 'Example Tag' %}
+{% else %}
+<div class="py-3">
+  <h4 id="{{ tag | slugify }}">{{ tag }}</h4>
+  <ul>
+  {% for publication in site.publications %}
+    {%- if publication.tags contains tag -%}
+      {%- if publication.external_url -%}
+        {%- assign url = publication.external_url -%}
+      {%- else -%}
+        {%- assign url = publication.url | relative_url -%}
+      {%- endif -%}
+    <a href="{{ url }}"><li>{{ publication.title }}</li></a>
+    <small class="text-muted"> - {{ publication.date | date_to_long_string }}</small>
+    <br/>
+    {%- endif -%}
+  {% endfor %}
+  </ul>
+</div>
+<hr class="bg-light">
+{% endif %}
+{% endfor %}

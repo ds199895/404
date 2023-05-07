@@ -1,0 +1,144 @@
+### Site Settings ###
+title               : 404Portfolio
+description         : >-
+                      I turn coffee :coffee: into code,
+                      use tabs over spaces
+                      and never broke production.
+baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
+repository          : Inst-AAA/archialgo.com # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
+remote_theme        : archialgo/theme
+open_new_tab        : true                             # Opens external URLs in new tab (works for posts, projects and navbar only)
+
+
+### Plugins ###
+plugins:
+  - jemoji
+
+
+### Navbar Settings ###
+nav_exclude:                                            # The following paths are excluded from navbar
+  - pages/tags.html
+  - pages/tags-algorithm.html
+  - pages/tags-hemesh.html
+  - pages/tags-project.html
+  - pages/tags-publication.html
+  - pages/404.html
+  - pages/index.md
+  - pages/status-hemesh.html
+  - documentation/partials/**                           # For Documentation Only
+  - pages/display_hemesh.html
+  - pages/display_material.html
+
+
+### Author Info ###
+author:
+  name              : John Doe
+  image             : https://archialgo-com-sources.oss-cn-hangzhou.aliyuncs.com/images/2021_all.jpg
+  behance           : your_username
+# dribbble          : your_username
+  email             : username@domain.com
+  facebook          : your_username
+  github            : Inst-AAA
+# gitlab            : your_username
+# instagram         : your_username
+# kaggle            : your_username
+  linkedin          : your_username
+  medium            : your_username
+# soundcloud        : your_username
+# spotify           : your_username
+# stackoverflow     : your_user_id
+# tumblr            : your_username.tumblr.com
+# twitch            : your_username
+  twitter           : your_username
+# vimeo             : your_username
+# youtube           : your_channel_name
+# keybase           : your_username
+
+
+### Posts ###
+permalink: /blog/:title
+
+
+### Collections ###
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name
+  elements:                                             # For Documentation Only
+    output: true                                        # For Documentation Only
+  publications:
+    output: true
+    permalink: /publications/:name
+  news:
+    output: true
+    permalink: /news/:name
+  algorithms:
+    output: true
+    permalink: /algorithms/:name
+  hemesh:
+    output: true
+    permalink: /hemesh/:name
+
+
+### Disqus ###
+disqus:
+  shortname: your-short-name-disqus                     # Your website Shortname on disqus
+
+
+### Analytics ###
+analytics:
+  enabled: false                                        # Set true to enable analytics
+  google:
+    tracking_id: your-google-tracking-id
+
+
+### Buy me a coffee ###
+# See https://www.buymeacoffee.com/
+buymeacoffee:
+  enabled: false
+  username: your_username
+  color: "#007bff"
+  message: "Thank you for visiting."                    # Message to be displayed aside from the button for a few seconds.
+  description: "Support me on Buy me a coffee!"
+
+
+### Defaults for collections ###
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  - scope:
+      path: ""
+      type: "algorithms"
+    values:
+      layout: "algorithm"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      comments: false                                   # Set to true to enable disqus comments
+  - scope:
+      path: ""
+      type: "news"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "publications"
+    values:
+      layout: "publication"
+      comment: true   
+  - scope:
+      path: ""
+      type: "hemesh"
+    values:
+      layout: "program"
+
+### Exclude from processing ###
+exclude:
+  - README.md
+  - CONTRIBUTING.md
+  - LICENSE
+  - "*.log"
