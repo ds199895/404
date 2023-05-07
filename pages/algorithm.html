@@ -1,0 +1,13 @@
+---
+layout: default
+title: Algorithm
+permalink: /algorithms/
+weight: 2
+remote_projects: 
+  - archibase
+---
+{% include algorithms/project-search.html %}
+{% assign carousel_items = site.algorithms | where:"navs","banner" %}
+{% assign carousel_items = carousel_items | sort: "date" | reverse %}
+{% include elements/project-carousel.html %}
+{% include algorithms/index.html %}

@@ -1,0 +1,19 @@
+---
+layout: null
+permalink: /search_publication.json
+---
+[
+  {% for publication in site.publications %}
+    {%- if project.navs contains "template" -%}
+    {% else %}
+      {
+        "title"    : "{{ publication.title | escape }}",
+        "subtitle" : "{{ publication.subtitle | escape }}",
+        "url"      : "{{ publication.external_url | default: publication.url | relative_url }}",
+        "tags"     : "{{ publication.tags | join: ', ' }}",
+        "authors"  : "{{ publication.authors }}",
+        "keywords" : "{{ publication.keywords | join: ', ' }}"
+      } {% unless forloop.last %},{% endunless %}
+    {% endif %}
+  {% endfor %}
+]

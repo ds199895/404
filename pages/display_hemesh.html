@@ -1,0 +1,708 @@
+---
+title: Display
+permalink: /display/hemesh
+---
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+-->
+
+<html lang="en" class="h-100">
+
+{% include head.html %}
+{% include navbar.html %}
+<style type="text/css">
+
+	#viz {
+		width: 1600px;
+		height: 600px;
+		border: 1px solid lightgray;
+		font: 22pt arial;
+	}
+	.vis-network:focus {
+		outline: none !important;
+	}
+	.text{
+		outline: none !important;
+		flex:3;
+	}
+	.container{
+
+	}
+	.cyph{
+		flex:1;
+		display: flex;
+		flex-direction: row;
+	}
+	.control{
+		flex:2;
+		display: flex;
+		flex-direction: row;
+	}
+	.components{
+		flex:2;
+	}
+	.buttons{
+		flex:2;
+	}
+	.dropdown1 {
+      position: relative;
+    }
+    .dropdown-content1 {
+      display: none;
+      position: absolute;
+      z-index: 1;
+	  overflow-y: auto;
+      max-height: 60px; /* 控制最大高度 */
+    }
+    /* 显示下拉列表 */
+    .dropdown1.active .dropdown-content1 {
+      display: block;
+    }
+	.dropdown2 {
+      position: relative;
+    }
+    .dropdown-content2 {
+      display: none;
+      position: absolute;
+      z-index: 1;
+	  overflow-y: auto;
+      max-height: 60px; /* 控制最大高度 */
+    }
+    /* 显示下拉列表 */
+    .dropdown2.active .dropdown-content2 {
+      display: block;
+    }
+
+</style>
+
+<script
+src="https://code.jquery.com/jquery-3.2.1.min.js"
+integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="{{ '/assets/js/neovis.js' | relative_url }}"></script>
+
+<script type="text/javascript">
+	// define config car
+	// instantiate nodevis object
+	// draw
+
+	var viz;
+	var info=''
+	var cy="MATCH p=()-->() RETURN p"
+	console.log(localStorage.getItem('referrer'));
+	if(localStorage.getItem('referrer')!=''){
+		 info=localStorage.getItem('referrer');
+		 cy= "match data=(na:class{name:'"+info+"'})<-[*1..2]->(nb:class) return data"
+	}
+
+
+	//alert('跳转来源页面：' + info);
+	// function draw() {
+	// 	var config = {
+	// 		container_id: "viz",
+	// 		server_url: "bolt://127.0.0.1:7687",
+	// 		server_user: "neo4j",
+	// 		server_password: "admin",
+	// 		visConfig: {
+	// 				nodes: {
+	// 					shape: 'triangle'
+	// 				},
+	// 				edges: {
+	// 					width:1,
+	// 					arrows: {
+	// 						to: {enabled: true}
+	// 					}
+	// 				},
+	// 			},
+	// 		labels: {
+	// 			"person": {
+	// 				"caption": "name",
+	// 				"community":1,
+	// 				"color":"#C2CEDC",
+	// 				"size": 80,
+	// 				"font": {
+	// 					"size":30,
+	// 					"color":"#C2CEDC"
+	// 											},
+
+	// 				//"title_properties": [
+	// 				//    "nick_name",
+	// 				//    "points"
+	// 				//                ],
+	// 				//"image": 'https://visjs.org/images/visjs_logo.png',
+	// 				// "community": "community"
+	// 				//"sizeCypher": "MATCH (n) WHERE id(n) = {id} MATCH (n)-[r]-() RETURN sum(r.weight) AS c"
+	// 			},
+	// 			"country": {
+	// 				"caption": "name",
+	// 				"community":0,
+	// 				// "community":"#B77F70",
+	// 				"size":160,
+	// 				"font": {
+	// 					"size":60,
+	// 					"color":"#000000"},
+	// 				//"title_properties": ["desc"],
+	// 				// "community": "community"
+	// 			},
+
+	// 			"place": {
+	// 				"caption": "name",
+	// 				"community":2,
+	// 				// "community": "community",
+	// 				"size":120,
+	// 				"font": {
+	// 					"size":40,
+	// 					"color":"#000000"},
+	// 				//"title_properties": ["desc"],
+					
+	// 			},
+	// 		},
+			
+				
+			
+	// 		relationships: {
+	// 			"": {
+	// 				"thickness": "1",
+					
+	// 				"caption":true
+	// 			},
+	// 		},
+	// 		// arrows: true,
+	// 		// hierarchical: false,
+	// 		initial_cypher: "MATCH p=()-->() RETURN p LIMIT 500"
+
+	// 	};
+
+	// 	viz = new NeoVis.default(config);
+	// 	viz.render();
+	// 	console.log(viz);
+
+
+	// 	// viz.registerOnEvent("completed", function() {
+
+	// 	// 		var edgeIds = viz.edges.getIds();  // 获取所有边缘的ID
+	// 	// 		for (var i = 0; i < edgeIds.length; i++) {
+	// 	// 			var edge = viz.edges.get(edgeIds[i]);  // 获取边缘对象
+	// 	// 			var type=edge.raw.type;
+	// 	// 			edge.label=type;
+	// 	// 			console.log(type);  // 打印边缘的type属性
+	// 	// 			// viz.edges.update({id:edge.id,label:type});
+	// 	// 		}
+	// 	// 	});
+
+	// }
+	
+	function draw() {
+			var config = {
+				containerId: "viz",
+				neo4j: {
+					serverUrl: "bolt://127.0.0.1:7687",
+					serverUser: "neo4j",
+					serverPassword: "12345678"
+				},
+				visConfig: {
+					nodes: {
+						shape: 'triangle',
+						color:"#C2CEDC"
+					},
+					edges: {
+						width:1.5,
+						// value: 0.001,
+						arrows: {
+							to: {
+								enabled: true,
+								type: "vee",
+								scaleFactor: 1,// 箭头大小的比例因子，
+							}
+						},
+						font: {
+							size: 8,
+							strokeWidth: 0,
+
+						}
+					},
+				},
+				labels: {
+					class:{
+						label:"name",
+						value:"size",
+
+						[NeoVis.NEOVIS_ADVANCED_CONFIG]: {
+							static: {
+								shape:"dot",
+								font:{
+							size: 8,
+							strokeWidth: 0,
+						},
+								color:"#C2CEDC",
+			
+							},
+							// cypher: {
+							// 	value: "MATCH (n) WHERE id(n) = $id RETURN SIZE((n)--()) AS s;"
+							// }
+						}
+
+					},
+
+
+				},
+				relationships: {
+					"Extends": {
+
+						[NeoVis.NEOVIS_ADVANCED_CONFIG]: {
+							static: {
+							},
+							// cypher: {
+							// 	value: "MATCH (n) WHERE id(n) = $id RETURN SIZE((n)--()) AS s;"
+							// }
+						}
+					},
+					"Implements": {
+						[NeoVis.NEOVIS_ADVANCED_CONFIG]: {
+							static: {
+								dashes:"true"
+							},
+						}
+					}
+				},
+				initialCypher: cy
+			};
+
+			viz = new NeoVis.default(config);
+			
+			viz.render();
+
+
+			// viz.registerOnEvent("completed", function() {
+
+
+			// 	var edgeIds = viz.edges.getIds();  // 获取所有边缘的ID
+			// 	for (var i = 0; i < edgeIds.length; i++) {
+			// 		var edge = viz.edges.get(edgeIds[i]);  // 获取边缘对象
+			// 		var type=edge.raw.type;
+			// 		edge.label=type;
+			// 		// console.log(type);  // 打印边缘的type属性
+			// 		viz.edges.update({id:edge.id,label:type});
+			// 	}
+			// });
+
+
+			viz.registerOnEvent("completed", function() {
+
+				var nodeIds = viz.nodes.getIds();  // 获取所有边缘的ID
+				for (var i = 0; i < nodeIds.length; i++) {
+					var node = viz.nodes.get(nodeIds[i]);  // 获取边缘对象
+					var name=node.raw.properties.name;
+					
+					//viz.nodes.update({id:node.id,value:node.raw.properties.size});
+					if(name==info){
+
+						viz.nodes.update({id:node.id,color:"#F52B22",font:{size:25}});
+
+						var edgeIds = viz.edges.getIds();// 获取所有边缘的ID
+						for( var i = 0; i < edgeIds.length; i++){
+
+							var edge = viz.edges.get(edgeIds[i]);// 获取边缘对象
+							if(edge.from==node.id){
+								viz.nodes.update({id:edge.to,font:{size:25},color:"#c3d88d"})
+								viz.edges.update({id:edge.id,font:{size:20},color:"#F52B22"})
+							}
+							else if(edge.to==node.id){
+								viz.nodes.update({id:edge.from,font:{size:25},color:"#c3d88d"})
+								viz.edges.update({id:edge.id,font:{size:20},color:"#F52B22"})
+							}
+						}
+					}
+				}
+			});
+			// 获取包含Neovis图形的SVG元素
+
+
+			   let lastClickTime = 0;
+			let doubleClickDelay = 500;
+
+			viz.registerOnEvent("clickNode", (event, target) => {
+				// 获取被双击的节点的ID
+				let timeSinceLastClick = new Date().getTime() - lastClickTime;
+				if (timeSinceLastClick < doubleClickDelay) {
+					// Double click event
+					const nodeId=event.nodeId
+					console.log(event.node.label);
+					info=event.node.label
+					var output = document.getElementById("output");
+
+                    cy="match data=(na:class{name:'"+info+"'})<-[*1.."+output.value+"]->(nb:class) return data"
+					rerender(cy)
+
+					var text = document.querySelector('.text');
+					text.value=cy
+
+					// Do something...
+				}
+				lastClickTime = new Date().getTime();
+			})
+
+			console.log(viz);
+
+		}
+   
+</script>
+
+<body onload="draw()">
+	<div class="container" style="user-select:none;">
+		<div id="viz" style="width:80% ;height:720px;border-radius:20px;margin:auto;outline:none;" >
+		</div>
+		<div class="cyph">		
+			<textarea  class="text" rows="3" cols="40" id="cypher" display="block" style=" position:relative;
+			left:180px;
+			top:20px;"></textarea>
+			
+			<br>
+			<div class="control">
+				<div class="components"style="position:relative;
+				left:200px;top:20px">
+					<label for="slider" style="font-size: 8;font-weight: 200;">Depth:</label>
+					<input class="rangeslider" type="range" id="slider" min="1" max="5" value="2"style="top:5px;width:100px">
+					<output for="slider" id="output">2</output>
+
+					<div class="dropdown1">
+						<label for="dropdown1" style="font-size: 8;font-weight: 200;">Node :</label>
+						<button onclick="toggleDropdown1()" aria-expanded="false">
+						  <span>&#x25BE;</span>
+						</button>
+						<div class="dropdown-content1">
+						  <select id="items1" multiple onchange="updateSelectedItems1()">
+							<option value="dot" font-size="2">dot</option>
+							<option value="circle"font-size="2">circle</option>
+							<option value="box"font-size="2">box</option>
+							<option value="database"font-size="2">database</option>
+							<option value="square"font-size="2">square</option>
+							<option value="triangle"font-size="2">triangle</option>
+							<option value="star"font-size="2">star</option>
+							<option value="ellipse"font-size="2">ellipse</option>
+							<option value="diamond"font-size="2">diamond</option>
+							<option value="hexagon"font-size="2">hexagon</option>
+						  </select>
+						</div>
+					</div>
+					<div class="dropdown2">
+						<label for="dropdown2" style="font-size: 8;font-weight: 200;">Arrow:</label>
+						<button onclick="toggleDropdown2()" aria-expanded="false">
+						 <span>&#x25BE;</span>
+						</button>
+						<div class="dropdown-content2">
+						  <select id="items2" multiple onchange="updateSelectedItems2()">
+							<option value="arrow">arrow</option>
+							<option value="bar">bar</option>
+							<option value="circle">circle</option>
+							<option value="diamond">diamond</option>
+							<option value="vee">vee</option>
+							<option value="triangle">triangle</option>
+							<option value="box">box</option>
+							<option value="crow">crow</option>
+							<option value="curve">curve</option>
+							<option value="inv_curve">inv_curve</option>
+							<option value="inv_triangle">inv_tri</option>
+						  </select>
+						</div>
+					</div>
+				</div>
+				<div class="buttons">
+
+					<p text-align="center"style="position:relative;
+					left:50px;
+					top:20px">Cypher Controls</p>
+					<div class="bts1">
+						<input type="submit" value="Reload" id="reload" text-align="center"style="font-size:6;position:relative;
+						left:50px;
+						top:10px;">
+						<input type="submit" value="Stabilize" id="stabilize" text-align="center" style="font-size:6;position:relative;
+						left:50px;
+						top:10px;">
+					</div>
+					
+					<input type="submit" id="loadall" value="loadAll" text-align="center" style="width:130px;position:relative;
+					left:50px;
+					top:25px;">
+				</div>
+				
+			</div>
+
+		</div>
+
+
+	</div>
+
+
+
+
+{% include elements/button-top.html %}
+{% include footer.html %}
+
+{% include analytics.html %}
+{% include scripts.html %}
+
+{%- if site.buymeacoffee.enabled == true -%}
+  <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="{{ site.buymeacoffee.username }}" data-description="{{ site.buymeacoffee.description }}" data-message="{{ site.buymeacoffee.message }}" data-color="{{ site.buymeacoffee.color }}" data-position="Right" data-x_margin="16" data-y_margin="16"></script>
+{%- endif -%}
+</body>
+<script>
+    var text = document.querySelector('.text');
+	text.value=cy
+	var slider = document.getElementById("slider");
+	var output = document.getElementById("output");
+
+	slider.addEventListener("input", function() {
+
+	output.value = parseInt(this.value);
+	cypher="match data=(na:class{name:'"+info+"'})<-[*1.."+output.value+"]->(nb:class) return data"
+	rerender(cypher)
+	var text = document.querySelector('.text');
+	text.value=cypher
+	});
+	function rerender(cy){
+		var button1 = document.querySelector('.dropdown1 button');
+	var button2 = document.querySelector('.dropdown2 button');
+	var arrowshape="vee"
+	var nodeshape="dot"
+	var select1 = document.getElementById('items1');
+	var selectedValues1 = Array.from(select1.selectedOptions).map(option => option.value);
+	var select2 = document.getElementById('items2');
+	var selectedValues2 = Array.from(select2.selectedOptions).map(option => option.value);
+	if(selectedValues1.length!=0){
+		nodeshape=button1.textContent;
+	}
+	if(selectedValues2.length!=0){
+		arrowshape=button2.textContent;
+	}
+
+		var config = {
+				containerId: "viz",
+				neo4j: {
+					serverUrl: "bolt://127.0.0.1:7687",
+					serverUser: "neo4j",
+					serverPassword: "12345678"
+				},
+				visConfig: {
+					nodes: {
+						shape: 'triangle',
+						color:"#C2CEDC"
+					},
+					edges: {
+						width:1.5,
+						// value: 0.001,
+						arrows: {
+							to: {
+								enabled: true,
+								type: arrowshape,
+								scaleFactor: 1,// 箭头大小的比例因子，
+							}
+						},
+						font: {
+							size: 8,
+							strokeWidth: 0,
+
+						}
+					},
+				},
+				labels: {
+					class:{
+						label:"name",
+						value:"size",
+
+						[NeoVis.NEOVIS_ADVANCED_CONFIG]: {
+							static: {
+								shape:nodeshape,
+								font:{
+									size: 8,
+									strokeWidth: 0,
+								},
+								color:"#C2CEDC",
+			
+							},
+							// cypher: {
+							// 	value: "MATCH (n) WHERE id(n) = $id RETURN SIZE((n)--()) AS s;"
+							// }
+						}
+
+					},
+
+
+				},
+				relationships: {
+					"Extends": {
+
+						[NeoVis.NEOVIS_ADVANCED_CONFIG]: {
+							static: {
+							},
+							// cypher: {
+							// 	value: "MATCH (n) WHERE id(n) = $id RETURN SIZE((n)--()) AS s;"
+							// }
+						}
+					},
+					"Implements": {
+						[NeoVis.NEOVIS_ADVANCED_CONFIG]: {
+							static: {
+								dashes:"true"
+							},
+						}
+					}
+				},
+				initialCypher: cy
+			};
+
+			viz = new NeoVis.default(config);
+			viz.render();
+			viz.registerOnEvent("completed", function() {
+
+var nodeIds = viz.nodes.getIds();  // 获取所有边缘的ID
+for (var i = 0; i < nodeIds.length; i++) {
+	var node = viz.nodes.get(nodeIds[i]);  // 获取边缘对象
+	var name=node.raw.properties.name;
+	
+	//viz.nodes.update({id:node.id,value:node.raw.properties.size});
+	if(name==info){
+
+		viz.nodes.update({id:node.id,color:"#F52B22",font:{size:25}});
+
+		var edgeIds = viz.edges.getIds();// 获取所有边缘的ID
+		for( var i = 0; i < edgeIds.length; i++){
+
+			var edge = viz.edges.get(edgeIds[i]);// 获取边缘对象
+			if(edge.from==node.id){
+				viz.nodes.update({id:edge.to,font:{size:25},color:"#c3d88d"})
+				viz.edges.update({id:edge.id,font:{size:20},color:"#F52B22"})
+			}
+			else if(edge.to==node.id){
+				viz.nodes.update({id:edge.from,font:{size:25},color:"#c3d88d"})
+				viz.edges.update({id:edge.id,font:{size:20},color:"#F52B22"})
+			}
+		}
+	}
+}
+});
+			let lastClickTime = 0;
+			let doubleClickDelay = 500;
+			viz.registerOnEvent("clickNode", (event, target) => {
+				// 获取被双击的节点的ID
+				let timeSinceLastClick = new Date().getTime() - lastClickTime;
+				if (timeSinceLastClick < doubleClickDelay) {
+					// Double click event
+					const nodeId=event.nodeId
+					console.log(event.node.label);
+					info=event.node.label
+					var output = document.getElementById("output");
+                    cy="match data=(na:class{name:'"+info+"'})<-[*1.."+output.value+"]->(nb:class) return data"
+					rerender(cy)
+					var text = document.querySelector('.text');
+					text.value=cy
+					// Do something...
+				} else {
+					// Single click event
+					
+					console.log('Single click!');
+					// Do something...
+				}
+				lastClickTime = new Date().getTime();
+			})
+
+	}
+
+	function toggleDropdown1() {
+      var dropdown = document.querySelector('.dropdown1');
+      dropdown.classList.toggle('active');
+      var button = dropdown.querySelector('button');
+      var expanded = button.getAttribute('aria-expanded') === 'true' || false;
+      button.setAttribute('aria-expanded', !expanded);
+    }
+
+    function updateSelectedItems1() {
+      var select = document.getElementById('items1');
+      var selectedValues = Array.from(select.selectedOptions).map(option => option.value);
+      var button = document.querySelector('.dropdown1 button');
+      if (selectedValues.length > 0) {
+        button.textContent = selectedValues.join(', ');
+      } else {
+        button.textContent = 'Node Shape';
+      }
+      toggleDropdown1();
+
+	  var nodeIds = viz.nodes.getIds();// 获取所有边缘的ID
+		for( var i = 0; i < nodeIds.length; i++){
+
+			var node = viz.nodes.get(nodeIds[i]);// 获取边缘对象
+
+			viz.nodes.update({id:node.id,shape:button.textContent})
+			
+		}
+
+    }
+	function toggleDropdown2() {
+      var dropdown = document.querySelector('.dropdown2');
+      dropdown.classList.toggle('active');
+      var button = dropdown.querySelector('button');
+      var expanded = button.getAttribute('aria-expanded') === 'true' || false;
+      button.setAttribute('aria-expanded', !expanded);
+    }
+
+    function updateSelectedItems2() {
+      var select = document.getElementById('items2');
+      var selectedValues = Array.from(select.selectedOptions).map(option => option.value);
+      var button = document.querySelector('.dropdown2 button');
+      if (selectedValues.length > 0) {
+        button.textContent = selectedValues.join(', ');
+      } else {
+        button.textContent = '';
+      }
+      toggleDropdown2();
+
+		var edgeIds = viz.edges.getIds();// 获取所有边缘的ID
+		edgeIds.forEach((index)=>{
+
+			viz.edges.update({id:index,arrows:{to:{enable:true,type:button.textContent}}})
+			
+		})
+
+    }
+
+
+
+	$("#reload").click(function() {
+
+		var cy = $("#cypher").val();
+
+		// if (cy.length > 3) {
+		// 	viz.renderWithCypher(cy);
+		// } else {
+		console.log("reload");
+		rerender(cy)
+
+
+		// }
+
+	});
+
+
+	$("#stabilize").click(function() {
+	viz.stabilize();
+	})
+
+	$("#loadall").click(function() {
+		rerender("MATCH p=()-->() RETURN p")
+		var text = document.querySelector('.text');
+		text.value="MATCH p=()-->() RETURN p"
+	})
+
+
+
+</script>
+<script>
+
+
+</script>
+</html>

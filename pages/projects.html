@@ -1,0 +1,15 @@
+---
+layout: default
+title: Project
+permalink: /projects/
+weight: 1
+remote_projects: 
+  - Archibase
+  - git-for-wizards
+  - arduino-visitor-counter
+---
+{% include projects/project-search.html %}
+{% assign carousel_items = site.projects| where:"navs","banner" %}
+{% assign carousel_items = carousel_items | sort: "date" | reverse %}
+{% include elements/project-carousel.html %}
+{% include projects/index.html %}

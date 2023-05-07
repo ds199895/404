@@ -1,0 +1,20 @@
+---
+layout: null
+permalink: /search_algorithm.json
+---
+[
+  {% for project in site.algorithms %}
+    {%- if project.navs contains "template" -%}
+    {% else %}
+      {
+        "title"    : "{{ project.title | escape }}",
+        "title_cn"  : "{{ project.title_cn | escape | default: ' '}}",
+        "tags"     : "{{ project.tags | join: ', ' }}",
+        "url"      : "{{ project.external_url | default: project.url | relative_url }}",
+        "location" : "{{ project.location | escape}}",
+        "team"     : "{{ project.team | join: ', '}}"
+      } {% unless forloop.last %},{% endunless %}
+    {% endif %}
+  {% endfor %}
+
+]
