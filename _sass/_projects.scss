@@ -1,0 +1,16 @@
+.project.card {
+  border-radius: $rounded-borders;
+  text-decoration: none !important;
+  margin: 20px auto;
+
+  .card-img-top {
+    border-radius: $rounded-borders $rounded-borders 0 0;
+  }
+
+  transition: transform 200ms;
+
+  &:hover{
+    transform: scale(1.01);
+    box-shadow: -2px 8px 15px -12px rgba(100, 120, 120, 1);
+  }
+}
