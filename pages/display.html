@@ -197,7 +197,8 @@ crossorigin="anonymous"></script>
 					serverUser: "neo4j",
 					serverPassword: "12345678",
 					protocol:"wss",
-					trust: "TRUST_ALL_CERTIFICATES"
+					trust: "TRUST_ALL_CERTIFICATES",
+					encrypted: window.location.protocol === 'https:' ? 'ENCRYPTION_ON': 'ENCRYPTION_OFF'
 				},
 				visConfig: {
 					nodes: {
