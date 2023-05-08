@@ -193,9 +193,10 @@ crossorigin="anonymous"></script>
 			var config = {
 				containerId: "viz",
 				neo4j: {
-					serverUrl: "bolt://10.192.55.16:7687",
+					serverUrl: "neo4j://10.192.55.16:7687",
 					serverUser: "neo4j",
-					serverPassword: "12345678"
+					serverPassword: "12345678",
+					encrypted: window.location.protocol === 'https:' ? 'ENCRYPTION_ON': 'ENCRYPTION_OFF',
 				},
 				visConfig: {
 					nodes: {
