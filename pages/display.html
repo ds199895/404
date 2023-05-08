@@ -196,7 +196,8 @@ crossorigin="anonymous"></script>
 					serverUrl: "bolt://10.192.0.53:7687",
 					serverUser: "neo4j",
 					serverPassword: "12345678",
-					encrypted: window.location.protocol === 'https:' ? 'ENCRYPTION_ON': 'ENCRYPTION_OFF',
+					protocol:"wss",
+					trust: "TRUST_ALL_CERTIFICATES"
 				},
 				visConfig: {
 					nodes: {
