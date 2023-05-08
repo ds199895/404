@@ -9,6 +9,7 @@ location_cn: 江苏·南京
 year: 2021
 description: This graduation project applies a 3D printing construction system to the design of the exhibition hall in Nanjing Tangshan Mine Park, creating a unique flowing space and lighting environment that showcases the superiority of this construction system. 
 team: [He Siyuan,Yao Xiuning]
+external_url: https://mp.weixin.qq.com/s/ONw262-5HtikiEOPyqldOA
 date: 2021-06-02
 ---
 
