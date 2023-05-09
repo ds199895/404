@@ -1,5 +1,5 @@
 ---
-navs: [news,program]
+navs: [news,program,banner]
 tags: [Data Analysis, Neo4j]
 image: https://archialgo-com-sources.oss-cn-hangzhou.aliyuncs.com/images/neo4j.jpg
 title: Extending and implementing graph using NeoVis
@@ -11,7 +11,7 @@ status: Done🙌
 date: 2022-06-30
 ---
 ---
-<!-- # Shopping Mall Planning Generator -->
+
 Created a workflow to analyze and read the source code of the Java graphics library [HE_Mesh](https://github.com/wblut/HE_Mesh), which was then presented in the form of a static webpage. Additionally, dynamic interaction is possible within internal network.
 
 ### Read and arrange the source code
