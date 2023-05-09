@@ -1,6 +1,6 @@
 ---
 title: Non-uniform Offset
-tags: [Graphics]
+tags: [Software Development]
 style: fill
 color: dark
 description: Unequally offsetting grid edges based on certain elements.
