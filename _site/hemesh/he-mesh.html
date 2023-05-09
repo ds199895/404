@@ -1,0 +1,3160 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  
+  
+  
+
+  
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="HE_Mesh">
+  <meta property="og:description" content="I turn coffee :coffee: into code, use tabs over spaces and never broke production.">
+  <meta property="og:image" content="https://archialgo-com-sources.oss-cn-hangzhou.aliyuncs.com/images/hesiyuan2.jpg">
+
+  <title>HE_Mesh</title>
+  <meta name="description" content="I turn coffee :coffee: into code, use tabs over spaces and never broke production.">
+
+  <link rel="shortcut icon" type="image/x-icon" href="/404/assets/favicon.ico">
+
+  <!-- Theme style -->
+  <script src="/404/assets/js/theme.js"></script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="/404/assets/css/bootstrap.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/404/assets/css/style.css">
+
+</head>
+
+
+<body class="h-100 d-flex flex-column">
+
+  <main class="flex-shrink-0 container mt-5">
+    <nav class="navbar navbar-expand-lg navbar-themed">
+
+  <a class="navbar-brand d-lg-none" href="/404/">
+    <h5><b class="size-unchange-1"></b></h5>
+  </a>
+  <a class="navbar-brand d-none d-lg-block" href="/404/">
+    <h5><b class="size-unchange-1">404Portfolio</b></h5>
+  </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-1x fa-bars text-themed"></i>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto">
+<a class="nav-item nav-link size-unchange-2 active" href="/404/"></a>
+
+      <a class="nav-item nav-link size-unchange-2 " href="/404/projects/">Project</a>
+
+      <a class="nav-item nav-link size-unchange-2 " href="/404/algorithms/">Algorithm</a>
+
+      <a class="nav-item nav-link size-unchange-2 " href="/404/blog/">Blog</a>
+
+      <a class="nav-item nav-link size-unchange-2 " href="/404/about/">About</a>
+
+      <a class="nav-item nav-link size-unchange-2 " href="/404/publications/">Publication</a>
+
+      <a class="nav-item nav-link size-unchange-2 " href="/404/display/">Display</a>
+
+      
+
+      <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
+    </div>
+  </div>
+
+</nav>
+
+    <div class="col-lg-10 mx-auto mt-5 markdown-body">
+  <h1><b>HE_Mesh</b></h1>
+
+  <h3><b></b></h3>
+
+
+<p class="post-metadata text-muted">
+  2023 -  
+  <b>43 mins read time</b>
+
+  <br>
+  </p>
+<p class="post-metadata text-muted">
+
+  
+    Team: 
+     
+      
+      
+      
+        Siyuan He
+      
+    
+  
+  <br>Tags: 
+    
+    <a class="text-decoration-none no-underline" href="/404/hemesh/tags#he-core">
+      <span class="badge badge-pill text-primary border border-primary ml-1">He_core</span>
+
+    </a>
+    <br>Status: 
+    <a class="text-decoration-none no-underline" href="/404/hemesh/status">
+      <span class="badge badge-pill text-primary border border-primary ml-1">Doing</span>
+
+    </a>
+  <br>Date: 
+    2023-04-03</p>
+
+<style>
+table th:first-of-type {
+width:5%;
+}
+table th:nth-of-type(2) {
+width:20%;
+}
+table th:nth-of-type(3) {
+width:30%;
+}
+table th:nth-of-type(4) {
+width:30%;
+}
+table th:nth-of-type(5) {
+width:8cm;
+}
+table th {
+color: rgba(0,0,0)!important;
+font-weight: bold; /*加粗*/
+/* text-align: center !important; 内容居中，加上 !important 避免被 Markdown 样式覆盖 */
+background: rgba(224,229,223,10)!important; /*背景色*/
+}
+</style>
+
+<p><br>
+<a href="/display/hemesh" onclick="saveReferrer()">继承关系图谱display</a>
+<script>
+function saveReferrer() {
+  var referrer ='HE_Mesh';
+  localStorage.setItem('referrer', referrer);
+}
+</script></p>
+
+<p><br></p>
+
+<h3 id="he_mesh">HE_Mesh</h3>
+
+<p><br></p>
+<h4 id="extends---he_meshelement">extends:   <a href="/hemesh/he-meshelement">HE_MeshElement</a>
+</h4>
+<p><br></p>
+<h4 id="implements---wb_trianglefactory--he_halfedgestructure--wb_geometry">implements:   <a href="/hemesh/wb-trianglefactory">WB_TriangleFactory</a>  <a href="/hemesh/he-halfedgestructure">HE_HalfedgeStructure</a>  <a href="/hemesh/wb-geometry">WB_Geometry</a>
+</h4>
+<p><br></p>
+
+<ul>
+  <li><strong>构造方法</strong></li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">属性</th>
+      <th style="text-align: left">方法名</th>
+      <th style="text-align: left">参数</th>
+      <th style="text-align: left">返回值</th>
+      <th style="text-align: left">备注</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left">final HE_Mesh mesh</td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left">final HEC_Creator creator</td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left">final WB_SimpleMesh mesh</td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left">final WB_SimpleMeshCreator mesh</td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li><strong>成员方法</strong></li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">属性</th>
+      <th style="text-align: left">方法名</th>
+      <th style="text-align: left">参数</th>
+      <th style="text-align: left">返回值</th>
+      <th style="text-align: left">备注</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">add</td>
+      <td style="text-align: left">final HE_Element el</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">add</td>
+      <td style="text-align: left">final HE_Face f</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">addFaces</td>
+      <td style="text-align: left">final Collection&lt;? extends HE_Face&gt; faces</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">addFaces</td>
+      <td style="text-align: left">final HE_Face[] faces</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">addFaces</td>
+      <td style="text-align: left">final HE_HalfedgeStructure source</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">add</td>
+      <td style="text-align: left">final HE_Halfedge he</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">addHalfedges</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">addHalfedges</td>
+      <td style="text-align: left">final HE_Halfedge[] halfedges</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">addHalfedges</td>
+      <td style="text-align: left">final HE_HalfedgeStructure source</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">add</td>
+      <td style="text-align: left">final HE_Vertex v</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">addVertices</td>
+      <td style="text-align: left">final Collection&lt;? extends HE_Vertex&gt; vertices</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">addVertices</td>
+      <td style="text-align: left">final HE_HalfedgeStructure source</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">addVertices</td>
+      <td style="text-align: left">final HE_Vertex[] vertices</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">add</td>
+      <td style="text-align: left">final HE_Mesh mesh</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">addSelection</td>
+      <td style="text-align: left">final String name, final HE_Machine machine,final HE_Selection sel</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">addSelection</td>
+      <td style="text-align: left">final String name, final HE_Selection sel</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">apply</td>
+      <td style="text-align: left">final WB_Transform3D T</td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">applySelf</td>
+      <td style="text-align: left">final WB_Transform3D T</td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">apply2D</td>
+      <td style="text-align: left">final WB_Transform2D T</td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">apply2DSelf</td>
+      <td style="text-align: left">final WB_Transform2D T</td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">clean</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">cleanSelections</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">cleanUnusedElementsByFace</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">removeUnconnectedElements</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">clear</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">clearEdges</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">clearFace</td>
+      <td style="text-align: left">final HE_Halfedge he</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">clearFaces</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">clearFacesNoSelectionCheck</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">clearHalfedge</td>
+      <td style="text-align: left">final HE_Face f</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">clearHalfedge</td>
+      <td style="text-align: left">final HE_Vertex v</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">clearHalfedges</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">clearNext</td>
+      <td style="text-align: left">final HE_Halfedge he</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">clearPair</td>
+      <td style="text-align: left">final HE_Halfedge he</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">clearPrecomputed</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">clearPrecomputedFaces</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">clearPrecomputedHalfedges</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">clearPrecomputedVertices</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">clearPrev</td>
+      <td style="text-align: left">final HE_Halfedge he</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">clearSelections</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">clearVertex</td>
+      <td style="text-align: left">final HE_Halfedge he</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">clearVertices</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">clearVerticesNoSelectionCheck</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">clearVisitedElements</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">contains</td>
+      <td style="text-align: left">final HE_Element el</td>
+      <td style="text-align: left">boolean</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">contains</td>
+      <td style="text-align: left">final HE_Face f</td>
+      <td style="text-align: left">boolean</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">contains</td>
+      <td style="text-align: left">final HE_Halfedge he</td>
+      <td style="text-align: left">boolean</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">contains</td>
+      <td style="text-align: left">final HE_Vertex v</td>
+      <td style="text-align: left">boolean</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">containsEdge</td>
+      <td style="text-align: left">final long key</td>
+      <td style="text-align: left">boolean</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">containsFace</td>
+      <td style="text-align: left">final long key</td>
+      <td style="text-align: left">boolean</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">containsHalfedge</td>
+      <td style="text-align: left">final long key</td>
+      <td style="text-align: left">boolean</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">containsVertex</td>
+      <td style="text-align: left">final long key</td>
+      <td style="text-align: left">boolean</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">copy</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">copySelection</td>
+      <td style="text-align: left">final String from, final String to</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createThreaded</td>
+      <td style="text-align: left">final HEC_Creator creator</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">cutFace</td>
+      <td style="text-align: left">final HE_Face f</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">deleteEdge</td>
+      <td style="text-align: left">final HE_Halfedge e</td>
+      <td style="text-align: left">HE_Face</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">deleteFace</td>
+      <td style="text-align: left">final HE_Face f</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">deleteFaces</td>
+      <td style="text-align: left">final HE_Selection faces</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">eItr</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">HE_EdgeIterator</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">fitInAABB</td>
+      <td style="text-align: left">final WB_AABB AABB</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">fitInAABB</td>
+      <td style="text-align: left">final WB_AABB from, final WB_AABB to</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">fitInAABBConstrained</td>
+      <td style="text-align: left">final WB_AABB AABB</td>
+      <td style="text-align: left">double</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">fitInAABBConstrained</td>
+      <td style="text-align: left">final WB_AABB from, final WB_AABB to</td>
+      <td style="text-align: left">double</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">fItr</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">HE_FaceIterator</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">fuse</td>
+      <td style="text-align: left">final HE_Mesh mesh</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">get</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getCenter</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_Point</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getAllBoundaryHalfedges</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">List&lt;HE_Halfedge&gt;</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getAllBoundaryVertices</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">List&lt;HE_Vertex&gt;</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getEdgeCenters</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_Point[]</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getEdgeNormals</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_Vector[]</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getEdges</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">List&lt;HE_Halfedge&gt;</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getEdgesAsArray</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">HE_Halfedge[]</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getEdgesAsInt</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">int[][]</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getEdgeWithIndex</td>
+      <td style="text-align: left">final int i</td>
+      <td style="text-align: left">HE_Halfedge</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getEdgeWithKey</td>
+      <td style="text-align: left">final long key</td>
+      <td style="text-align: left">HE_Halfedge</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getEulerCharacteristic</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">int</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getFaceCenter</td>
+      <td style="text-align: left">final int id</td>
+      <td style="text-align: left">WB_Point</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getFaceCenters</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_Point[]</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getFaceColors</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">int[]</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getFaceInternalLabels</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">int[]</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getFaceNormal</td>
+      <td style="text-align: left">final int id</td>
+      <td style="text-align: left">WB_Vector</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getFaceNormals</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_Vector[]</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getFacePlanes</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_Plane[]</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getFaces</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">List&lt;HE_Face&gt;</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getFacesAsArray</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">HE_Face[]</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getFacesAsInt</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">int[][]</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getFaceTextureIds</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">int[]</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getFaceTree</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_KDTree3D&lt;WB_Point,Long&gt;</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getFaceUserLabels</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">int[]</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getFaceVisibility</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">boolean[]</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getFaceWithIndex</td>
+      <td style="text-align: left">final int i</td>
+      <td style="text-align: left">HE_Face</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getFaceWithKey</td>
+      <td style="text-align: left">final long key</td>
+      <td style="text-align: left">HE_Face</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getHalfedgeFromTo</td>
+      <td style="text-align: left">final HE_Vertex v0,final HE_Vertex v1</td>
+      <td style="text-align: left">HE_Halfedge</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getHalfedges</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">List&lt;HE_Halfedge&gt;</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getHalfedgesAsArray</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">HE_Halfedge[]</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getHalfedgeWithIndex</td>
+      <td style="text-align: left">final int i</td>
+      <td style="text-align: left">HE_Halfedge</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getHalfedgeWithKey</td>
+      <td style="text-align: left">final long key</td>
+      <td style="text-align: left">HE_Halfedge</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getIndex</td>
+      <td style="text-align: left">final HE_Face f</td>
+      <td style="text-align: left">int</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getIndex</td>
+      <td style="text-align: left">final HE_Halfedge edge</td>
+      <td style="text-align: left">int</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getIndex</td>
+      <td style="text-align: left">final HE_Vertex v</td>
+      <td style="text-align: left">int</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getKeyedEdgeCenters</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">Map&lt;Long,WB_Point&gt;</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getKeyedEdgeNormals</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">Map&lt;Long,WB_Vector&gt;</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getKeyedFaceCenters</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">Map&lt;Long,WB_Point&gt;</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getKeyedFaceNormals</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">Map&lt;Long,WB_Vector&gt;</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getKeyedVertexNormals</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">Map&lt;Long,WB_Vector&gt;</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getMeanEdgeLength</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">double</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getName</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">String</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getNewSelection</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getNewSelection</td>
+      <td style="text-align: left">final String name</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getNetwork</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_Network</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getNumberOfEdges</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">int</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getNumberOfFaces</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">int</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getNumberOfHalfedges</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">int</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getNumberOfVertices</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">int</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getPoints</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_CoordCollection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getPolygonList</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">List&lt;WB_Polygon&gt;</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getPolygons</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_Polygon[]</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getSegments</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_Segment[]</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getSelection</td>
+      <td style="text-align: left">final String name</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getSelectionNames</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">Set&lt;String&gt;</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectionCheck</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getSharedFaces</td>
+      <td style="text-align: left">final HE_Vertex v1,final HE_Vertex v2</td>
+      <td style="text-align: left">List&lt;HE_Face&gt;</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getTriangles</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">int[]</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getUnpairedHalfedges</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">List&lt;HE_Halfedge&gt;</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getVertex</td>
+      <td style="text-align: left">final int i</td>
+      <td style="text-align: left">WB_Coord</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getVertexColors</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">int[]</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getVertexInternalLabels</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">int[]</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getVertexKeyToIndexMap</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">Map&lt;Long,Integer&gt;</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getVertexNormal</td>
+      <td style="text-align: left">final int i</td>
+      <td style="text-align: left">WB_Vector</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getVertexNormals</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_Vector[]</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getVertexTree</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_KDTree3D&lt;WB_Coord,Long&gt;</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getVertexUserLabels</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">int[]</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getVertexVisibility</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">boolean[]</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getVertexWithIndex</td>
+      <td style="text-align: left">final int i</td>
+      <td style="text-align: left">HE_Vertex</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getPositionWithIndex</td>
+      <td style="text-align: left">final int i</td>
+      <td style="text-align: left">WB_Point</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getVertexWithKey</td>
+      <td style="text-align: left">final long key</td>
+      <td style="text-align: left">HE_Vertex</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getVertices</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">List&lt;HE_Vertex&gt;</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getVerticesAsArray</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">HE_Vertex[]</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getVerticesAsCoord</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">List&lt;WB_Coord&gt;</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getVerticesAsDouble</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">double[][]</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getVerticesAsFloat</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">float[][]</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">heItr</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">HE_HalfedgeIterator</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">isFinished</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">boolean</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">isNeighbor</td>
+      <td style="text-align: left">final HE_RAS<he_face> partition1,final HE_RAS<he_face> partition2</he_face></he_face>
+</td>
+      <td style="text-align: left">boolean</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">isSurface</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">boolean</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">modify</td>
+      <td style="text-align: left">final HEM_Modifier modifier</td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">modifyThreaded</td>
+      <td style="text-align: left">final HEM_Modifier modifier</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">move</td>
+      <td style="text-align: left">final double x, final double y, final double z</td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">move</td>
+      <td style="text-align: left">final WB_Coord v</td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">moveSelf</td>
+      <td style="text-align: left">final double x, final double y, final double z</td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">moveSelf</td>
+      <td style="text-align: left">final WB_Coord v</td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">moveTo</td>
+      <td style="text-align: left">final double x, final double y, final double z</td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">moveTo</td>
+      <td style="text-align: left">final WB_Coord v</td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">moveToSelf</td>
+      <td style="text-align: left">final double x, final double y, final double z</td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">moveToSelf</td>
+      <td style="text-align: left">final WB_Coord v</td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">remove</td>
+      <td style="text-align: left">final HE_Face f</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">remove</td>
+      <td style="text-align: left">final HE_Halfedge he</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">remove</td>
+      <td style="text-align: left">final HE_Vertex v</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">removeEdges</td>
+      <td style="text-align: left">final Collection&lt;? extends HE_Halfedge&gt; edges</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">removeEdges</td>
+      <td style="text-align: left">final HE_Halfedge[] edges</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">removeFaces</td>
+      <td style="text-align: left">final Collection&lt;? extends HE_Face&gt; faces</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">removeFaces</td>
+      <td style="text-align: left">final HE_Face[] faces</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">removeHalfedges</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">removeHalfedges</td>
+      <td style="text-align: left">final HE_Halfedge[] halfedges</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">removeNoSelectionCheck</td>
+      <td style="text-align: left">final HE_Halfedge he</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">removeSelection</td>
+      <td style="text-align: left">final String name</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">removeVertices</td>
+      <td style="text-align: left">final Collection&lt;? extends HE_Vertex&gt; vertices</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">removeVertices</td>
+      <td style="text-align: left">final HE_Vertex[] vertices</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">renameSelection</td>
+      <td style="text-align: left">final String from, final String to</td>
+      <td style="text-align: left">boolean</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">replaceFaces</td>
+      <td style="text-align: left">final HE_Mesh mesh</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">replaceHalfedges</td>
+      <td style="text-align: left">final HE_Mesh mesh</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">replaceSelection</td>
+      <td style="text-align: left">final String name, final HE_Machine machine,final HE_Selection sel</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">replaceSelection</td>
+      <td style="text-align: left">final String name,final HE_Selection sel</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">replaceVertices</td>
+      <td style="text-align: left">final HE_Mesh mesh</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">resetEdgeInternalLabels</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">resetEdgeUserLabels</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">resetFaceInternalLabels</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">resetFaceUserLabels</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">resetHalfedgeInternalLabels</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">resetHalfedgeUserLabels</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">resetInternalLabels</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">resetUserLabels</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">resetVertexInternalLabels</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">resetVertexUserLabels</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">rotateAboutAxis</td>
+      <td style="text-align: left">final double angle, final double px,final double py, final double pz, final double ax, final double ay,final double az</td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">rotateAboutAxis</td>
+      <td style="text-align: left">final double angle, final WB_Coord p,final WB_Coord a</td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">rotateAboutAxis2P</td>
+      <td style="text-align: left">final double angle, final double p1x,final double p1y, final double p1z, final double p2x,final double p2y, final double p2z</td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">rotateAboutAxis2P</td>
+      <td style="text-align: left">final double angle, final WB_Coord p1,final WB_Coord p2</td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">rotateAboutAxis2PSelf</td>
+      <td style="text-align: left">final double angle, final double p1x,final double p1y, final double p1z, final double p2x,final double p2y, final double p2z</td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">rotateAboutAxis2PSelf</td>
+      <td style="text-align: left">final double angle, final WB_Coord p1,final WB_Coord p2</td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">rotateAboutAxisSelf</td>
+      <td style="text-align: left">final double angle, final double px,final double py, final double pz, final double ax, final double ay,final double az</td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">rotateAboutAxisSelf</td>
+      <td style="text-align: left">final double angle, final WB_Coord p,final WB_Coord a</td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">rotateAboutCenter</td>
+      <td style="text-align: left">final double angle, final double ax,final double ay, final double az</td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">rotateAboutCenter</td>
+      <td style="text-align: left">final double angle, final WB_Coord a</td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">rotateAboutCenterSelf</td>
+      <td style="text-align: left">final double angle, final double ax,final double ay, final double az</td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">rotateAboutCenterSelf</td>
+      <td style="text-align: left">final double angle, final WB_Coord a</td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">rotateAboutOrigin</td>
+      <td style="text-align: left">final double angle, final double ax,final double ay, final double az</td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">rotateAboutOrigin</td>
+      <td style="text-align: left">final double angle, final WB_Coord a</td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">rotateAboutOriginSelf</td>
+      <td style="text-align: left">final double angle, final double ax,final double ay, final double az</td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">rotateAboutOriginSelf</td>
+      <td style="text-align: left">final double angle, final WB_Coord a</td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">scale</td>
+      <td style="text-align: left">final double scaleFactor</td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">scale</td>
+      <td style="text-align: left">final double scaleFactorx, final double scaleFactory,final double scaleFactorz</td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">scale</td>
+      <td style="text-align: left">final double scaleFactorx, final double scaleFactory,final double scaleFactorz, final WB_Coord c</td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">scale</td>
+      <td style="text-align: left">final double scaleFactor, final WB_Coord c</td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">scaleSelf</td>
+      <td style="text-align: left">final double scaleFactor</td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">scaleSelf</td>
+      <td style="text-align: left">final double scaleFactorx,final double scaleFactory, final double scaleFactorz</td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">scaleSelf</td>
+      <td style="text-align: left">final double scaleFactorx,final double scaleFactory, final double scaleFactorz,final WB_Coord c</td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">scaleSelf</td>
+      <td style="text-align: left">final double scaleFactor, final WB_Coord c</td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectAll</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectAll</td>
+      <td style="text-align: left">final String name</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectAllEdges</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectAllEdges</td>
+      <td style="text-align: left">final String name</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectAllFaces</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectAllFaces</td>
+      <td style="text-align: left">final String name</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectFaces</td>
+      <td style="text-align: left">int start, int stop</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectFaces</td>
+      <td style="text-align: left">final String name, int start, int stop</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectAllHalfedges</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectAllHalfedges</td>
+      <td style="text-align: left">final String name</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectAllInnerBoundaryHalfedges</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectAllInnerBoundaryHalfedges</td>
+      <td style="text-align: left">final String name</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectAllOuterBoundaryHalfedges</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectAllOuterBoundaryHalfedges</td>
+      <td style="text-align: left">final String name</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectAllVertices</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectAllVertices</td>
+      <td style="text-align: left">final String name</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectBackEdges</td>
+      <td style="text-align: left">final String name, final WB_Plane P</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectBackEdges</td>
+      <td style="text-align: left">final WB_Plane P</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectBackFaces</td>
+      <td style="text-align: left">final String name, final WB_Plane P</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectBackFaces</td>
+      <td style="text-align: left">final WB_Plane P</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectBackVertices</td>
+      <td style="text-align: left">final String name,final WB_Plane P</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectBackVertices</td>
+      <td style="text-align: left">final WB_Plane P</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectBoundaryEdges</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectBoundaryEdges</td>
+      <td style="text-align: left">final String name</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectBoundaryFaces</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectBoundaryFaces</td>
+      <td style="text-align: left">final String name</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectBoundaryVertices</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectBoundaryVertices</td>
+      <td style="text-align: left">final String name</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectCrossingEdges</td>
+      <td style="text-align: left">final String name,final WB_Plane P</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectCrossingEdges</td>
+      <td style="text-align: left">final WB_Plane P</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectCrossingFaces</td>
+      <td style="text-align: left">final String name,final WB_Plane P</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectCrossingFaces</td>
+      <td style="text-align: left">final WB_Plane P</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectEdgesWithLabel</td>
+      <td style="text-align: left">final int label</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectEdgesWithLabel</td>
+      <td style="text-align: left">final String name,final int label</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectEdgesWithOtherInternalLabel</td>
+      <td style="text-align: left">final int label</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectEdgesWithOtherInternalLabel</td>
+      <td style="text-align: left">final String name,final int label</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectEdgesWithOtherLabel</td>
+      <td style="text-align: left">final int label</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectEdgesWithOtherLabel</td>
+      <td style="text-align: left">final String name,final int label</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectEdgesWithInternalLabel</td>
+      <td style="text-align: left">final int label</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectEdgesWithInternalLabel</td>
+      <td style="text-align: left">final String name,final int label</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectFacesWithInternalLabel</td>
+      <td style="text-align: left">final int label</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectFacesWithInternalLabel</td>
+      <td style="text-align: left">final String name,final int label</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectFacesWithLabel</td>
+      <td style="text-align: left">final int label</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectFacesWithLabel</td>
+      <td style="text-align: left">final String name,final int label</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectFacesWithNormal</td>
+      <td style="text-align: left">final String name,final WB_Coord v</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectFacesWithNormal</td>
+      <td style="text-align: left">final String name,final WB_Coord n, final double ta</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectFacesWithNormal</td>
+      <td style="text-align: left">final WB_Coord v</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectFacesWithNormal</td>
+      <td style="text-align: left">final WB_Coord n,final double ta</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectFacesWithOtherInternalLabel</td>
+      <td style="text-align: left">final int label</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectFacesWithOtherInternalLabel</td>
+      <td style="text-align: left">final String name,final int label</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectFacesWithOtherLabel</td>
+      <td style="text-align: left">final int label</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectFacesWithOtherLabel</td>
+      <td style="text-align: left">final String name,final int label</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectFrontEdges</td>
+      <td style="text-align: left">final String name, final WB_Plane P</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectFrontEdges</td>
+      <td style="text-align: left">final WB_Plane P</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectFrontFaces</td>
+      <td style="text-align: left">final String name, final WB_Plane P</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectFrontFaces</td>
+      <td style="text-align: left">final WB_Plane P</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectFrontVertices</td>
+      <td style="text-align: left">final String name,final WB_Plane P</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectFrontVertices</td>
+      <td style="text-align: left">final WB_Plane P</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectHalfedgesWithLabel</td>
+      <td style="text-align: left">final int label</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectHalfedgesWithLabel</td>
+      <td style="text-align: left">final String name,final int label</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectHalfedgesWithOtherInternalLabel</td>
+      <td style="text-align: left">final int label</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectHalfedgesWithOtherInternalLabel</td>
+      <td style="text-align: left">final String name,final int label</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectHalfedgesWithOtherLabel</td>
+      <td style="text-align: left">final int label</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectHalfedgesWithOtherLabel</td>
+      <td style="text-align: left">final String name,final int label</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectHalfedgeWithInternalLabel</td>
+      <td style="text-align: left">final int label</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectHalfedgeWithInternalLabel</td>
+      <td style="text-align: left">final String name,final int label</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectOnVertices</td>
+      <td style="text-align: left">final String name, final WB_Plane P</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectOnVertices</td>
+      <td style="text-align: left">final WB_Plane P</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectRandomEdges</td>
+      <td style="text-align: left">final double r</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectRandomEdges</td>
+      <td style="text-align: left">final double r, final long seed</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectRandomEdges</td>
+      <td style="text-align: left">final String name, final double r</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectRandomEdges</td>
+      <td style="text-align: left">final String name, final double r,final long seed</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectRandomFaces</td>
+      <td style="text-align: left">final double r</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectRandomFaces</td>
+      <td style="text-align: left">final double r, final long seed</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectRandomFaces</td>
+      <td style="text-align: left">final String name, final double r</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectRandomFaces</td>
+      <td style="text-align: left">final String name, final double r,final long seed</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectRandomVertices</td>
+      <td style="text-align: left">final double r</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectRandomVertices</td>
+      <td style="text-align: left">final double r, final long seed</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectRandomVertices</td>
+      <td style="text-align: left">final String name,final double r</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectRandomVertices</td>
+      <td style="text-align: left">final String name, final double r,final long seed</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectVerticesWithInternalLabel</td>
+      <td style="text-align: left">final int label</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectVerticesWithInternalLabel</td>
+      <td style="text-align: left">final String name,final int label</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectVerticesWithLabel</td>
+      <td style="text-align: left">final int label</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectVerticesWithLabel</td>
+      <td style="text-align: left">final String name,final int label</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectVerticesWithOtherInternalLabel</td>
+      <td style="text-align: left">final int label</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectVerticesWithOtherInternalLabel</td>
+      <td style="text-align: left">final String name,final int label</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectVerticesWithOtherLabel</td>
+      <td style="text-align: left">final int label</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">selectVerticesWithOtherLabel</td>
+      <td style="text-align: left">final String name,final int label</td>
+      <td style="text-align: left">HE_Selection</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">set</td>
+      <td style="text-align: left">final HE_Mesh target</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">setEdgeInternalLabels</td>
+      <td style="text-align: left">final int label</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">setEdgeUserLabels</td>
+      <td style="text-align: left">final int label</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">setFace</td>
+      <td style="text-align: left">final HE_Halfedge he, final HE_Face f</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">setFaceColor</td>
+      <td style="text-align: left">final int color</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">setFaceColorWithInternalLabel</td>
+      <td style="text-align: left">final int color, final int i</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">setFaceColorWithOtherInternalLabel</td>
+      <td style="text-align: left">final int color,final int i</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">setFaceColorWithOtherUserLabel</td>
+      <td style="text-align: left">final int color, final int i</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">setFaceColorWithUserLabel</td>
+      <td style="text-align: left">final int color, final int i</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">setFaceInternalLabels</td>
+      <td style="text-align: left">final int label</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">setFaceUserLabels</td>
+      <td style="text-align: left">final int label</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">setHalfedge</td>
+      <td style="text-align: left">final HE_Face f, final HE_Halfedge he</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">setHalfedge</td>
+      <td style="text-align: left">final HE_Vertex v, final HE_Halfedge he</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">setHalfedgeColor</td>
+      <td style="text-align: left">final int color</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">setHalfedgeColorWithInternalLabel</td>
+      <td style="text-align: left">final int color,final int i</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">setHalfedgeColorWithOtherInternalLabel</td>
+      <td style="text-align: left">final int color,final int i</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">setHalfedgeColorWithOtherUserLabel</td>
+      <td style="text-align: left">final int color,final int i</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">setHalfedgeColorWithUserLabel</td>
+      <td style="text-align: left">final int color, final int i</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">setHalfedgeInternalLabels</td>
+      <td style="text-align: left">final int label</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">setHalfedgeUserLabels</td>
+      <td style="text-align: left">final int label</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">setName</td>
+      <td style="text-align: left">final String name</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">setNext</td>
+      <td style="text-align: left">final HE_Halfedge he, final HE_Halfedge hen</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">setNoCopy</td>
+      <td style="text-align: left">final HE_Mesh target</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">setPair</td>
+      <td style="text-align: left">final HE_Halfedge he1, final HE_Halfedge he2</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">setPairNoSelectionCheck</td>
+      <td style="text-align: left">final HE_Halfedge he1,final HE_Halfedge he2</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">setVertex</td>
+      <td style="text-align: left">final HE_Halfedge he, final HE_Vertex v</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">setVertex</td>
+      <td style="text-align: left">final HE_Vertex v, final double x, final double y</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">setVertex</td>
+      <td style="text-align: left">final HE_Vertex v, final double x, final double y,final double z</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">setVertex</td>
+      <td style="text-align: left">final HE_Vertex v, final WB_Coord c</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">setVertexColor</td>
+      <td style="text-align: left">final int color</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">setVertexColorWithInternalLabel</td>
+      <td style="text-align: left">final int color, final int i</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">setVertexColorWithOtherInternalLabel</td>
+      <td style="text-align: left">final int color,final int i</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">setVertexColorWithOtherUserLabel</td>
+      <td style="text-align: left">final int color, final int i</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">setVertexColorWithUserLabel</td>
+      <td style="text-align: left">final int color, final int i</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">setVertexInternalLabels</td>
+      <td style="text-align: left">final int label</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">setVertexUserLabels</td>
+      <td style="text-align: left">final int label</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">setVertexWithIndex</td>
+      <td style="text-align: left">final int index, final double x,final double y</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">setVertexWithIndex</td>
+      <td style="text-align: left">final int index, final double x,final double y, final double z</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">setVertexWithIndex</td>
+      <td style="text-align: left">final int index, final WB_Coord c</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">setVertexWithKey</td>
+      <td style="text-align: left">final long key, final double x,final double y</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">setVertexWithKey</td>
+      <td style="text-align: left">final long key, final double x, final double y,final double z</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">setVertexWithKey</td>
+      <td style="text-align: left">final long key, final WB_Coord c</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">setVerticesFromDouble</td>
+      <td style="text-align: left">final double[][] values</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">setVerticesFromFloat</td>
+      <td style="text-align: left">final double[] values</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">setVerticesFromFloat</td>
+      <td style="text-align: left">final float[] values</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">setVerticesFromFloat</td>
+      <td style="text-align: left">final float[][] values</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">setVerticesFromFloat</td>
+      <td style="text-align: left">final int[] values</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">setVerticesFromInt</td>
+      <td style="text-align: left">final int[][] values</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">setVerticesFromPoint</td>
+      <td style="text-align: left">final List&lt;? extends WB_Coord&gt; values</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">setVerticesFromPoint</td>
+      <td style="text-align: left">final WB_Coord[] values</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">simplify</td>
+      <td style="text-align: left">final HES_Simplifier simplifier</td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">simplifyThreaded</td>
+      <td style="text-align: left">final HES_Simplifier simplifier</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">smooth</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">smooth</td>
+      <td style="text-align: left">final int rep</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">sort</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">sort</td>
+      <td style="text-align: left">final HE_FaceSort faceSort,final HE_VertexSort vertexSort</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">subdivide</td>
+      <td style="text-align: left">final HES_Subdividor subdividor</td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">subdivide</td>
+      <td style="text-align: left">final HES_Subdividor subdividor, final int rep</td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">subdivideThreaded</td>
+      <td style="text-align: left">final HES_Subdividor subdividor</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">subdivideThreaded</td>
+      <td style="text-align: left">final HES_Subdividor subdividor,final int rep</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">toSimpleMesh</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">toString</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">String</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">transform</td>
+      <td style="text-align: left">final WB_Transform3D T</td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">transformSelf</td>
+      <td style="text-align: left">final WB_Transform3D T</td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">uncapBoundaryHalfedges</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">update</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">validate</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">boolean</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">vItr</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">HE_VertexIterator</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">stats</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getAABB</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_AABB</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">triangulate</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">void</td>
+      <td style="text-align: left"> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="creatorthread">CreatorThread</h3>
+
+<p><br></p>
+<h4 id="implements--callablehe_mesh">implements:  Callable&lt;HE_Mesh&gt;</h4>
+<p><br></p>
+
+<ul>
+  <li><strong>构造方法</strong></li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">属性</th>
+      <th style="text-align: left">方法名</th>
+      <th style="text-align: left">参数</th>
+      <th style="text-align: left">返回值</th>
+      <th style="text-align: left">备注</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">CreatorThread</td>
+      <td style="text-align: left">final HEC_Creator creator</td>
+      <td style="text-align: left">CreatorThread</td>
+      <td style="text-align: left"> </td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li><strong>成员方法</strong></li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">属性</th>
+      <th style="text-align: left">方法名</th>
+      <th style="text-align: left">参数</th>
+      <th style="text-align: left">返回值</th>
+      <th style="text-align: left">备注</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">call</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="modifierthread">ModifierThread</h3>
+
+<p><br></p>
+<h4 id="implements--callablehe_mesh-1">implements:  Callable&lt;HE_Mesh&gt;</h4>
+<p><br></p>
+
+<ul>
+  <li><strong>构造方法</strong></li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">属性</th>
+      <th style="text-align: left">方法名</th>
+      <th style="text-align: left">参数</th>
+      <th style="text-align: left">返回值</th>
+      <th style="text-align: left">备注</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">ModifierThread</td>
+      <td style="text-align: left">final HEM_Modifier machine, final HE_Mesh mesh</td>
+      <td style="text-align: left">ModifierThread</td>
+      <td style="text-align: left"> </td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li><strong>成员方法</strong></li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">属性</th>
+      <th style="text-align: left">方法名</th>
+      <th style="text-align: left">参数</th>
+      <th style="text-align: left">返回值</th>
+      <th style="text-align: left">备注</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">call</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="simplifierthread">SimplifierThread</h3>
+
+<p><br></p>
+<h4 id="implements--callablehe_mesh-2">implements:  Callable&lt;HE_Mesh&gt;</h4>
+<p><br></p>
+
+<ul>
+  <li><strong>构造方法</strong></li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">属性</th>
+      <th style="text-align: left">方法名</th>
+      <th style="text-align: left">参数</th>
+      <th style="text-align: left">返回值</th>
+      <th style="text-align: left">备注</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">SimplifierThread</td>
+      <td style="text-align: left">final HES_Simplifier machine, final HE_Mesh mesh</td>
+      <td style="text-align: left">SimplifierThread</td>
+      <td style="text-align: left"> </td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li><strong>成员方法</strong></li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">属性</th>
+      <th style="text-align: left">方法名</th>
+      <th style="text-align: left">参数</th>
+      <th style="text-align: left">返回值</th>
+      <th style="text-align: left">备注</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">call</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="subdividorthread">SubdividorThread</h3>
+
+<p><br></p>
+<h4 id="implements--callablehe_mesh-3">implements:  Callable&lt;HE_Mesh&gt;</h4>
+<p><br></p>
+
+<ul>
+  <li><strong>构造方法</strong></li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">属性</th>
+      <th style="text-align: left">方法名</th>
+      <th style="text-align: left">参数</th>
+      <th style="text-align: left">返回值</th>
+      <th style="text-align: left">备注</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">SubdividorThread</td>
+      <td style="text-align: left">final HES_Subdividor machine, final HE_Mesh mesh</td>
+      <td style="text-align: left">SubdividorThread</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">setNoCopy</td>
+      <td style="text-align: left">new HE_Mesh</td>
+      <td style="text-align: left">setNoCopy</td>
+      <td style="text-align: left"> </td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li><strong>成员方法</strong></li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">属性</th>
+      <th style="text-align: left">方法名</th>
+      <th style="text-align: left">参数</th>
+      <th style="text-align: left">返回值</th>
+      <th style="text-align: left">备注</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">call</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">HE_Mesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">this</td>
+      <td style="text-align: left">synchronized</td>
+      <td style="text-align: left"> </td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+  </main>
+  
+<!-- Back to top button -->
+<button type="button" class="btn btn-dark btn-floating btn-lg" id="btn-back-to-top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<script src="/404/assets/js/button_back_to_top.js"></script>
+  
+<!-- jQuery -->
+<script src="//cdn.bootcss.com/jquery/2.2.2/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<footer class="mt-auto py-3 text-center">
+
+  <small class="text-muted mb-2">
+    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
+    by <strong>John Doe</strong>
+  </small>
+
+  <div class="container-fluid justify-content-center">
+<a class="social mx-1" href="https://www.behance.net/your_username" style="color: #6c757d" onmouseover="this.style.color='#1769ff'" onmouseout="this.style.color='#6c757d'">
+      <i class="fab fa-behance fa-1x"></i>
+    </a><a class="social mx-1" href="mailto:username@domain.com" style="color: #6c757d" onmouseover="this.style.color='#db4437'" onmouseout="this.style.color='#6c757d'">
+      <i class="fas fa-envelope fa-1x"></i>
+    </a><a class="social mx-1" href="https://www.facebook.com/your_username" style="color: #6c757d" onmouseover="this.style.color='#3b5998'" onmouseout="this.style.color='#6c757d'">
+      <i class="fab fa-facebook fa-1x"></i>
+    </a><a class="social mx-1" href="https://www.github.com/Inst-AAA" style="color: #6c757d" onmouseover="this.style.color='#333333'" onmouseout="this.style.color='#6c757d'">
+      <i class="fab fa-github fa-1x"></i>
+    </a><a class="social mx-1" href="https://www.linkedin.com/in/your_username" style="color: #6c757d" onmouseover="this.style.color='#007bb5'" onmouseout="this.style.color='#6c757d'">
+      <i class="fab fa-linkedin-in fa-1x"></i>
+    </a><a class="social mx-1" href="https://medium.com/@your_username" style="color: #6c757d" onmouseover="this.style.color='#00ab6c'" onmouseout="this.style.color='#6c757d'">
+      <i class="fab fa-medium fa-1x"></i>
+    </a><a class="social mx-1" href="https://www.twitter.com/your_username" style="color: #6c757d" onmouseover="this.style.color='#1da1f2'" onmouseout="this.style.color='#6c757d'">
+      <i class="fab fa-twitter fa-1x"></i>
+    </a>
+
+</div>
+<small id="attribution">
+    theme <a href="https://github.com/YoussefRaafatNasry/portfolYOU">portfolYOU</a>
+  </small>
+
+</footer>
+<div class="cb-search-tool" style="position: fixed; top: 0px ; bottom: 0px; left: 0px; right:  0px;
+      opacity: 0.95; background-color: #111111; z-index: 9999; display: none;">
+    <input type="text" class="form-control cb-search-content" id="cb-search-content" style="position: fixed; top: 60px" placeholder="文章标题 日期 标签" autocomplete="off">
+
+    <div style="position: fixed; top: 16px; right: 16px;">
+        <img src="/search/img/cb-close.png" id="cb-close-btn">
+    </div>
+</div>
+
+<div style="position: fixed; right: 16px; bottom: 20px;">
+    <img src="/search/img/cb-search.png" id="cb-search-btn" title="双击ctrl试一下">
+</div>
+
+<link rel="stylesheet" href="/404/search/css/cb-search.css">
+
+<script src="/404/search/js/bootstrap3-typeahead.min.js"></script>
+<script src="/404/search/js/cb-search.js"></script>
+
+
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Initialize all tooltips -->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+
+</script>
+</body>
+
+</html>
+

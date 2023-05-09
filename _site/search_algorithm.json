@@ -1,0 +1,25 @@
+[
+  
+  
+      {
+        "title"    : "HE_Mesh Library",
+        "title_cn"  : "HE_Mesh程序包整理",
+        "tags"     : "Java, HalfEdge Data, Program",
+        "url"      : "/404/algorithms/he-mesh",
+        "location" : "",
+        "team"     : "Biao Li, Siyuan He, Xuelu Zhang, Bei Wang, Jiajun Li"
+      } ,
+    
+  
+      {
+        "title"    : "Shopping Mall Planning Generator",
+        "title_cn"  : "购物中心平面布局辅助生成工具",
+        "tags"     : "Generative Design, Building Layout",
+        "url"      : "/404/algorithms/2021-shopping-mall-planning-generator",
+        "location" : "",
+        "team"     : "Biao Li, Baizhou Zhang"
+      } 
+    
+  
+
+]

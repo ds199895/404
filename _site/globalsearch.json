@@ -1,0 +1,89 @@
+[
+
+  
+    {
+      "title"    : "A better Hello World",
+      "category" : "",
+      "tags"     : "Software Development",
+      "url"      : "/404/blog/a-better-hello-world",
+      "date"     : "2016-07-23 00:00:00 +0800"
+    } 
+  
+  ,  
+  
+    {
+      "title"    : "Tangshan Mine Park Landscape Gallery",
+      "title_cn"  : "南京汤山矿坑公园入口景观廊桥",
+      "tags"     : "Digital Fabrication, Installation, Project, Nanjing",
+      "url"      : "/404/projects/2019-tangshan-mine-park-landscape-gallery",
+      "location" : "Nanjing, Jiangsu, China",
+      "team"     : "Biao Li, Peng Tang, Hongjian Li, Hanchen Guo"
+    } ,
+  
+    {
+      "title"    : "Linpan Landscape Installation",
+      "title_cn"  : "南岸美村“林·盘”艺术景观装置",
+      "tags"     : "Digital Fabrication, Installation, Project, Anren",
+      "url"      : "/404/projects/2019-linpan-landscape-installation",
+      "location" : "Chengdu, Sichuan, China",
+      "team"     : "Biao Li, Peng Tang, Hongjian Li, Yulong Chen, Yichen Mo, Zhenyu Hu"
+    } ,
+  
+    {
+      "title"    : "Stress-oriented 3D printing floor system - Design of the Nanjing Tangshan Mine Park Exhibition Hall.",
+      "title_cn"  : "应力导向的3D打印楼盖系统——南京汤山矿坑公园展览馆设计",
+      "tags"     : "Digital Fabrication, Installation, Project, Nanjing",
+      "url"      : "https://mp.weixin.qq.com/s/ONw262-5HtikiEOPyqldOA",
+      "location" : "Nanjing, Jiangsu, China",
+      "team"     : "He Siyuan, Yao Xiuning"
+    } ,
+  
+    {
+      "title"    : "local project template",
+      "title_cn"  : "模板",
+      "tags"     : "",
+      "url"      : "/404/projects/local-project-template",
+      "location" : "Nanjing, Jiangsu, China",
+      "team"     : "personA, personB"
+    } ,
+  
+    {
+      "title"    : "Detail-Preserving Fluid Simulation",
+      "title_cn"  : " ",
+      "tags"     : "Taichi, Fluid Simulation, Cerp, RK3, MacCormack",
+      "url"      : "https://github.com/amomorning/pbs-fluid",
+      "location" : "",
+      "team"     : "Yichen Mo, Haitao Yu, Jingyu Wang"
+    } 
+  
+  ,
+  
+    {
+        "title"    : "Publications Template",
+        "subtitle" : "",
+        "url"      : "/404/publications/2000-01-01-publications-template",
+        "tags"     : "",
+        "authors"  : "AAABBB",
+        "keywords" : "关键词1, 关键词2, Keywords1, Keywords2"
+    } ,
+  
+    {
+        "title"    : "基于整数规划的停车场车位排布优化算法研究",
+        "subtitle" : "Research on Optimization Algorithm of parking lot layout based on Integer Programming",
+        "url"      : "/404/publications/2022-11-27-integer-programming-parkinglot",
+        "tags"     : "Integer Programming, Parking Layouts, Generative Design",
+        "authors"  : "He SiyuanBiao Li",
+        "keywords" : "停车场, 整数规划, 车位排布, 区域划分, Parking Lot, Integer Programming, Parking Place Arrangements"
+    } ,
+  
+    {
+        "title"    : "几何原型与形态编码在商业建筑平面生成中的应用探索",
+        "subtitle" : "Exploration on the Application of Geometric Prototype and Form Encoding Strategies in the Layout Generation of Commercial Buildings",
+        "url"      : "/404/publications/2022-11-27-strategies-commercial",
+        "tags"     : "Generative Design, Rule-Based, Building Layouts",
+        "authors"  : "Baizhou ZhangBiao Li",
+        "keywords" : "规则转译, 商业建筑平面, 几何原型, 形态编码, 建筑生成设计, Rule Translation, Commercial Building Layout, Geometric Prototype, Morphological Encoding, Architectural Generative Design"
+    } 
+      
+  
+]

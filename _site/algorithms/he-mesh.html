@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  
+  
+  
+
+  
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="HE_Mesh Library">
+  <meta property="og:description" content="HE_Mesh, a Java library for creating and manipulating polygonal meshes. Aimed primarily at Processing.  HE_Mesh 是基于Java语言的半边数据结构与几何库。该项目整理了HE_Mesh的各个类的方法与属性">
+  <meta property="og:image" content="https://archialgo-com-sources.oss-cn-hangzhou.aliyuncs.com/images/HEC_Catalan.png">
+
+  <title>HE_Mesh Library</title>
+  <meta name="description" content="HE_Mesh, a Java library for creating and manipulating polygonal meshes. Aimed primarily at Processing.  HE_Mesh 是基于Java语言的半边数据结构与几何库。该项目整理了HE_Mesh的各个类的方法与属性">
+
+  <link rel="shortcut icon" type="image/x-icon" href="/404/assets/favicon.ico">
+
+  <!-- Theme style -->
+  <script src="/404/assets/js/theme.js"></script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="/404/assets/css/bootstrap.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/404/assets/css/style.css">
+
+</head>
+
+
+<body class="h-100 d-flex flex-column">
+
+  <main class="flex-shrink-0 container mt-5">
+    <nav class="navbar navbar-expand-lg navbar-themed">
+
+  <a class="navbar-brand d-lg-none" href="/404/">
+    <h5 ><b class="size-unchange-1"></b></h5>
+  </a>
+  <a class="navbar-brand d-none d-lg-block" href="/404/">
+    <h5 ><b class="size-unchange-1">404Portfolio</b></h5>
+  </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-1x fa-bars text-themed"></i>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link size-unchange-2 active" href="/404/"></a>
+
+      <a class="nav-item nav-link size-unchange-2 " href="/404/projects/">Project</a>
+
+      <a class="nav-item nav-link size-unchange-2 active" href="/404/algorithms/">Algorithm</a>
+
+      <a class="nav-item nav-link size-unchange-2 " href="/404/blog/">Blog</a>
+
+      <a class="nav-item nav-link size-unchange-2 " href="/404/about/">About</a>
+
+      <a class="nav-item nav-link size-unchange-2 " href="/404/publications/">Publication</a>
+
+      <a class="nav-item nav-link size-unchange-2 " href="/404/display/">Display</a>
+
+      
+
+      <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
+    </div>
+  </div>
+
+</nav>
+
+    <div class="col-lg-10 mx-auto mt-5 markdown-body">
+  <h1><b>HE_Mesh Library</b></h1>
+
+  <h3><b>HE_Mesh程序包整理</b></h3>
+
+
+<p class="post-metadata text-muted">
+  2019 -  
+  <b>9 mins read time</b>
+
+  <br>
+  <p class="post-metadata text-muted">
+
+  
+    Team: 
+     
+      
+      
+      
+        Biao Li
+      
+     
+      
+      
+      , 
+      
+      
+        Siyuan He
+      
+     
+      
+      
+      , 
+      
+      
+        Xuelu Zhang
+      
+     
+      
+      
+      , 
+      
+      
+        Bei Wang
+      
+     
+      
+      
+      , 
+      
+      
+        Jiajun Li
+      
+    
+  
+  <br>Tags: 
+    
+    <a class="text-decoration-none no-underline" href="/404/algorithms/tags#java">
+      <span class="badge badge-pill text-primary border border-primary ml-1">Java</span>
+
+    </a>
+    
+    <a class="text-decoration-none no-underline" href="/404/algorithms/tags#halfedge-data">
+      <span class="badge badge-pill text-primary border border-primary ml-1">HalfEdge Data</span>
+
+    </a>
+    
+    <a class="text-decoration-none no-underline" href="/404/algorithms/tags#program">
+      <span class="badge badge-pill text-primary border border-primary ml-1">Program</span>
+
+    </a>
+    </p>
+
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="false">
+
+  <ol class="carousel-indicators">
+    
+  </ol>
+
+  <div class="carousel-inner">
+    
+  </div>
+
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+
+</div>
+
+<!-- Simple-Jekyll-Search https://github.com/christian-fei/Simple-Jekyll-Search -->
+
+<div class="input-group mt-5 px-3">
+  <input id="search-input" type="text" class="form-control search-box" placeholder="Search classes.." />
+  <div class="input-group-append">
+    <span class="input-group-text border border-primary bg-primary text-white">
+      <i class="fas fa-search"></i>
+    </span>
+  </div>
+  <button class="btn btn-outline-primary ml-1" onclick="location.href = '/404/hemesh/tags';">
+    <i class="fas fa-tags"></i>
+  </button>
+</div>
+<ul class="px-3" id="results-container"></ul>
+
+<script src="https://cdn.rawgit.com/christian-fei/Simple-Jekyll-Search/master/dest/simple-jekyll-search.min.js"></script>
+
+<script>
+  var sjs = SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        searchResultTemplate: '<a href="{url}" class="list-group-item list-group-item-action">{title} {title_cn}</a>',
+        noResultsText: '<li class="list-group-item list-group-item-action disabled">No results found</li>',
+        json: '/404/search_hemesh.json'
+      })
+</script>
+
+<style type="text/css">
+  .title{
+    border: 1px solid black;
+    width: 100%;
+    height: 30px;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    text-align: center;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+  }
+  .title.active{
+    border: 1.5px solid #007bff;
+    width: 100%;
+    height: 30px;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    text-align: center;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+  }
+  .cards {
+        -webkit-column-count: 6;
+        -moz-column-count: 6;
+        column-count: 6;
+        -webkit-column-gap: 1.25rem;
+        -moz-column-gap: 1.25rem;
+        column-gap: 1.25rem;
+        orphans: 1;
+        widows:1;
+        margin-bottom: 20px;
+    }
+
+    .cards .card {
+        display: inline-block;
+        width:100%
+    }
+    .card-columns {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+        -webkit-column-gap: 1.1rem;
+        -moz-column-gap: 1.1rem;
+        column-gap: 1.1rem;
+        orphans: 1;
+        widows:1;
+    }
+
+    .card-columns .card {
+        display: inline-block;
+        width:100%
+    }
+
+</style>
+
+<div class="cards t-3">
+  
+  <div class="title" id="toggleGeom">
+    Geom
+    <!-- <button class="but" id="toggleGeom" style="background-color: white;" flex="1">▾</button> -->
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      var t="Geom"
+      if(t!='Geom'){
+        $(".Geom").slideToggle();
+      }else{
+        var selected = document.getElementById('toggleGeom');
+        selected.classList.toggle('active');
+        localStorage.setItem('dis', "Geom");
+      }
+      
+      $("#toggleGeom").click(function() {
+        var selected = document.getElementById('toggleGeom');
+        selected.classList.toggle('active');
+        var info = localStorage.getItem('dis');
+        if(info!=""){
+          $("."+info).slideToggle();
+          var selected = document.getElementById('toggle'+info);
+          selected.classList.remove('active');
+        }
+        
+        if(info!="Geom"){
+          localStorage.setItem('dis', "Geom");
+          console.log(localStorage.getItem('dis'));
+          $(".Geom").slideToggle();
+        }else{
+          localStorage.setItem('dis', "");
+          console.log(localStorage.getItem('dis'));
+        }
+     
+      });
+    });
+  </script>
+  
+  <div class="title" id="toggleHe_core">
+    He_core
+    <!-- <button class="but" id="toggleHe_core" style="background-color: white;" flex="1">▾</button> -->
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      var t="He_core"
+      if(t!='Geom'){
+        $(".He_core").slideToggle();
+      }else{
+        var selected = document.getElementById('toggleHe_core');
+        selected.classList.toggle('active');
+        localStorage.setItem('dis', "He_core");
+      }
+      
+      $("#toggleHe_core").click(function() {
+        var selected = document.getElementById('toggleHe_core');
+        selected.classList.toggle('active');
+        var info = localStorage.getItem('dis');
+        if(info!=""){
+          $("."+info).slideToggle();
+          var selected = document.getElementById('toggle'+info);
+          selected.classList.remove('active');
+        }
+        
+        if(info!="He_core"){
+          localStorage.setItem('dis', "He_core");
+          console.log(localStorage.getItem('dis'));
+          $(".He_core").slideToggle();
+        }else{
+          localStorage.setItem('dis', "");
+          console.log(localStorage.getItem('dis'));
+        }
+     
+      });
+    });
+  </script>
+  
+  <div class="title" id="toggleHe_creators">
+    He_creators
+    <!-- <button class="but" id="toggleHe_creators" style="background-color: white;" flex="1">▾</button> -->
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      var t="He_creators"
+      if(t!='Geom'){
+        $(".He_creators").slideToggle();
+      }else{
+        var selected = document.getElementById('toggleHe_creators');
+        selected.classList.toggle('active');
+        localStorage.setItem('dis', "He_creators");
+      }
+      
+      $("#toggleHe_creators").click(function() {
+        var selected = document.getElementById('toggleHe_creators');
+        selected.classList.toggle('active');
+        var info = localStorage.getItem('dis');
+        if(info!=""){
+          $("."+info).slideToggle();
+          var selected = document.getElementById('toggle'+info);
+          selected.classList.remove('active');
+        }
+        
+        if(info!="He_creators"){
+          localStorage.setItem('dis', "He_creators");
+          console.log(localStorage.getItem('dis'));
+          $(".He_creators").slideToggle();
+        }else{
+          localStorage.setItem('dis', "");
+          console.log(localStorage.getItem('dis'));
+        }
+     
+      });
+    });
+  </script>
+  
+  <div class="title" id="toggleHe_modifiers">
+    He_modifiers
+    <!-- <button class="but" id="toggleHe_modifiers" style="background-color: white;" flex="1">▾</button> -->
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      var t="He_modifiers"
+      if(t!='Geom'){
+        $(".He_modifiers").slideToggle();
+      }else{
+        var selected = document.getElementById('toggleHe_modifiers');
+        selected.classList.toggle('active');
+        localStorage.setItem('dis', "He_modifiers");
+      }
+      
+      $("#toggleHe_modifiers").click(function() {
+        var selected = document.getElementById('toggleHe_modifiers');
+        selected.classList.toggle('active');
+        var info = localStorage.getItem('dis');
+        if(info!=""){
+          $("."+info).slideToggle();
+          var selected = document.getElementById('toggle'+info);
+          selected.classList.remove('active');
+        }
+        
+        if(info!="He_modifiers"){
+          localStorage.setItem('dis', "He_modifiers");
+          console.log(localStorage.getItem('dis'));
+          $(".He_modifiers").slideToggle();
+        }else{
+          localStorage.setItem('dis', "");
+          console.log(localStorage.getItem('dis'));
+        }
+     
+      });
+    });
+  </script>
+  
+  <div class="title" id="toggleHe_subdividors">
+    He_subdividors
+    <!-- <button class="but" id="toggleHe_subdividors" style="background-color: white;" flex="1">▾</button> -->
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      var t="He_subdividors"
+      if(t!='Geom'){
+        $(".He_subdividors").slideToggle();
+      }else{
+        var selected = document.getElementById('toggleHe_subdividors');
+        selected.classList.toggle('active');
+        localStorage.setItem('dis', "He_subdividors");
+      }
+      
+      $("#toggleHe_subdividors").click(function() {
+        var selected = document.getElementById('toggleHe_subdividors');
+        selected.classList.toggle('active');
+        var info = localStorage.getItem('dis');
+        if(info!=""){
+          $("."+info).slideToggle();
+          var selected = document.getElementById('toggle'+info);
+          selected.classList.remove('active');
+        }
+        
+        if(info!="He_subdividors"){
+          localStorage.setItem('dis', "He_subdividors");
+          console.log(localStorage.getItem('dis'));
+          $(".He_subdividors").slideToggle();
+        }else{
+          localStorage.setItem('dis', "");
+          console.log(localStorage.getItem('dis'));
+        }
+     
+      });
+    });
+  </script>
+  
+  <div class="title" id="toggleHe_tools">
+    He_tools
+    <!-- <button class="but" id="toggleHe_tools" style="background-color: white;" flex="1">▾</button> -->
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      var t="He_tools"
+      if(t!='Geom'){
+        $(".He_tools").slideToggle();
+      }else{
+        var selected = document.getElementById('toggleHe_tools');
+        selected.classList.toggle('active');
+        localStorage.setItem('dis', "He_tools");
+      }
+      
+      $("#toggleHe_tools").click(function() {
+        var selected = document.getElementById('toggleHe_tools');
+        selected.classList.toggle('active');
+        var info = localStorage.getItem('dis');
+        if(info!=""){
+          $("."+info).slideToggle();
+          var selected = document.getElementById('toggle'+info);
+          selected.classList.remove('active');
+        }
+        
+        if(info!="He_tools"){
+          localStorage.setItem('dis', "He_tools");
+          console.log(localStorage.getItem('dis'));
+          $(".He_tools").slideToggle();
+        }else{
+          localStorage.setItem('dis', "");
+          console.log(localStorage.getItem('dis'));
+        }
+     
+      });
+    });
+  </script>
+  
+  <div class="title" id="toggleCore">
+    Core
+    <!-- <button class="but" id="toggleCore" style="background-color: white;" flex="1">▾</button> -->
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      var t="Core"
+      if(t!='Geom'){
+        $(".Core").slideToggle();
+      }else{
+        var selected = document.getElementById('toggleCore');
+        selected.classList.toggle('active');
+        localStorage.setItem('dis', "Core");
+      }
+      
+      $("#toggleCore").click(function() {
+        var selected = document.getElementById('toggleCore');
+        selected.classList.toggle('active');
+        var info = localStorage.getItem('dis');
+        if(info!=""){
+          $("."+info).slideToggle();
+          var selected = document.getElementById('toggle'+info);
+          selected.classList.remove('active');
+        }
+        
+        if(info!="Core"){
+          localStorage.setItem('dis', "Core");
+          console.log(localStorage.getItem('dis'));
+          $(".Core").slideToggle();
+        }else{
+          localStorage.setItem('dis', "");
+          console.log(localStorage.getItem('dis'));
+        }
+     
+      });
+    });
+  </script>
+  
+  <div class="title" id="toggleProcessing">
+    Processing
+    <!-- <button class="but" id="toggleProcessing" style="background-color: white;" flex="1">▾</button> -->
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      var t="Processing"
+      if(t!='Geom'){
+        $(".Processing").slideToggle();
+      }else{
+        var selected = document.getElementById('toggleProcessing');
+        selected.classList.toggle('active');
+        localStorage.setItem('dis', "Processing");
+      }
+      
+      $("#toggleProcessing").click(function() {
+        var selected = document.getElementById('toggleProcessing');
+        selected.classList.toggle('active');
+        var info = localStorage.getItem('dis');
+        if(info!=""){
+          $("."+info).slideToggle();
+          var selected = document.getElementById('toggle'+info);
+          selected.classList.remove('active');
+        }
+        
+        if(info!="Processing"){
+          localStorage.setItem('dis', "Processing");
+          console.log(localStorage.getItem('dis'));
+          $(".Processing").slideToggle();
+        }else{
+          localStorage.setItem('dis', "");
+          console.log(localStorage.getItem('dis'));
+        }
+     
+      });
+    });
+  </script>
+  
+  <div class="title" id="toggleMath">
+    Math
+    <!-- <button class="but" id="toggleMath" style="background-color: white;" flex="1">▾</button> -->
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      var t="Math"
+      if(t!='Geom'){
+        $(".Math").slideToggle();
+      }else{
+        var selected = document.getElementById('toggleMath');
+        selected.classList.toggle('active');
+        localStorage.setItem('dis', "Math");
+      }
+      
+      $("#toggleMath").click(function() {
+        var selected = document.getElementById('toggleMath');
+        selected.classList.toggle('active');
+        var info = localStorage.getItem('dis');
+        if(info!=""){
+          $("."+info).slideToggle();
+          var selected = document.getElementById('toggle'+info);
+          selected.classList.remove('active');
+        }
+        
+        if(info!="Math"){
+          localStorage.setItem('dis', "Math");
+          console.log(localStorage.getItem('dis'));
+          $(".Math").slideToggle();
+        }else{
+          localStorage.setItem('dis', "");
+          console.log(localStorage.getItem('dis'));
+        }
+     
+      });
+    });
+  </script>
+  
+  <div class="title" id="toggleNurbs">
+    Nurbs
+    <!-- <button class="but" id="toggleNurbs" style="background-color: white;" flex="1">▾</button> -->
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      var t="Nurbs"
+      if(t!='Geom'){
+        $(".Nurbs").slideToggle();
+      }else{
+        var selected = document.getElementById('toggleNurbs');
+        selected.classList.toggle('active');
+        localStorage.setItem('dis', "Nurbs");
+      }
+      
+      $("#toggleNurbs").click(function() {
+        var selected = document.getElementById('toggleNurbs');
+        selected.classList.toggle('active');
+        var info = localStorage.getItem('dis');
+        if(info!=""){
+          $("."+info).slideToggle();
+          var selected = document.getElementById('toggle'+info);
+          selected.classList.remove('active');
+        }
+        
+        if(info!="Nurbs"){
+          localStorage.setItem('dis', "Nurbs");
+          console.log(localStorage.getItem('dis'));
+          $(".Nurbs").slideToggle();
+        }else{
+          localStorage.setItem('dis', "");
+          console.log(localStorage.getItem('dis'));
+        }
+     
+      });
+    });
+  </script>
+  
+  <div class="title" id="toggleOther">
+    Other
+    <!-- <button class="but" id="toggleOther" style="background-color: white;" flex="1">▾</button> -->
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      var t="Other"
+      if(t!='Geom'){
+        $(".Other").slideToggle();
+      }else{
+        var selected = document.getElementById('toggleOther');
+        selected.classList.toggle('active');
+        localStorage.setItem('dis', "Other");
+      }
+      
+      $("#toggleOther").click(function() {
+        var selected = document.getElementById('toggleOther');
+        selected.classList.toggle('active');
+        var info = localStorage.getItem('dis');
+        if(info!=""){
+          $("."+info).slideToggle();
+          var selected = document.getElementById('toggle'+info);
+          selected.classList.remove('active');
+        }
+        
+        if(info!="Other"){
+          localStorage.setItem('dis', "Other");
+          console.log(localStorage.getItem('dis'));
+          $(".Other").slideToggle();
+        }else{
+          localStorage.setItem('dis', "");
+          console.log(localStorage.getItem('dis'));
+        }
+     
+      });
+    });
+  </script>
+  
+</div>
+<p><br /></p>
+
+<div class="Geom">
+    <h4 class="text-center mt-6 mb-2">Geom</h4>
+    <div class="card-columns m-5">
+      <!-- Local Projects -->
+        
+    </div>
+  </div>
+
+<div class="He_core">
+    <h4 class="text-center mt-6 mb-2">He_core</h4>
+    <div class="card-columns m-5">
+      <!-- Local Projects -->
+        <div class="wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/404/hemesh/he-edgeiterator" class="project card text-themed"><div class="card-body">
+      <h5 id="he-edgeiterator-name" class="card-title">HE_EdgeIterator
+      </h5>
+
+      <p id="he-edgeiterator-desc" class="card-text"></p>
+      <p id="he-edgeiterator-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_core</span></p>
+    </div>
+  </a>
+</div>
+<div class="wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/404/hemesh/he-element" class="project card text-themed"><div class="card-body">
+      <h5 id="he-element-name" class="card-title">HE_Element
+      </h5>
+
+      <p id="he-element-desc" class="card-text"></p>
+      <p id="he-element-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_core</span></p>
+    </div>
+  </a>
+</div>
+<div class="wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/404/hemesh/he-face" class="project card text-themed"><div class="card-body">
+      <h5 id="he-face-name" class="card-title">HE_Face
+      </h5>
+
+      <p id="he-face-desc" class="card-text"></p>
+      <p id="he-face-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_core</span></p>
+    </div>
+  </a>
+</div>
+<div class="wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/404/hemesh/he-faceedgecirculator" class="project card text-themed"><div class="card-body">
+      <h5 id="he-faceedgecirculator-name" class="card-title">HE_FaceEdgeCirculator
+      </h5>
+
+      <p id="he-faceedgecirculator-desc" class="card-text"></p>
+      <p id="he-faceedgecirculator-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_core</span></p>
+    </div>
+  </a>
+</div>
+<div class="wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/404/hemesh/he-faceedgerevcirculator" class="project card text-themed"><div class="card-body">
+      <h5 id="he-faceedgerevcirculator-name" class="card-title">HE_FaceEdgeRevCirculator
+      </h5>
+
+      <p id="he-faceedgerevcirculator-desc" class="card-text"></p>
+      <p id="he-faceedgerevcirculator-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_core</span></p>
+    </div>
+  </a>
+</div>
+<div class="wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/404/hemesh/he-facefacecirculator" class="project card text-themed"><div class="card-body">
+      <h5 id="he-facefacecirculator-name" class="card-title">HE_FaceFaceCirculator
+      </h5>
+
+      <p id="he-facefacecirculator-desc" class="card-text"></p>
+      <p id="he-facefacecirculator-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_core</span></p>
+    </div>
+  </a>
+</div>
+<div class="wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/404/hemesh/he-facefacerevcirculator" class="project card text-themed"><div class="card-body">
+      <h5 id="he-facefacerevcirculator-name" class="card-title">HE_FaceFaceRevCirculator
+      </h5>
+
+      <p id="he-facefacerevcirculator-desc" class="card-text"></p>
+      <p id="he-facefacerevcirculator-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_core</span></p>
+    </div>
+  </a>
+</div>
+<div class="wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/404/hemesh/he-facehalfedgeinnercirculator" class="project card text-themed"><div class="card-body">
+      <h5 id="he-facehalfedgeinnercirculator-name" class="card-title">HE_FaceHalfedgeInnerCirculator
+      </h5>
+
+      <p id="he-facehalfedgeinnercirculator-desc" class="card-text"></p>
+      <p id="he-facehalfedgeinnercirculator-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_core</span></p>
+    </div>
+  </a>
+</div>
+<div class="wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/404/hemesh/he-facehalfedgeinnerrevcirculator" class="project card text-themed"><div class="card-body">
+      <h5 id="he-facehalfedgeinnerrevcirculator-name" class="card-title">HE_FaceHalfedgeInnerRevCirculator
+      </h5>
+
+      <p id="he-facehalfedgeinnerrevcirculator-desc" class="card-text"></p>
+      <p id="he-facehalfedgeinnerrevcirculator-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_core</span></p>
+    </div>
+  </a>
+</div>
+<div class="wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/404/hemesh/he-facehalfedgeoutercirculator" class="project card text-themed"><div class="card-body">
+      <h5 id="he-facehalfedgeoutercirculator-name" class="card-title">HE_FaceHalfedgeOuterCirculator
+      </h5>
+
+      <p id="he-facehalfedgeoutercirculator-desc" class="card-text"></p>
+      <p id="he-facehalfedgeoutercirculator-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_core</span></p>
+    </div>
+  </a>
+</div>
+<div class="wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/404/hemesh/he-facehalfedgeouterrevcirculator" class="project card text-themed"><div class="card-body">
+      <h5 id="he-facehalfedgeouterrevcirculator-name" class="card-title">HE_FaceHalfedgeOuterRevCirculator
+      </h5>
+
+      <p id="he-facehalfedgeouterrevcirculator-desc" class="card-text"></p>
+      <p id="he-facehalfedgeouterrevcirculator-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_core</span></p>
+    </div>
+  </a>
+</div>
+<div class="wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/404/hemesh/he-faceiterator" class="project card text-themed"><div class="card-body">
+      <h5 id="he-faceiterator-name" class="card-title">HE_FaceIterator
+      </h5>
+
+      <p id="he-faceiterator-desc" class="card-text"></p>
+      <p id="he-faceiterator-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_core</span></p>
+    </div>
+  </a>
+</div>
+<div class="wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/404/hemesh/he-facesort" class="project card text-themed"><div class="card-body">
+      <h5 id="he-facesort-name" class="card-title">HE_FaceSort
+      </h5>
+
+      <p id="he-facesort-desc" class="card-text"></p>
+      <p id="he-facesort-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_core</span></p>
+    </div>
+  </a>
+</div>
+<div class="wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/404/hemesh/he-facevertexcirculator" class="project card text-themed"><div class="card-body">
+      <h5 id="he-facevertexcirculator-name" class="card-title">HE_FaceVertexCirculator
+      </h5>
+
+      <p id="he-facevertexcirculator-desc" class="card-text"></p>
+      <p id="he-facevertexcirculator-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_core</span></p>
+    </div>
+  </a>
+</div>
+<div class="wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/404/hemesh/he-facevertexrevcirculator" class="project card text-themed"><div class="card-body">
+      <h5 id="he-facevertexrevcirculator-name" class="card-title">HE_FaceVertexRevCirculator
+      </h5>
+
+      <p id="he-facevertexrevcirculator-desc" class="card-text"></p>
+      <p id="he-facevertexrevcirculator-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_core</span></p>
+    </div>
+  </a>
+</div>
+<div class="wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/404/hemesh/he-halfedge" class="project card text-themed"><div class="card-body">
+      <h5 id="he-halfedge-name" class="card-title">HE_Halfedge
+      </h5>
+
+      <p id="he-halfedge-desc" class="card-text"></p>
+      <p id="he-halfedge-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_core</span></p>
+    </div>
+  </a>
+</div>
+<div class="wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/404/hemesh/he-halfedgeiterator" class="project card text-themed"><div class="card-body">
+      <h5 id="he-halfedgeiterator-name" class="card-title">HE_HalfedgeIterator
+      </h5>
+
+      <p id="he-halfedgeiterator-desc" class="card-text"></p>
+      <p id="he-halfedgeiterator-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_core</span></p>
+    </div>
+  </a>
+</div>
+<div class="wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/404/hemesh/he-halfedgestructure" class="project card text-themed"><div class="card-body">
+      <h5 id="he-halfedgestructure-name" class="card-title">HE_HalfedgeStructure
+      </h5>
+
+      <p id="he-halfedgestructure-desc" class="card-text"></p>
+      <p id="he-halfedgestructure-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_core</span></p>
+    </div>
+  </a>
+</div>
+<div class="wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/404/hemesh/he-machine" class="project card text-themed"><div class="card-body">
+      <h5 id="he-machine-name" class="card-title">HE_Machine
+      </h5>
+
+      <p id="he-machine-desc" class="card-text"></p>
+      <p id="he-machine-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_core</span></p>
+    </div>
+  </a>
+</div>
+<div class="wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/404/hemesh/he-mesh" class="project card text-themed"><div class="card-body">
+      <h5 id="he-mesh-name" class="card-title">HE_Mesh
+      </h5>
+
+      <p id="he-mesh-desc" class="card-text"></p>
+      <p id="he-mesh-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_core</span></p>
+    </div>
+  </a>
+</div>
+<div class="wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/404/hemesh/he-meshcollection" class="project card text-themed"><div class="card-body">
+      <h5 id="he-meshcollection-name" class="card-title">HE_MeshCollection
+      </h5>
+
+      <p id="he-meshcollection-desc" class="card-text"></p>
+      <p id="he-meshcollection-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_core</span></p>
+    </div>
+  </a>
+</div>
+<div class="wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/404/hemesh/he-meshelement" class="project card text-themed"><div class="card-body">
+      <h5 id="he-meshelement-name" class="card-title">HE_MeshElement
+      </h5>
+
+      <p id="he-meshelement-desc" class="card-text"></p>
+      <p id="he-meshelement-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_core</span></p>
+    </div>
+  </a>
+</div>
+<div class="wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/404/hemesh/he-meshiterator" class="project card text-themed"><div class="card-body">
+      <h5 id="he-meshiterator-name" class="card-title">HE_MeshIterator
+      </h5>
+
+      <p id="he-meshiterator-desc" class="card-text"></p>
+      <p id="he-meshiterator-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_core</span></p>
+    </div>
+  </a>
+</div>
+<div class="wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/404/hemesh/he-meshop" class="project card text-themed"><div class="card-body">
+      <h5 id="he-meshop-name" class="card-title">HE_MeshOp
+      </h5>
+
+      <p id="he-meshop-desc" class="card-text"></p>
+      <p id="he-meshop-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_core</span></p>
+    </div>
+  </a>
+</div>
+
+    </div>
+  </div>
+
+<div class="He_creators">
+    <h4 class="text-center mt-6 mb-2">He_creators</h4>
+    <div class="card-columns m-5">
+      <!-- Local Projects -->
+        
+    </div>
+  </div>
+
+<div class="He_modifiers">
+    <h4 class="text-center mt-6 mb-2">He_modifiers</h4>
+    <div class="card-columns m-5">
+      <!-- Local Projects -->
+        
+    </div>
+  </div>
+
+<div class="He_subdividors">
+    <h4 class="text-center mt-6 mb-2">He_subdividors</h4>
+    <div class="card-columns m-5">
+      <!-- Local Projects -->
+        
+    </div>
+  </div>
+
+<div class="He_tools">
+    <h4 class="text-center mt-6 mb-2">He_tools</h4>
+    <div class="card-columns m-5">
+      <!-- Local Projects -->
+        
+    </div>
+  </div>
+
+<div class="Core">
+    <h4 class="text-center mt-6 mb-2">Core</h4>
+    <div class="card-columns m-5">
+      <!-- Local Projects -->
+        
+    </div>
+  </div>
+
+<div class="Processing">
+    <h4 class="text-center mt-6 mb-2">Processing</h4>
+    <div class="card-columns m-5">
+      <!-- Local Projects -->
+        
+    </div>
+  </div>
+
+<div class="Math">
+    <h4 class="text-center mt-6 mb-2">Math</h4>
+    <div class="card-columns m-5">
+      <!-- Local Projects -->
+        
+    </div>
+  </div>
+
+<div class="Nurbs">
+    <h4 class="text-center mt-6 mb-2">Nurbs</h4>
+    <div class="card-columns m-5">
+      <!-- Local Projects -->
+        
+    </div>
+  </div>
+
+<div class="Other">
+    <h4 class="text-center mt-6 mb-2">Other</h4>
+    <div class="card-columns m-5">
+      <!-- Local Projects -->
+        
+    </div>
+  </div>
+
+
+</div>
+  </main>
+  
+<!-- Back to top button -->
+<button
+        type="button"
+        class="btn btn-dark btn-floating btn-lg"
+        id="btn-back-to-top"
+        >
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<script src="/404/assets/js/button_back_to_top.js"></script>
+  
+<!-- jQuery -->
+<script src="//cdn.bootcss.com/jquery/2.2.2/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<footer class="mt-auto py-3 text-center">
+
+  <small class="text-muted mb-2">
+    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
+    by <strong>John Doe</strong>
+  </small>
+
+  <div class="container-fluid justify-content-center"><a class="social mx-1"  href="https://www.behance.net/your_username"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#1769ff'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-behance fa-1x"></i>
+    </a><a class="social mx-1"  href="mailto:username@domain.com"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#db4437'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fas fa-envelope fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.facebook.com/your_username"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#3b5998'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-facebook fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.github.com/Inst-AAA"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#333333'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-github fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.linkedin.com/in/your_username"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#007bb5'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-linkedin-in fa-1x"></i>
+    </a><a class="social mx-1"  href="https://medium.com/@your_username"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#00ab6c'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-medium fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.twitter.com/your_username"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#1da1f2'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-twitter fa-1x"></i>
+    </a>
+
+</div><small id="attribution">
+    theme <a href="https://github.com/YoussefRaafatNasry/portfolYOU">portfolYOU</a>
+  </small>
+
+</footer>
+<div class="cb-search-tool" style="position: fixed; top: 0px ; bottom: 0px; left: 0px; right:  0px;
+      opacity: 0.95; background-color: #111111; z-index: 9999; display: none;">
+    <input type="text" class="form-control cb-search-content" id="cb-search-content" style="position: fixed; top: 60px" placeholder="文章标题 日期 标签" autocomplete="off">
+
+    <div style="position: fixed; top: 16px; right: 16px;">
+        <img src="/search/img/cb-close.png"  id="cb-close-btn"/>
+    </div>
+</div>
+
+<div style="position: fixed; right: 16px; bottom: 20px;">
+    <img src="/search/img/cb-search.png"  id="cb-search-btn"  title="双击ctrl试一下"/>
+</div>
+
+<link rel="stylesheet" href="/404/search/css/cb-search.css">
+
+<script src="/404/search/js/bootstrap3-typeahead.min.js"></script>
+<script src="/404/search/js/cb-search.js"></script>
+
+
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Initialize all tooltips -->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+
+</script>
+</body>
+
+</html>
+
