@@ -1,7 +1,23 @@
+- name: AutoCad
+  percentage: 90
+  color: info
+
 - name: Adobe Photoshop
-  percentage: 95
+  percentage: 90
   color: info
 
 - name: Adobe Illustrator
+  percentage: 50
+  color: success
+
+- name: Adobe Indesign
   percentage: 90
+  color: success
+
+- name: Rhinoceros
+  percentage: 90
+  color: success
+
+- name: SketchUp
+  percentage: 80
   color: success

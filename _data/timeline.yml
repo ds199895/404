@@ -1,17 +1,29 @@
-- title: Student, Harvard CS
-  from: 2014
-  to: 2018
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+- title: Bachelor, SouthEast University
+  from: 2016
+  to: 2021
+  description: At the School of Architecture
 
-- title: Software Engineer, Google, UK
-  from: 2018
-  to: present
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+- title: Award Second Prize
+  from: 2019.03
+  to: 2019.06
+  description: Gouli Cup BIM Assembly Competition for University Students in Jiangsu
+
+- title: Award Second Prize
+  from: 2019.09
+  to: 2019.11
+  description: JinxiCup National Student Steel Structure Competition
+
+- title: Intern, ECADI
+  from: 2020.06
+  to: 2020.10
+  description: Assist architects in their work, modeling and creating construction drawings, and using parametric software and code to process Autocad files.
+
+- title: Award First Prize
+  from: 2021.12
+  to: 2022.06
+  description: Excellent Graduation Design/Thesis for Undergraduates in Jiangsu Province
+
+- title: Master Student, SouthEast University
+  from: 2021
+  to: 2024
+  description: Architecture Design and Theory at the School of Architecture

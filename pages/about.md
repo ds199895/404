@@ -8,7 +8,7 @@ weight: 4
 # **About Me**
 
 Hi I am **{{ site.author.name }}** :wave:,<br>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+I am currently pursuing a Master's degree in Architecture Design and Theory at the School of Architecture, Southeast University. My research focuses on generative design, including graphic algorithms and data analysis. I have an outgoing personality, enjoy trying new things, and maintain a curious mindset. Additionally, I excel in team communication and collaboration with strong execution skills. In addition to my research focus, I have also expanded my skill set to include front-end development, secondary development, and ROS drone simulation.
 
 <div class="row">
 {% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}
