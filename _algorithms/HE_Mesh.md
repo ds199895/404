@@ -12,10 +12,7 @@ date: 2020-10-16
 types: [Geom,He_core,He_creators,He_modifiers,He_subdividors,He_tools,Core,Processing,Math,Nurbs,Other]
 distype: Geom
 ---
-
-
-
-
+### Due to internal research requirements, it has not been officially open-sourced yet. Therefore, only partial results are displayed.
 
 {% assign carousel_items = site.hemesh| where:"navs","banner" %}
 {% assign carousel_items = carousel_items | sort: "date" | reverse %}
