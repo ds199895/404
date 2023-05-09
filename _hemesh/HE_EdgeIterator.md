@@ -36,7 +36,7 @@ background: rgba(224,229,223,10)!important; /*背景色*/
             
 
 <br>
-<a href="/display/hemesh" onclick="saveReferrer()">继承关系图谱display</a>
+<a href="/404/display/hemesh" onclick="saveReferrer()">继承关系图谱display</a>
 <script>
 function saveReferrer() {
   var referrer ='HE_EdgeIterator';
