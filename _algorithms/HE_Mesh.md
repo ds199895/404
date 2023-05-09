@@ -1,5 +1,5 @@
 ---
-navs: [news,algorithm]
+navs: [news,algorithm,banner]
 tags: [Java, HalfEdge Data, Program]
 image: https://archialgo-com-sources.oss-cn-hangzhou.aliyuncs.com/images/HEC_Catalan.png
 title: HE_Mesh Library
