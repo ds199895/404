@@ -4337,8 +4337,8 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
 .navbar-nav .nav-link {
     padding-right: 0;
     padding-left:0;
-    margin-left: 10px;
-    font-size:10px;
+    margin-left: 5px;
+    font-size:1px;
 }
 
 .navbar-nav .dropdown-menu {
