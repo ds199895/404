@@ -21,7 +21,7 @@ date: 2022-06-20
 ![](https://archialgo-com-sources.oss-cn-hangzhou.aliyuncs.com/images/jiandu1.jpg)
 
 <center>爬取图片示例</center>
-
+<br>
 这一步完成之后，就可以进行OCR识别与分析，但是得到的原始图片带有的信息比较复杂，识别精度无法满足需求。
 另外，因为后续需要对文本进行研究分析，词条当页文字并不够，故而同时下载上下文两页图片。为了精度尽量高和调用api次数尽量少，需要对三张图片进行文字分割与重组。
 
@@ -30,19 +30,22 @@ date: 2022-06-20
 通过将图片nparray水平与垂直拍平的像素信息进行文字与空白的区分，然后对像素进行分割，将所有文字分割成一个一个小块存储。然后再按照顺序将三张图片中的文字合并，扔掉多余信息，成为简牍一样的形式。
 ![](https://archialgo-com-sources.oss-cn-hangzhou.aliyuncs.com/images/jiandu2.jpg)
 <center>openCV分割：文字块</center>
-
+<br>
 ![](https://archialgo-com-sources.oss-cn-hangzhou.aliyuncs.com/images/jiandu3.jpg)
 <center>文字块重组：简牍</center>
-
+<br>
 在此基础上调用合合api进行OCR文字识别。几乎能够保证100%的识别精度。
 
 ### GUI用户界面
 在完成以上程序的主体内容之后，设计了程序的GUI界面，将之前实现的功能：xls合并与分析，古籍库词条搜索，古籍库词条下载与识别整合在一起。
 ![](https://archialgo-com-sources.oss-cn-hangzhou.aliyuncs.com/images/jiandu5.png)
 <center>搜索</center>
+<br>
 ![](https://archialgo-com-sources.oss-cn-hangzhou.aliyuncs.com/images/jiandu6.png)
 <center>词条下载</center>
+<br>
 ![](https://archialgo-com-sources.oss-cn-hangzhou.aliyuncs.com/images/jiandu7.png)
 <center>词条分析</center>
+<br>
 
 {% include elements/button-top.html %}
