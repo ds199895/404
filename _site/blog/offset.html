@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  
+  
+  
+
+  
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Non-uniform Offset">
+  <meta property="og:description" content="Unequally offsetting grid edges based on certain elements.">
+  <meta property="og:image" content="https://archialgo-com-sources.oss-cn-hangzhou.aliyuncs.com/images/hesiyuan2.jpg">
+
+  <title>Non-uniform Offset</title>
+  <meta name="description" content="Unequally offsetting grid edges based on certain elements.">
+
+  <link rel="shortcut icon" type="image/x-icon" href="/404/assets/favicon.ico">
+
+  <!-- Theme style -->
+  <script src="/404/assets/js/theme.js"></script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="/404/assets/css/bootstrap.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/404/assets/css/style.css">
+
+</head>
+
+
+<body class="h-100 d-flex flex-column">
+
+  <main class="flex-shrink-0 container mt-5">
+    <nav class="navbar navbar-expand-lg navbar-themed">
+
+  <a class="navbar-brand d-lg-none" href="/404/">
+    <h5 ><b class="size-unchange-1"></b></h5>
+  </a>
+  <a class="navbar-brand d-none d-lg-block" href="/404/">
+    <h5 ><b class="size-unchange-1">404Portfolio</b></h5>
+  </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-1x fa-bars text-themed"></i>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link size-unchange-2 active" href="/404/"></a>
+
+      <a class="nav-item nav-link size-unchange-2 " href="/404/projects/">Project</a>
+
+      <a class="nav-item nav-link size-unchange-2 " href="/404/algorithms/">Algorithm</a>
+
+      <a class="nav-item nav-link size-unchange-2 active" href="/404/blog/">Blog</a>
+
+      <a class="nav-item nav-link size-unchange-2 " href="/404/about/">About</a>
+
+      <a class="nav-item nav-link size-unchange-2 " href="/404/publications/">Publication</a>
+
+      <a class="nav-item nav-link size-unchange-2 " href="/404/display/">Display</a>
+
+      
+
+      <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
+    </div>
+  </div>
+
+</nav>
+
+    <div class="col-lg-10 mx-auto mt-5 markdown-body">
+  <h1><b>Non-uniform Offset</b></h1>
+
+<p class="post-metadata text-muted">
+  23 July 2022 -  
+  <b>less than 1 min read time</b>
+
+  <br>Tags: 
+    
+    <a class="text-decoration-none no-underline" href="/404/blog/tags#software-development">
+      <span class="tag badge badge-pill text-primary border border-primary">Software Development</span>
+    </a>
+    </p>
+
+<h2 id="方式1-根据半边的显示的方式启发利用偏移找交线方式">方式1 根据半边的显示的方式启发，利用偏移找交线方式</h2>
+<p>原始效果</p>
+
+<p><img src="https://archialgo-com-sources.oss-cn-hangzhou.aliyuncs.com/images/Untitled.png" alt="origin" title="origin" /></p>
+
+<p>偏移效果</p>
+
+<p><img src="https://archialgo-com-sources.oss-cn-hangzhou.aliyuncs.com/images/Untitled-2.png" alt="offset" title="offset" /></p>
+
+<p>半边显示</p>
+
+<p><img src="https://archialgo-com-sources.oss-cn-hangzhou.aliyuncs.com/images/Untitled-3.png" alt="half_edge_ori" title="hlfedge_ori" />
+<img src="https://archialgo-com-sources.oss-cn-hangzhou.aliyuncs.com/images/Untitled-4.png" alt="half_edge_offset" title="halfedge_offset" /></p>
+
+<h2 id="方法2-利用四点共圆的平面几何原型进行转化运算">方法2 利用四点共圆的平面几何原型进行转化运算</h2>
+<p>计算示意
+<img src="https://archialgo-com-sources.oss-cn-hangzhou.aliyuncs.com/images/Untitled-17.jpg" alt="cal" /></p>
+
+<p>据此，找到每个顶点对应的偏移后的点</p>
+
+<p>特殊情况排除与处理：
+<img src="https://archialgo-com-sources.oss-cn-hangzhou.aliyuncs.com/images/Untitled-5.png" alt="cal" title="special" /></p>
+
+<p>避免自相交：</p>
+
+<p>1.计算三线共点阈值
+<img src="https://archialgo-com-sources.oss-cn-hangzhou.aliyuncs.com/images/Untitled-6.png" alt="jion" title="jion" /></p>
+
+<p>2.分类讨论阈值点在偏移后线的内/外侧
+<img src="https://archialgo-com-sources.oss-cn-hangzhou.aliyuncs.com/images/Untitled-7.png" alt="out" title="out" /></p>
+
+<p>同上
+<img src="https://archialgo-com-sources.oss-cn-hangzhou.aliyuncs.com/images/Untitled-8.png" alt="like above" title="like above" /></p>
+
+<p>另外一种可能：通过判断是否反向延长进行区分
+<img src="https://archialgo-com-sources.oss-cn-hangzhou.aliyuncs.com/images/Untitled-9.png" alt="Reverse Extension Line" title="Reverse Extension Line" /></p>
+
+<p><img src="https://archialgo-com-sources.oss-cn-hangzhou.aliyuncs.com/images/Untitled-10.png" alt="Reverse Extension Line2" title="Reverse Extension Line" /></p>
+
+<p>效果：
+<img src="https://archialgo-com-sources.oss-cn-hangzhou.aliyuncs.com/images/Untitled-11.png" alt="Final outcome1" title="Final outcome" /></p>
+
+<p><img src="https://archialgo-com-sources.oss-cn-hangzhou.aliyuncs.com/images/Untitled-12.png" alt="Final outcome2" title="Final outcome" />
+<img src="https://archialgo-com-sources.oss-cn-hangzhou.aliyuncs.com/images/Untitled-13.png" alt="Final outcome3" title="Final outcome" />
+<img src="https://archialgo-com-sources.oss-cn-hangzhou.aliyuncs.com/images/Untitled-14.png" alt="Final outcome4" title="Final outcome" />
+<img src="https://archialgo-com-sources.oss-cn-hangzhou.aliyuncs.com/images/Untitled-15.png" alt="Final outcome5" title="Final outcome" />
+<img src="https://archialgo-com-sources.oss-cn-hangzhou.aliyuncs.com/images/Untitled-16.png" alt="Final outcome6" title="Final outcome" /></p>
+
+
+
+</div>
+  </main>
+  
+<!-- Back to top button -->
+<button
+        type="button"
+        class="btn btn-dark btn-floating btn-lg"
+        id="btn-back-to-top"
+        >
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<script src="/404/assets/js/button_back_to_top.js"></script>
+  
+<!-- jQuery -->
+<script src="//cdn.bootcss.com/jquery/2.2.2/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<footer class="mt-auto py-3 text-center">
+
+  <small class="text-muted mb-2">
+    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
+    by <strong>He Siyuan</strong>
+  </small>
+
+  <div class="container-fluid justify-content-center"><a class="social mx-1"  href="https://www.behance.net/your_username"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#1769ff'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-behance fa-1x"></i>
+    </a><a class="social mx-1"  href="mailto:2410831777@qq.com"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#db4437'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fas fa-envelope fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.github.com/ds199895"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#333333'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-github fa-1x"></i>
+    </a>
+
+</div><small id="attribution">
+    theme <a href="https://github.com/YoussefRaafatNasry/portfolYOU">portfolYOU</a>
+  </small>
+
+</footer>
+<div class="cb-search-tool" style="position: fixed; top: 0px ; bottom: 0px; left: 0px; right:  0px;
+      opacity: 0.95; background-color: #111111; z-index: 9999; display: none;">
+    <input type="text" class="form-control cb-search-content" id="cb-search-content" style="position: fixed; top: 60px" placeholder="文章标题 日期 标签" autocomplete="off">
+
+    <div style="position: fixed; top: 16px; right: 16px;">
+        <img src="/search/img/cb-close.png"  id="cb-close-btn"/>
+    </div>
+</div>
+
+<div style="position: fixed; right: 16px; bottom: 20px;">
+    <img src="/search/img/cb-search.png"  id="cb-search-btn"  title="双击ctrl试一下"/>
+</div>
+
+<link rel="stylesheet" href="/404/search/css/cb-search.css">
+
+<script src="/404/search/js/bootstrap3-typeahead.min.js"></script>
+<script src="/404/search/js/cb-search.js"></script>
+
+
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Initialize all tooltips -->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+
+</script>
+</body>
+
+</html>
+

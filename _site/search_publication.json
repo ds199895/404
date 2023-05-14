@@ -17,16 +17,6 @@
         "tags"     : "Integer Programming, Parking Layouts, Generative Design",
         "authors"  : "He SiyuanBiao Li",
         "keywords" : "停车场, 整数规划, 车位排布, 区域划分, Parking Lot, Integer Programming, Parking Place Arrangements"
-      } ,
-    
-  
-      {
-        "title"    : "几何原型与形态编码在商业建筑平面生成中的应用探索",
-        "subtitle" : "Exploration on the Application of Geometric Prototype and Form Encoding Strategies in the Layout Generation of Commercial Buildings",
-        "url"      : "/404/publications/2022-11-27-strategies-commercial",
-        "tags"     : "Generative Design, Rule-Based, Building Layouts",
-        "authors"  : "Baizhou ZhangBiao Li",
-        "keywords" : "规则转译, 商业建筑平面, 几何原型, 形态编码, 建筑生成设计, Rule Translation, Commercial Building Layout, Geometric Prototype, Morphological Encoding, Architectural Generative Design"
       } 
     
   

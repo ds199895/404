@@ -1,6 +1,5 @@
 [
   
-  
       {
         "title"    : "HE_Mesh Library",
         "title_cn"  : "HE_Mesh程序包整理",
@@ -12,12 +11,22 @@
     
   
       {
-        "title"    : "Shopping Mall Planning Generator",
-        "title_cn"  : "购物中心平面布局辅助生成工具",
-        "tags"     : "Generative Design, Building Layout",
-        "url"      : "/404/algorithms/2021-shopping-mall-planning-generator",
+        "title"    : "Search and original text processing of ancient book library based on web crawler and OpenCV",
+        "title_cn"  : "基于爬虫与OpenCV的古籍库搜索与原文处理",
+        "tags"     : "OpenCV, python, OCR",
+        "url"      : "/404/algorithms/2022-jiandu",
         "location" : "",
-        "team"     : "Biao Li, Baizhou Zhang"
+        "team"     : "He Siyuan"
+      } ,
+    
+  
+      {
+        "title"    : "Extending and implementing graph using NeoVis",
+        "title_cn"  : "基于NeoVis的HE_Mesh类库继承图谱",
+        "tags"     : "Data Analysis, Neo4j",
+        "url"      : "/404/algorithms/2023-neovis-display-hemesh-relationship",
+        "location" : "",
+        "team"     : "He Siyuan"
       } 
     
   

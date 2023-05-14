@@ -1,0 +1,1880 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  
+  
+  
+
+  
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="WB_GeometryFactory">
+  <meta property="og:description" content="君子病无能焉，不病人之不己知也">
+  <meta property="og:image" content="https://archialgo-com-sources.oss-cn-hangzhou.aliyuncs.com/images/hesiyuan2.jpg">
+
+  <title>WB_GeometryFactory</title>
+  <meta name="description" content="君子病无能焉，不病人之不己知也">
+
+  <link rel="shortcut icon" type="image/x-icon" href="/404/assets/favicon.ico">
+
+  <!-- Theme style -->
+  <script src="/404/assets/js/theme.js"></script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="/404/assets/css/bootstrap.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/404/assets/css/style.css">
+
+</head>
+
+
+<body class="h-100 d-flex flex-column">
+
+  <main class="flex-shrink-0 container mt-5">
+    <nav class="navbar navbar-expand-lg navbar-themed">
+
+  <a class="navbar-brand d-lg-none" href="/404/">
+    <h5 ><b class="size-unchange-1"></b></h5>
+  </a>
+  <a class="navbar-brand d-none d-lg-block" href="/404/">
+    <h5 ><b class="size-unchange-1">404Portfolio</b></h5>
+  </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-1x fa-bars text-themed"></i>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link size-unchange-2 active" href="/404/"></a>
+
+      <a class="nav-item nav-link size-unchange-2 " href="/404/projects/">Project</a>
+
+      <a class="nav-item nav-link size-unchange-2 " href="/404/algorithms/">Algorithm</a>
+
+      <a class="nav-item nav-link size-unchange-2 " href="/404/blog/">Blog</a>
+
+      <a class="nav-item nav-link size-unchange-2 " href="/404/about/">About</a>
+
+      <a class="nav-item nav-link size-unchange-2 " href="/404/publications/">Publication</a>
+
+      <a class="nav-item nav-link size-unchange-2 " href="/404/display/">Display</a>
+
+      
+
+      <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
+    </div>
+  </div>
+
+</nav>
+
+    <div class="col-lg-10 mx-auto mt-5 markdown-body">
+  <h1><b>WB_GeometryFactory</b></h1>
+
+  <h3><b></b></h3>
+
+
+<p class="post-metadata text-muted">
+  2023 -  
+  <b>29 mins read time</b>
+
+  <br>
+  <p class="post-metadata text-muted">
+
+  
+    Team: 
+     
+      
+      
+      
+        Siyuan He
+      
+    
+  
+  <br>Tags: 
+    
+    <a class="text-decoration-none no-underline" href="/404/hemesh/tags#geom">
+      <span class="badge badge-pill text-primary border border-primary ml-1">Geom</span>
+
+    </a>
+    
+    <a class="text-decoration-none no-underline" href="/404/hemesh/tags#factory">
+      <span class="badge badge-pill text-primary border border-primary ml-1">factory</span>
+
+    </a>
+    <br>Status: 
+    <a class="text-decoration-none no-underline" href="/404/hemesh/status">
+      <span class="badge badge-pill text-primary border border-primary ml-1">Doing</span>
+
+    </a>
+  <br>Date: 
+    2023-04-03</p>
+
+<style>
+table th:first-of-type {
+width:5%;
+}
+table th:nth-of-type(2) {
+width:20%;
+}
+table th:nth-of-type(3) {
+width:30%;
+}
+table th:nth-of-type(4) {
+width:30%;
+}
+table th:nth-of-type(5) {
+width:8cm;
+}
+table th {
+color: rgba(0,0,0)!important;
+font-weight: bold; /*加粗*/
+/* text-align: center !important; 内容居中，加上 !important 避免被 Markdown 样式覆盖 */
+background: rgba(224,229,223,10)!important; /*背景色*/
+}
+</style>
+
+<p><br />
+<a href="/display/hemesh" onclick="saveReferrer()">继承关系图谱display</a>
+<script>
+function saveReferrer() {
+  var referrer ='WB_GeometryFactory';
+  localStorage.setItem('referrer', referrer);
+}
+</script></p>
+
+<p><br /></p>
+
+<h3 id="wb_geometryfactory">WB_GeometryFactory</h3>
+
+<p><br /></p>
+<h4 id="extends---wb_geometryfactory2d">extends:   <a href="/hemesh/wb-geometryfactory2d">WB_GeometryFactory2D</a></h4>
+<p><br /></p>
+
+<ul>
+  <li><strong>构造方法</strong></li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">属性</th>
+      <th style="text-align: left">方法名</th>
+      <th style="text-align: left">参数</th>
+      <th style="text-align: left">返回值</th>
+      <th style="text-align: left">备注</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">WB_GeometryFactory</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_GeometryFactory</td>
+      <td style="text-align: left"> </td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li><strong>成员方法</strong></li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">属性</th>
+      <th style="text-align: left">方法名</th>
+      <th style="text-align: left">参数</th>
+      <th style="text-align: left">返回值</th>
+      <th style="text-align: left">备注</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">static</td>
+      <td style="text-align: left">instance</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_GeometryFactory</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">origin</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_Point</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">X</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_Vector</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">Y</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_Vector</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">Z</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_Vector</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">minX</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_Vector</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">minY</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_Vector</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">minZ</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_Vector</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">XY</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_Plane</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">YZ</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_Plane</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">ZX</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_Plane</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">YX</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_Plane</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">ZY</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_Plane</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">XZ</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_Plane</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createCSFromOriginAndX</td>
+      <td style="text-align: left">final WB_Coord origin,final WB_Coord X</td>
+      <td style="text-align: left">WB_CoordinateSystem</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createCSFromOriginAndX</td>
+      <td style="text-align: left">final WB_Coord origin,final WB_Coord X, final WB_CoordinateSystem parent</td>
+      <td style="text-align: left">WB_CoordinateSystem</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createCSFromOriginAndXY</td>
+      <td style="text-align: left">final WB_Coord origin,final WB_Coord X, final WB_Coord Y</td>
+      <td style="text-align: left">WB_CoordinateSystem</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createCSFromOriginAndXY</td>
+      <td style="text-align: left">final WB_Coord origin,final WB_Coord X, final WB_Coord Y,final WB_CoordinateSystem parent</td>
+      <td style="text-align: left">WB_CoordinateSystem</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createCSFromOriginAndXYZ</td>
+      <td style="text-align: left">final WB_Coord origin,final WB_Coord X, final WB_Coord Y, final WB_Coord Z,final WB_CoordinateSystem parent</td>
+      <td style="text-align: left">WB_CoordinateSystem</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createCSFromOriginAndXYZ</td>
+      <td style="text-align: left">final WB_Coord origin,final WB_Coord X, final WB_Coord Y, final WB_Coord Z</td>
+      <td style="text-align: left">WB_CoordinateSystem</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createEmbeddedPlane</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_Map2D</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createEmbeddedPlane</td>
+      <td style="text-align: left">final int mode, final double offset</td>
+      <td style="text-align: left">WB_Map2D</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createEmbeddedPlane</td>
+      <td style="text-align: left">final int mode</td>
+      <td style="text-align: left">WB_Map2D</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createEmbeddedPlane</td>
+      <td style="text-align: left">final WB_Plane P, final double offset</td>
+      <td style="text-align: left">WB_Map2D</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createEmbeddedPlane</td>
+      <td style="text-align: left">final WB_Plane P</td>
+      <td style="text-align: left">WB_Map2D</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createPoint</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_Point</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createPoint</td>
+      <td style="text-align: left">final WB_Coord p</td>
+      <td style="text-align: left">WB_Point</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createPoint</td>
+      <td style="text-align: left">final double[] p</td>
+      <td style="text-align: left">WB_Point</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createPoint</td>
+      <td style="text-align: left">final double _x, final double _y</td>
+      <td style="text-align: left">WB_Point</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createPoint</td>
+      <td style="text-align: left">final double _x, final double _y,final double _z</td>
+      <td style="text-align: left">WB_Point</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createInterpolatedPoint</td>
+      <td style="text-align: left">final WB_Coord p, final WB_Coord q,final double f</td>
+      <td style="text-align: left">WB_Point</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createIncenter</td>
+      <td style="text-align: left">final WB_Triangle tri</td>
+      <td style="text-align: left">WB_Point</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createOrthocenter</td>
+      <td style="text-align: left">final WB_Triangle tri</td>
+      <td style="text-align: left">WB_Point</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createPointFromBarycentricCoordinates</td>
+      <td style="text-align: left">final double u,final double v, final double w, final WB_Triangle tri</td>
+      <td style="text-align: left">WB_Point</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createPointFromCylindrical</td>
+      <td style="text-align: left">final double r, final double phi,final double z</td>
+      <td style="text-align: left">WB_Point</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createPointFromSpherical</td>
+      <td style="text-align: left">final double r, final double theta,final double phi</td>
+      <td style="text-align: left">WB_Point</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createPointFromParaboloidal</td>
+      <td style="text-align: left">final double sigma,final double tau, final double phi</td>
+      <td style="text-align: left">WB_Point</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createPointFromParabolic</td>
+      <td style="text-align: left">final double sigma,final double tau, final double z</td>
+      <td style="text-align: left">WB_Point</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createPointFromOblateSpheroidal</td>
+      <td style="text-align: left">final double a,final double mu, final double nu, final double phi</td>
+      <td style="text-align: left">WB_Point</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createPointFromProlateSpheroidal</td>
+      <td style="text-align: left">final double a,final double mu, final double nu, final double phi</td>
+      <td style="text-align: left">WB_Point</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createPointFromEllipsoidal</td>
+      <td style="text-align: left">final double a, final double b,final double c, final double lambda, final double mu,final double nu</td>
+      <td style="text-align: left">WB_Point</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createPointFromElliptic</td>
+      <td style="text-align: left">final double a, final double mu,final double nu, final double z</td>
+      <td style="text-align: left">WB_Point</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createPointFromToroidal</td>
+      <td style="text-align: left">final double a, final double sigma,final double tau, final double phi</td>
+      <td style="text-align: left">WB_Point</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createPointFromBispherical</td>
+      <td style="text-align: left">final double a,final double sigma, final double tau, final double phi</td>
+      <td style="text-align: left">WB_Point</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createPointFromBipolarCylindrical</td>
+      <td style="text-align: left">final double a,final double sigma, final double tau, final double z</td>
+      <td style="text-align: left">WB_Point</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createPointFromConical</td>
+      <td style="text-align: left">final double b, final double c,final double r, final double mu, final double nu</td>
+      <td style="text-align: left">WB_Point</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createCentroid</td>
+      <td style="text-align: left">final WB_Triangle tri</td>
+      <td style="text-align: left">WB_Point</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createCircumcenter</td>
+      <td style="text-align: left">final WB_Triangle tri</td>
+      <td style="text-align: left">WB_Point</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createPointFromTrilinearCoordinates</td>
+      <td style="text-align: left">final double u,final double v, final double w, final WB_Triangle tri</td>
+      <td style="text-align: left">WB_Point</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createMidpoint</td>
+      <td style="text-align: left">final WB_Coord p, final WB_Coord q</td>
+      <td style="text-align: left">WB_Point</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">cleanPointlist</td>
+      <td style="text-align: left">final List<WB_Point> points</WB_Point></td>
+      <td style="text-align: left">List&lt;WB_Point&gt;</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createVector</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_Vector</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createVectorFromTo</td>
+      <td style="text-align: left">final WB_Coord p, final WB_Coord q</td>
+      <td style="text-align: left">WB_Vector</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">WB_Vector</td>
+      <td style="text-align: left">final WB_Coord p</td>
+      <td style="text-align: left">final</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createVector</td>
+      <td style="text-align: left">final double _x, final double _y</td>
+      <td style="text-align: left">WB_Vector</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createVector</td>
+      <td style="text-align: left">final double _x, final double _y,final double _z</td>
+      <td style="text-align: left">WB_Vector</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createNormalizedVector</td>
+      <td style="text-align: left">final WB_Coord p</td>
+      <td style="text-align: left">WB_Vector</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createNormalizedVectorFromTo</td>
+      <td style="text-align: left">final WB_Coord p,final WB_Coord q</td>
+      <td style="text-align: left">WB_Vector</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createNormalizedVector</td>
+      <td style="text-align: left">final double _x, final double _y,final double _z</td>
+      <td style="text-align: left">WB_Vector</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createNormalizedVector</td>
+      <td style="text-align: left">final double _x, final double _y,final double _z, final double _w</td>
+      <td style="text-align: left">WB_Vector</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createNormalizedVector</td>
+      <td style="text-align: left">final double _x, final double _y</td>
+      <td style="text-align: left">WB_Vector</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createNormalizedPerpendicularVector</td>
+      <td style="text-align: left">final double _x,final double _y</td>
+      <td style="text-align: left">WB_Vector</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createNormalizedPerpendicularVector</td>
+      <td style="text-align: left">final double _x,final double _y, final double _z</td>
+      <td style="text-align: left">WB_Vector</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createNormalizedPerpendicularVector</td>
+      <td style="text-align: left">final WB_Coord p</td>
+      <td style="text-align: left">WB_Vector</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createVectorFromCylindrical</td>
+      <td style="text-align: left">final double r,final double phi, final double z</td>
+      <td style="text-align: left">WB_Vector</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createVectorFromSpherical</td>
+      <td style="text-align: left">final double r,final double theta, final double phi</td>
+      <td style="text-align: left">WB_Vector</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createVectorFromParaboloidal</td>
+      <td style="text-align: left">final double sigma,final double tau, final double phi</td>
+      <td style="text-align: left">WB_Vector</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createVectorFromParabolic</td>
+      <td style="text-align: left">final double sigma,final double tau, final double z</td>
+      <td style="text-align: left">WB_Vector</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createVectorFromOblateSpheroidal</td>
+      <td style="text-align: left">final double a,final double mu, final double nu, final double phi</td>
+      <td style="text-align: left">WB_Vector</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createVectorFromProlateSpheroidal</td>
+      <td style="text-align: left">final double a,final double mu, final double nu, final double phi</td>
+      <td style="text-align: left">WB_Vector</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createVectorFromEllipsoidal</td>
+      <td style="text-align: left">final double a, final double b,final double c, final double lambda, final double mu,final double nu</td>
+      <td style="text-align: left">WB_Vector</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createVectorFromElliptic</td>
+      <td style="text-align: left">final double a, final double mu,final double nu, final double z</td>
+      <td style="text-align: left">WB_Vector</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createVectorFromToroidal</td>
+      <td style="text-align: left">final double a,final double sigma, final double tau, final double phi</td>
+      <td style="text-align: left">WB_Vector</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createVectorFromBispherical</td>
+      <td style="text-align: left">final double a,final double sigma, final double tau, final double phi</td>
+      <td style="text-align: left">WB_Vector</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createVectorFromBipolarCylindrical</td>
+      <td style="text-align: left">final double a,final double sigma, final double tau, final double z</td>
+      <td style="text-align: left">WB_Vector</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createVectorFromConical</td>
+      <td style="text-align: left">final double b, final double c,final double r, final double mu, final double nu</td>
+      <td style="text-align: left">WB_Vector</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createLineThroughPoints</td>
+      <td style="text-align: left">final WB_Coord p1,final WB_Coord p2</td>
+      <td style="text-align: left">WB_Line</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createLineThroughPoints</td>
+      <td style="text-align: left">final double x1, final double y1,final double x2, final double y2</td>
+      <td style="text-align: left">WB_Line</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createLineThroughPoints</td>
+      <td style="text-align: left">final double x1, final double y1,final double z1, final double x2, final double y2,final double z2</td>
+      <td style="text-align: left">WB_Line</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createLineWithDirection</td>
+      <td style="text-align: left">final WB_Coord origin,final WB_Coord direction</td>
+      <td style="text-align: left">WB_Line</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createLineWithDirection</td>
+      <td style="text-align: left">final double ox, final double oy,final double oz, final double dx, final double dy,final double dz</td>
+      <td style="text-align: left">WB_Line</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createParallelLineThroughPoint</td>
+      <td style="text-align: left">final WB_Line L,final WB_Coord p</td>
+      <td style="text-align: left">WB_Line</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createBisector</td>
+      <td style="text-align: left">final WB_Coord p, final WB_Coord q</td>
+      <td style="text-align: left">WB_Plane</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createRayThroughPoints</td>
+      <td style="text-align: left">final WB_Coord p1, final WB_Coord p2</td>
+      <td style="text-align: left">WB_Ray</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createRayThroughPoints</td>
+      <td style="text-align: left">final double x1, final double y1,final double x2, final double y2</td>
+      <td style="text-align: left">WB_Ray</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createRayThroughPoints</td>
+      <td style="text-align: left">final double x1, final double y1,final double z1, final double x2, final double y2,final double z2</td>
+      <td style="text-align: left">WB_Ray</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createRayWithDirection</td>
+      <td style="text-align: left">final WB_Coord origin,final WB_Coord direction</td>
+      <td style="text-align: left">WB_Ray</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createRayWithDirection</td>
+      <td style="text-align: left">final double ox, final double oy,final double oz, final double dx, final double dy,final double dz</td>
+      <td style="text-align: left">WB_Ray</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createParallelRayThroughPoint</td>
+      <td style="text-align: left">final WB_Line L,final WB_Coord p</td>
+      <td style="text-align: left">WB_Ray</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createSegment</td>
+      <td style="text-align: left">final WB_Coord p1, final WB_Coord p2</td>
+      <td style="text-align: left">WB_Segment</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createSegmentWithLength</td>
+      <td style="text-align: left">final WB_Coord origin,final WB_Coord direction, final double length</td>
+      <td style="text-align: left">WB_Segment</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createSegment</td>
+      <td style="text-align: left">final double x1, final double y1,final double x2, final double y2</td>
+      <td style="text-align: left">WB_Segment</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createSegmentWithLength</td>
+      <td style="text-align: left">final double ox, final double oy,final double dx, final double dy, final double length</td>
+      <td style="text-align: left">WB_Segment</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createSegment</td>
+      <td style="text-align: left">final double x1, final double y1,final double z1, final double x2, final double y2,final double z2</td>
+      <td style="text-align: left">WB_Segment</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createSegmentWithLength</td>
+      <td style="text-align: left">final double ox, final double oy,final double oz, final double dx, final double dy, final double dz,final double length</td>
+      <td style="text-align: left">WB_Segment</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">splitSimplePolygon</td>
+      <td style="text-align: left">final WB_Polygon poly,final WB_Plane P</td>
+      <td style="text-align: left">WB_Polygon[]</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createTriangle</td>
+      <td style="text-align: left">final double p1x, final double p1y,final double p1z, final double p2x, final double p2y,final double p2z, final double p3x, final double p3y,final double p3z</td>
+      <td style="text-align: left">WB_Triangle</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createTriangle</td>
+      <td style="text-align: left">final WB_Coord p1, final WB_Coord p2,final WB_Coord p3</td>
+      <td style="text-align: left">WB_Triangle</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createInversionPoint</td>
+      <td style="text-align: left">final WB_Coord p,final WB_Sphere inversionSphere</td>
+      <td style="text-align: left">WB_Point</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createInversionCircle</td>
+      <td style="text-align: left">final WB_Circle C,final WB_Circle inversionCircle</td>
+      <td style="text-align: left">WB_Circle</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createCircumcircle3D</td>
+      <td style="text-align: left">final WB_Triangle tri</td>
+      <td style="text-align: left">WB_Circle</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createIncircle</td>
+      <td style="text-align: left">final WB_Triangle tri</td>
+      <td style="text-align: left">WB_Circle</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createPlane</td>
+      <td style="text-align: left">final WB_Coord origin, final WB_Coord normal</td>
+      <td style="text-align: left">WB_Plane</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createPlane</td>
+      <td style="text-align: left">final double ox, final double oy,final double oz, final double nx, final double ny,final double nz</td>
+      <td style="text-align: left">WB_Plane</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createPlane</td>
+      <td style="text-align: left">final WB_Coord p1, final WB_Coord p2,final WB_Coord p3</td>
+      <td style="text-align: left">WB_Plane</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createPlane</td>
+      <td style="text-align: left">final WB_Triangle T</td>
+      <td style="text-align: left">WB_Plane</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createFlippedPlane</td>
+      <td style="text-align: left">final WB_Plane P</td>
+      <td style="text-align: left">WB_Plane</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createOffsetPlane</td>
+      <td style="text-align: left">final WB_Coord origin,final WB_Coord normal, final double offset</td>
+      <td style="text-align: left">WB_Plane</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createOffsetPlane</td>
+      <td style="text-align: left">final double ox, final double oy,final double oz, final double nx, final double ny, final double nz,final double offset</td>
+      <td style="text-align: left">WB_Plane</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createOffsetPlane</td>
+      <td style="text-align: left">final WB_Coord p1, final WB_Coord p2,final WB_Coord p3, final double offset</td>
+      <td style="text-align: left">WB_Plane</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createMesh</td>
+      <td style="text-align: left">final WB_Coord[] points, final int[][] faces</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createMesh</td>
+      <td style="text-align: left">final Collection&lt;? extends WB_Coord&gt; points,final int[][] faces</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createMesh</td>
+      <td style="text-align: left">final WB_AABB aabb</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createUniqueMesh</td>
+      <td style="text-align: left">final WB_SimpleMesh mesh</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createUniqueMesh</td>
+      <td style="text-align: left">final WB_SimpleMesh mesh,final double threshold</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createRegularPrism</td>
+      <td style="text-align: left">final int n, final double radius,final double h</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createPrism</td>
+      <td style="text-align: left">final Collection&lt;? extends WB_Coord&gt; points,final double h</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createPrismOpen</td>
+      <td style="text-align: left">final Collection&lt;? extends WB_Coord&gt; points,final double h</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createPrism</td>
+      <td style="text-align: left">final WB_Coord[] points, final double h</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createPrismFaces</td>
+      <td style="text-align: left">final int n</td>
+      <td style="text-align: left">int[][]</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createPrismFacesOpen</td>
+      <td style="text-align: left">final int n</td>
+      <td style="text-align: left">int[][]</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createPrism</td>
+      <td style="text-align: left">final WB_Polygon poly, final double h</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createPrism</td>
+      <td style="text-align: left">final WB_Polygon poly, final double h,final double offset</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createMesh</td>
+      <td style="text-align: left">final WB_Polygon poly</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createMesh</td>
+      <td style="text-align: left">final WB_Polygon poly, final double offset</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createPrismOpen</td>
+      <td style="text-align: left">final WB_Polygon poly, final double h</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createRegularAntiPrism</td>
+      <td style="text-align: left">final int n, final double radius,final double h</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createAntiPrism</td>
+      <td style="text-align: left">final Collection&lt;? extends WB_Coord&gt; points,final double h</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createAntiPrism</td>
+      <td style="text-align: left">final WB_Coord[] points, final double h</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createAntiprismFaces</td>
+      <td style="text-align: left">final int n</td>
+      <td style="text-align: left">int[][]</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createAntiPrism</td>
+      <td style="text-align: left">final WB_Polygon poly, final double h</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createArchimedes</td>
+      <td style="text-align: left">final int type, final double edgeLength</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createCatalan</td>
+      <td style="text-align: left">final int type, final double edgeLength</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createVerticesFromArray</td>
+      <td style="text-align: left">final double[][] vertices</td>
+      <td style="text-align: left">List&lt;WB_Point&gt;</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createJohnson</td>
+      <td style="text-align: left">final int type, final double edgeLength</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createOtherPolyhedron</td>
+      <td style="text-align: left">final int type,final double edgeLength</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createPlato</td>
+      <td style="text-align: left">final int type, final double edgeLength</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createPolyhedronFromWRL</td>
+      <td style="text-align: left">String name, final double radius</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createZonohedron</td>
+      <td style="text-align: left">final WB_Coord[] vectors,final double scale</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createStellatedIcosahedron</td>
+      <td style="text-align: left">final int type,final double radius</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createDipyramidWithAngleRange</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createDipyramidWithAngleRange</td>
+      <td style="text-align: left">final WB_Coord[] points,final double minangle, final double maxangle,final WB_Map2D context</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createDipyramidWithAngle</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createDipyramidWithAngle</td>
+      <td style="text-align: left">final WB_Coord[] points,final double angle, final WB_Map2D context</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createDipyramidWithAngle</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createDipyramidWithAngle</td>
+      <td style="text-align: left">final WB_Coord[] points,final double angle</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createDipyramidWithHeight</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createDipyramidWithHeight</td>
+      <td style="text-align: left">final WB_Coord[] points,final double height</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createDipyramidWithHeight</td>
+      <td style="text-align: left">final WB_Coord[] points,final double height, final WB_Map2D context</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createDipyramidWithHeight</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createTaperWithAnglesAndHeight</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createTaperWithAnglesAndHeight</td>
+      <td style="text-align: left">final WB_Coord[] points,final double angles[], final double height, final boolean b,final boolean t, final WB_Map2D context</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createTaperWithAngleRangeAndHeight</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createTaperWithAngleRangeAndHeight</td>
+      <td style="text-align: left">final WB_Coord[] points,final double minangle, final double maxangle, final double height,final boolean b, final boolean t, final WB_Map2D context</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createTaperWithAngleRangeAndHeight</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createTaperWithAngleRangeAndHeight</td>
+      <td style="text-align: left">final WB_Coord[] points,final double minangle, final double maxangle, final double height,final WB_Map2D context</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createTaperWithAngleAndHeight</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createTaperWithAngleAndHeight</td>
+      <td style="text-align: left">final WB_Coord[] points,final double angle, final double height, final WB_Map2D context</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createTaperWithAngleAndHeight</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createTaperWithAngleAndHeight</td>
+      <td style="text-align: left">final WB_Coord[] points,final double angle, final double height</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createBitaperWithAnglesAndHeight</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createBitaperWithAnglesAndHeight</td>
+      <td style="text-align: left">final WB_Coord[] points,final double[] angles, final double height, final boolean b,final boolean t, final WB_Map2D context</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createBitaperWithAngleRangeAndHeight</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createBitaperWithAngleRangeAndHeight</td>
+      <td style="text-align: left">final WB_Coord[] points,final double minangle, final double maxangle, final double height,final boolean b, final boolean t, final WB_Map2D context</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createBitaperWithAngleRangeAndHeight</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createBitaperWithAngleRangeAndHeight</td>
+      <td style="text-align: left">final WB_Coord[] points,final double minangle, final double maxangle, final double height,final WB_Map2D context</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createBitaperWithAngleRangeAndHeight</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createBitaperWithAngleRangeAndHeight</td>
+      <td style="text-align: left">final WB_Coord[] points,final double minangle, final double maxangle, final double height</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createBitaperWithAngleAndHeight</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createBitaperWithAngleAndHeight</td>
+      <td style="text-align: left">final WB_Coord[] points,final double angle, final double height, final WB_Map2D context</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createBitaperWithAngleAndHeight</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createBitaperWithAngleAndHeight</td>
+      <td style="text-align: left">final WB_Coord[] points,final double angle, final double height</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createCapsuleWithAnglesAndHeight</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createCapsuleWithAngleRangeAndHeight</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createCapsuleWithAngleAndHeight</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createCapsuleWithAnglesAndHeight</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createCapsuleWithAngleRangeAndHeight</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createCapsuleWithAngleAndHeight</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createCapsuleWithAnglesAndHeight</td>
+      <td style="text-align: left">final WB_Coord[] points,final double[] angles, final double height, final double cap,final boolean b, final boolean t, final WB_Map2D context</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createCapsuleWithAngleRangeAndHeight</td>
+      <td style="text-align: left">final WB_Coord[] points,final double minangle, final double maxangle, final double height,final double cap, final boolean b, final boolean t,final WB_Map2D context</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createCapsuleWithAngleAndHeight</td>
+      <td style="text-align: left">final WB_Coord[] points,final double angle, final double height, final double cap,final boolean b, final boolean t, final WB_Map2D context</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createCapsuleWithAnglesAndHeight</td>
+      <td style="text-align: left">final WB_Coord[] points,final double[] angles, final double height, final double cap</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createCapsuleWithAngleRangeAndHeight</td>
+      <td style="text-align: left">final WB_Coord[] points,final double minangle, final double maxangle, final double height,final double cap</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createCapsuleWithAngleAndHeight</td>
+      <td style="text-align: left">final WB_Coord[] points,final double angle, final double height, final double cap</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createSpindleWithAnglesAndHeight</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createSpindle</td>
+      <td style="text-align: left">final Collection&lt;? extends WB_Coord&gt; points,final double height, final double cap, final WB_Map2D context</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createSpindle</td>
+      <td style="text-align: left">final Collection&lt;? extends WB_Coord&gt; points,final double height, final double cap</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createSpindleWithAnglesAndHeight</td>
+      <td style="text-align: left">final WB_Coord[] points,final double[] angles, final double height, final double cap,final WB_Map2D context</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createSpindle</td>
+      <td style="text-align: left">final WB_Coord[] points, final double height,final double cap, final WB_Map2D context</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createSpindle</td>
+      <td style="text-align: left">final WB_Coord[] points, final double height,final double cap</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createConvexHull</td>
+      <td style="text-align: left">final List&lt;? extends WB_Coord&gt; points</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createConvexHull</td>
+      <td style="text-align: left">final WB_Coord[] points</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createConvexHull</td>
+      <td style="text-align: left">final WB_Coord[] points,final boolean triangulate</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createConvexHull</td>
+      <td style="text-align: left">final List&lt;? extends WB_Coord&gt; points,final boolean triangulate</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createConvexHullWithThreshold</td>
+      <td style="text-align: left">final WB_Coord[] points,final boolean triangulate, final double threshold</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createConvexHullWithThreshold</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">WB_SimpleMesh</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createClosestPointOnTriangle</td>
+      <td style="text-align: left">final WB_Coord p,final WB_Coord a, final WB_Coord b, final WB_Coord c</td>
+      <td style="text-align: left">WB_Point</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createClosestPointOnPolygon</td>
+      <td style="text-align: left">final WB_Coord p,final WB_Polygon poly</td>
+      <td style="text-align: left">WB_Point</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createSphereWithRadius</td>
+      <td style="text-align: left">final WB_Coord center,final double radius</td>
+      <td style="text-align: left">WB_Sphere</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createSphereWithDiameter</td>
+      <td style="text-align: left">final WB_Coord center,final double diameter</td>
+      <td style="text-align: left">WB_Sphere</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createSphereWithRadius</td>
+      <td style="text-align: left">final double x, final double y,final double z, final double radius</td>
+      <td style="text-align: left">WB_Sphere</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createSphereWithDiameter</td>
+      <td style="text-align: left">final double x, final double y,final double z, final double diameter</td>
+      <td style="text-align: left">WB_Sphere</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createTetrahedron</td>
+      <td style="text-align: left">final WB_Coord p1,final WB_Coord p2, final WB_Coord p3, final WB_Coord p4</td>
+      <td style="text-align: left">WB_Tetrahedron</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">getIntersection</td>
+      <td style="text-align: left">final WB_Coord a, final WB_Coord b,final WB_Plane P</td>
+      <td style="text-align: left">WB_Point</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createPolygonConvexHull</td>
+      <td style="text-align: left">final WB_Polygon poly</td>
+      <td style="text-align: left">WB_Polygon</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createBufferedPolygons</td>
+      <td style="text-align: left">final WB_Polygon poly,final double d</td>
+      <td style="text-align: left">List&lt;WB_Polygon&gt;</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createBufferedPolygons</td>
+      <td style="text-align: left">final WB_Polygon poly,final double d, final int n</td>
+      <td style="text-align: left">List&lt;WB_Polygon&gt;</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createBufferedPolygonsStraight</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">List&lt;WB_Polygon&gt;</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createBufferedPolygons</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">List&lt;WB_Polygon&gt;</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createBufferedPolygons</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">List&lt;WB_Polygon&gt;</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createBufferedPolygonsStraight</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">List&lt;WB_Polygon&gt;</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createBoundaryPolygons</td>
+      <td style="text-align: left">final WB_Polygon poly</td>
+      <td style="text-align: left">List&lt;WB_Polygon&gt;</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createRibbonPolygons</td>
+      <td style="text-align: left">final WB_Polygon poly,final double d</td>
+      <td style="text-align: left">List&lt;WB_Polygon&gt;</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createRibbonPolygons</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">List&lt;WB_Polygon&gt;</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createRibbonPolygons</td>
+      <td style="text-align: left">final WB_Polygon poly,final double o, final double i</td>
+      <td style="text-align: left">List&lt;WB_Polygon&gt;</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createRibbonPolygons</td>
+      <td style="text-align: left">()</td>
+      <td style="text-align: left">List&lt;WB_Polygon&gt;</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createSimplifiedPolygon</td>
+      <td style="text-align: left">final WB_Polygon poly,final double tol</td>
+      <td style="text-align: left">List&lt;WB_Polygon&gt;</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createDensifiedPolygon</td>
+      <td style="text-align: left">final WB_Polygon poly,final double max</td>
+      <td style="text-align: left">List&lt;WB_Polygon&gt;</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">constrainPolygons</td>
+      <td style="text-align: left">final WB_Polygon poly,final WB_Polygon container</td>
+      <td style="text-align: left">List&lt;WB_Polygon&gt;</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">constrainPolygons</td>
+      <td style="text-align: left">final WB_Polygon[] polygons,final WB_Polygon container</td>
+      <td style="text-align: left">List&lt;WB_Polygon&gt;</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">constrainPolygons</td>
+      <td style="text-align: left">final List<WB_Polygon> polygons,final WB_Polygon container</WB_Polygon></td>
+      <td style="text-align: left">List&lt;WB_Polygon&gt;</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createUniquePoints</td>
+      <td style="text-align: left">final List<WB_Coord> points,final double threshold</WB_Coord></td>
+      <td style="text-align: left">List&lt;WB_Coord&gt;</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createUniquePoints</td>
+      <td style="text-align: left">final List<WB_Coord> points</WB_Coord></td>
+      <td style="text-align: left">List&lt;WB_Coord&gt;</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">createUniquePlanes</td>
+      <td style="text-align: left">final List<WB_Plane> planes</WB_Plane></td>
+      <td style="text-align: left">List&lt;WB_Plane&gt;</td>
+      <td style="text-align: left"> </td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+  </main>
+  
+<!-- Back to top button -->
+<button
+        type="button"
+        class="btn btn-dark btn-floating btn-lg"
+        id="btn-back-to-top"
+        >
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<script src="/404/assets/js/button_back_to_top.js"></script>
+  
+<!-- jQuery -->
+<script src="//cdn.bootcss.com/jquery/2.2.2/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<footer class="mt-auto py-3 text-center">
+
+  <small class="text-muted mb-2">
+    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
+    by <strong>He Siyuan</strong>
+  </small>
+
+  <div class="container-fluid justify-content-center"><a class="social mx-1"  href="https://www.behance.net/your_username"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#1769ff'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-behance fa-1x"></i>
+    </a><a class="social mx-1"  href="mailto:2410831777@qq.com"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#db4437'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fas fa-envelope fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.github.com/ds199895"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#333333'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-github fa-1x"></i>
+    </a>
+
+</div><small id="attribution">
+    theme <a href="https://github.com/YoussefRaafatNasry/portfolYOU">portfolYOU</a>
+  </small>
+
+</footer>
+<div class="cb-search-tool" style="position: fixed; top: 0px ; bottom: 0px; left: 0px; right:  0px;
+      opacity: 0.95; background-color: #111111; z-index: 9999; display: none;">
+    <input type="text" class="form-control cb-search-content" id="cb-search-content" style="position: fixed; top: 60px" placeholder="文章标题 日期 标签" autocomplete="off">
+
+    <div style="position: fixed; top: 16px; right: 16px;">
+        <img src="/search/img/cb-close.png"  id="cb-close-btn"/>
+    </div>
+</div>
+
+<div style="position: fixed; right: 16px; bottom: 20px;">
+    <img src="/search/img/cb-search.png"  id="cb-search-btn"  title="双击ctrl试一下"/>
+</div>
+
+<link rel="stylesheet" href="/404/search/css/cb-search.css">
+
+<script src="/404/search/js/bootstrap3-typeahead.min.js"></script>
+<script src="/404/search/js/cb-search.js"></script>
+
+
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Initialize all tooltips -->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+
+</script>
+</body>
+
+</html>
+

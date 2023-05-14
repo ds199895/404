@@ -22,11 +22,11 @@
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="Display">
-  <meta property="og:description" content="I turn coffee :coffee: into code, use tabs over spaces and never broke production.">
+  <meta property="og:description" content="君子病无能焉，不病人之不己知也">
   <meta property="og:image" content="https://archialgo-com-sources.oss-cn-hangzhou.aliyuncs.com/images/hesiyuan2.jpg">
 
   <title>Display</title>
-  <meta name="description" content="I turn coffee :coffee: into code, use tabs over spaces and never broke production.">
+  <meta name="description" content="君子病无能焉，不病人之不己知也">
 
   <link rel="shortcut icon" type="image/x-icon" href="/404/assets/favicon.ico">
 
@@ -425,45 +425,45 @@ crossorigin="anonymous"></script>
 
 <body onload="draw()">
 	<div class="container" style="user-select:none;">
-		<div id="viz" style="width:80% ;height:720px;border-radius:20px;margin:auto;outline:none;">
+		<div id="viz" style="width:80% ;height:720px;border-radius:20px;margin:auto;outline:none;" >
 		</div>
 		<div class="cyph">		
-			<textarea class="text" rows="3" cols="40" id="cypher" display="block" style=" position:relative;
+			<textarea  class="text" rows="3" cols="40" id="cypher" display="block" style=" position:relative;
 			left:180px;
 			top:20px;"></textarea>
 			
 			<br>
 			<div class="control">
-				<div class="components" style="position:relative;
+				<div class="components"style="position:relative;
 				left:200px;top:20px">
 					<label for="slider" style="font-size: 8;font-weight: 200;">Depth:</label>
-					<input class="rangeslider" type="range" id="slider" min="1" max="5" value="2" style="top:5px;width:100px">
+					<input class="rangeslider" type="range" id="slider" min="1" max="5" value="2"style="top:5px;width:100px">
 					<output for="slider" id="output">2</output>
 
 					<div class="dropdown1">
 						<label for="dropdown1" style="font-size: 8;font-weight: 200;">Node :</label>
 						<button onclick="toggleDropdown1()" aria-expanded="false">
-						  <span>▾</span>
+						  <span>&#x25BE;</span>
 						</button>
 						<div class="dropdown-content1">
 						  <select id="items1" multiple onchange="updateSelectedItems1()">
 							<option value="dot" font-size="2">dot</option>
-							<option value="circle" font-size="2">circle</option>
-							<option value="box" font-size="2">box</option>
-							<option value="database" font-size="2">database</option>
-							<option value="square" font-size="2">square</option>
-							<option value="triangle" font-size="2">triangle</option>
-							<option value="star" font-size="2">star</option>
-							<option value="ellipse" font-size="2">ellipse</option>
-							<option value="diamond" font-size="2">diamond</option>
-							<option value="hexagon" font-size="2">hexagon</option>
+							<option value="circle"font-size="2">circle</option>
+							<option value="box"font-size="2">box</option>
+							<option value="database"font-size="2">database</option>
+							<option value="square"font-size="2">square</option>
+							<option value="triangle"font-size="2">triangle</option>
+							<option value="star"font-size="2">star</option>
+							<option value="ellipse"font-size="2">ellipse</option>
+							<option value="diamond"font-size="2">diamond</option>
+							<option value="hexagon"font-size="2">hexagon</option>
 						  </select>
 						</div>
 					</div>
 					<div class="dropdown2">
 						<label for="dropdown2" style="font-size: 8;font-weight: 200;">Arrow:</label>
 						<button onclick="toggleDropdown2()" aria-expanded="false">
-						 <span>▾</span>
+						 <span>&#x25BE;</span>
 						</button>
 						<div class="dropdown-content2">
 						  <select id="items2" multiple onchange="updateSelectedItems2()">
@@ -484,11 +484,11 @@ crossorigin="anonymous"></script>
 				</div>
 				<div class="buttons">
 
-					<p text-align="center" style="position:relative;
+					<p text-align="center"style="position:relative;
 					left:50px;
 					top:20px">Cypher Controls</p>
 					<div class="bts1">
-						<input type="submit" value="Reload" id="reload" text-align="center" style="font-size:6;position:relative;
+						<input type="submit" value="Reload" id="reload" text-align="center"style="font-size:6;position:relative;
 						left:50px;
 						top:10px;">
 						<input type="submit" value="Stabilize" id="stabilize" text-align="center" style="font-size:6;position:relative;
@@ -513,7 +513,11 @@ crossorigin="anonymous"></script>
 
 
 <!-- Back to top button -->
-<button type="button" class="btn btn-dark btn-floating btn-lg" id="btn-back-to-top">
+<button
+        type="button"
+        class="btn btn-dark btn-floating btn-lg"
+        id="btn-back-to-top"
+        >
   <i class="fas fa-arrow-up"></i>
 </button>
 
@@ -529,28 +533,27 @@ crossorigin="anonymous"></script>
 
   <small class="text-muted mb-2">
     <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
-    by <strong>John Doe</strong>
+    by <strong>He Siyuan</strong>
   </small>
 
-  <div class="container-fluid justify-content-center">
-<a class="social mx-1" href="https://www.behance.net/your_username" style="color: #6c757d" onmouseover="this.style.color='#1769ff'" onmouseout="this.style.color='#6c757d'">
+  <div class="container-fluid justify-content-center"><a class="social mx-1"  href="https://www.behance.net/your_username"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#1769ff'"
+       onMouseOut="this.style.color='#6c757d'">
       <i class="fab fa-behance fa-1x"></i>
-    </a><a class="social mx-1" href="mailto:username@domain.com" style="color: #6c757d" onmouseover="this.style.color='#db4437'" onmouseout="this.style.color='#6c757d'">
+    </a><a class="social mx-1"  href="mailto:2410831777@qq.com"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#db4437'"
+       onMouseOut="this.style.color='#6c757d'">
       <i class="fas fa-envelope fa-1x"></i>
-    </a><a class="social mx-1" href="https://www.facebook.com/your_username" style="color: #6c757d" onmouseover="this.style.color='#3b5998'" onmouseout="this.style.color='#6c757d'">
-      <i class="fab fa-facebook fa-1x"></i>
-    </a><a class="social mx-1" href="https://www.github.com/Inst-AAA" style="color: #6c757d" onmouseover="this.style.color='#333333'" onmouseout="this.style.color='#6c757d'">
+    </a><a class="social mx-1"  href="https://www.github.com/ds199895"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#333333'"
+       onMouseOut="this.style.color='#6c757d'">
       <i class="fab fa-github fa-1x"></i>
-    </a><a class="social mx-1" href="https://www.linkedin.com/in/your_username" style="color: #6c757d" onmouseover="this.style.color='#007bb5'" onmouseout="this.style.color='#6c757d'">
-      <i class="fab fa-linkedin-in fa-1x"></i>
-    </a><a class="social mx-1" href="https://medium.com/@your_username" style="color: #6c757d" onmouseover="this.style.color='#00ab6c'" onmouseout="this.style.color='#6c757d'">
-      <i class="fab fa-medium fa-1x"></i>
-    </a><a class="social mx-1" href="https://www.twitter.com/your_username" style="color: #6c757d" onmouseover="this.style.color='#1da1f2'" onmouseout="this.style.color='#6c757d'">
-      <i class="fab fa-twitter fa-1x"></i>
     </a>
 
-</div>
-<small id="attribution">
+</div><small id="attribution">
     theme <a href="https://github.com/YoussefRaafatNasry/portfolYOU">portfolYOU</a>
   </small>
 
@@ -560,12 +563,12 @@ crossorigin="anonymous"></script>
     <input type="text" class="form-control cb-search-content" id="cb-search-content" style="position: fixed; top: 60px" placeholder="文章标题 日期 标签" autocomplete="off">
 
     <div style="position: fixed; top: 16px; right: 16px;">
-        <img src="/search/img/cb-close.png" id="cb-close-btn">
+        <img src="/search/img/cb-close.png"  id="cb-close-btn"/>
     </div>
 </div>
 
 <div style="position: fixed; right: 16px; bottom: 20px;">
-    <img src="/search/img/cb-search.png" id="cb-search-btn" title="双击ctrl试一下">
+    <img src="/search/img/cb-search.png"  id="cb-search-btn"  title="双击ctrl试一下"/>
 </div>
 
 <link rel="stylesheet" href="/404/search/css/cb-search.css">

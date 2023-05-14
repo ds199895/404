@@ -1,28 +1,20 @@
 [
   
       {
-        "title"    : "Tangshan Mine Park Landscape Gallery",
-        "title_cn"  : "南京汤山矿坑公园入口景观廊桥",
-        "tags"     : "Digital Fabrication, Installation, Project, Nanjing",
-        "url"      : "/404/projects/2019-tangshan-mine-park-landscape-gallery",
-        "location" : "Nanjing, Jiangsu, China",
-        "team"     : "Biao Li, Peng Tang, Hongjian Li, Hanchen Guo"
-      } ,
-      {
-        "title"    : "Linpan Landscape Installation",
-        "title_cn"  : "南岸美村“林·盘”艺术景观装置",
-        "tags"     : "Digital Fabrication, Installation, Project, Anren",
-        "url"      : "/404/projects/2019-linpan-landscape-installation",
-        "location" : "Chengdu, Sichuan, China",
-        "team"     : "Biao Li, Peng Tang, Hongjian Li, Yulong Chen, Yichen Mo, Zhenyu Hu"
-      } ,
-      {
         "title"    : "Stress-oriented 3D printing floor system - Design of the Nanjing Tangshan Mine Park Exhibition Hall.",
         "title_cn"  : "应力导向的3D打印楼盖系统——南京汤山矿坑公园展览馆设计",
         "tags"     : "Digital Fabrication, Installation, Project, Nanjing",
         "url"      : "https://mp.weixin.qq.com/s/ONw262-5HtikiEOPyqldOA",
         "location" : "Nanjing, Jiangsu, China",
         "team"     : "He Siyuan, Yao Xiuning"
+      } ,
+      {
+        "title"    : "Latterns of Montain Fan",
+        "title_cn"  : "矾灵灯彩",
+        "tags"     : "Digital Fabrication, Installation, Project, Nanjing",
+        "url"      : "https://mp.weixin.qq.com/s/AKJxphyNFOaUFpzBfg4nrQ",
+        "location" : "Nanjing, Jiangsu, China",
+        "team"     : "Zhang Xuelu Li Jiajun He Siyuan"
       } ,
       {
         "title"    : "Detail-Preserving Fluid Simulation",
