@@ -3,7 +3,7 @@ navs: [news,program,banner]
 tags: [OpenCV, python,OCR]
 image: https://archialgo-com-sources.oss-cn-hangzhou.aliyuncs.com/images/jiandu3.jpg
 title: Search and original text processing of ancient book library based on web crawler and OpenCV
-title_cn: 基于爬虫与OpenCV的古籍库搜索与原文处理
+title_cn: 简牍：基于爬虫与OpenCV的古籍库搜索与原文处理
 year: 2022
 description: 通过爬虫爬取古籍库关键词搜索结果，下载图片，然后通过opencv进行图像分割，将文字切块分好，然后再进行组合，成为“简牍”，然后调用合合信息api进行OCR识别，获取原文。
 team: [He Siyuan]
