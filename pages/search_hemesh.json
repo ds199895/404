@@ -12,7 +12,8 @@ permalink: /search_hemesh.json
         "tags"     : "{{ project.tags | join: ', ' }}",
         "url"      : "{{ project.external_url | default: project.url | relative_url }}",
         "location" : "{{ project.location | escape}}",
-        "team"     : "{{ project.team | join: ', '}}"
+        "team"     : "{{ project.team | join: ', '}}",
+        "content"  : "{{ project.content | strip_html | strip_newlines | remove_chars_cn }}"
       } {% unless forloop.last %},{% endunless %}
     {% endif %}
   {% endfor %}
