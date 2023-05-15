@@ -8,7 +8,7 @@ description:
 team: [Siyuan He]
 status: Doing
 year: 2023
-date: 2023-04-03
+date: 2023-05-15
 ---
 <style>
 table th:first-of-type {
@@ -36,7 +36,7 @@ background: rgba(224,229,223,10)!important; /*背景色*/
             
 
 <br>
-<a href="/display/hemesh" onclick="saveReferrer()">继承关系图谱display</a>
+<a href="{{site.baseurl}}/display/hemesh" onclick="saveReferrer()">继承关系图谱display</a>
 <script>
 function saveReferrer() {
   var referrer ='WB_GeometryFactory';
@@ -49,7 +49,7 @@ function saveReferrer() {
 ### WB_GeometryFactory
 
 <br>
-#### extends:   [WB_GeometryFactory2D](/hemesh/wb-geometryfactory2d)
+#### extends:   [WB_GeometryFactory2D]({{site.baseurl}}/hemesh/wb-geometryfactory2d)
 <br>
 
 
