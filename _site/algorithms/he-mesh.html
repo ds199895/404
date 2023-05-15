@@ -255,7 +255,8 @@
         display: inline-block;
         width:100%
     }
-    .card-columns {
+    .card-cols {
+        width: 100%;
         -webkit-column-count: 3;
         -moz-column-count: 3;
         column-count: 3;
@@ -266,10 +267,30 @@
         widows:1;
     }
 
-    .card-columns .card {
+    .card-cols .card {
         display: inline-block;
         width:100%
     }
+    /* .badge_1 {
+    display: flex;
+    flex-direction: column;
+    width:auto;
+    padding: .25em .4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 10rem;
+    transition:color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
+}*/
+.badge-pill1 {
+    padding-right: .6em;
+    padding-left: .6em;
+    border-radius:10rem;
+    width:auto;
+} 
 
 </style>
 
@@ -709,7 +730,7 @@
 
 <div class="Geom">
     <h4 class="text-center mt-6 mb-2">Geom</h4>
-    <div class="card-columns m-5">
+    <div class="card-cols m-5">
       <!-- Local Projects -->
         <div class="wow animated fadeIn" data-wow-delay=".15s">
   <a href="/404/hemesh/wb-geometry" class="project card text-themed"><div class="card-body">
@@ -717,7 +738,7 @@
       </h5>
 
       <p id="wb-geometry-desc" class="card-text"></p>
-      <p id="wb-geometry-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">Geom</span></p>
+      <p id="wb-geometry-tags" class="card-text"><span class="badge_1 badge-pill1 text-primary border border-primary ml-1">Geom</span></p>
     </div>
   </a>
 </div>
@@ -727,7 +748,7 @@
       </h5>
 
       <p id="wb-geometry2d-desc" class="card-text"></p>
-      <p id="wb-geometry2d-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">Geom</span></p>
+      <p id="wb-geometry2d-tags" class="card-text"><span class="badge_1 badge-pill1 text-primary border border-primary ml-1">Geom</span></p>
     </div>
   </a>
 </div>
@@ -737,7 +758,7 @@
       </h5>
 
       <p id="wb-geometryfactory-desc" class="card-text"></p>
-      <p id="wb-geometryfactory-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">Geom</span><span class="badge badge-pill text-primary border border-primary ml-1">factory</span></p>
+      <p id="wb-geometryfactory-tags" class="card-text"><span class="badge_1 badge-pill1 text-primary border border-primary ml-1">Geom</span><span class="badge_1 badge-pill1 text-primary border border-primary ml-1">factory</span></p>
     </div>
   </a>
 </div>
@@ -747,7 +768,7 @@
       </h5>
 
       <p id="wb-geometryfactory2d-desc" class="card-text"></p>
-      <p id="wb-geometryfactory2d-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">Geom</span><span class="badge badge-pill text-primary border border-primary ml-1">factory</span></p>
+      <p id="wb-geometryfactory2d-tags" class="card-text"><span class="badge_1 badge-pill1 text-primary border border-primary ml-1">Geom</span><span class="badge_1 badge-pill1 text-primary border border-primary ml-1">factory</span></p>
     </div>
   </a>
 </div>
@@ -757,7 +778,7 @@
       </h5>
 
       <p id="wb-geometryop-desc" class="card-text"></p>
-      <p id="wb-geometryop-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">Geom</span></p>
+      <p id="wb-geometryop-tags" class="card-text"><span class="badge_1 badge-pill1 text-primary border border-primary ml-1">Geom</span></p>
     </div>
   </a>
 </div>
@@ -767,7 +788,7 @@
       </h5>
 
       <p id="wb-geometryop2d-desc" class="card-text"></p>
-      <p id="wb-geometryop2d-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">Geom</span></p>
+      <p id="wb-geometryop2d-tags" class="card-text"><span class="badge_1 badge-pill1 text-primary border border-primary ml-1">Geom</span></p>
     </div>
   </a>
 </div>
@@ -777,7 +798,7 @@
       </h5>
 
       <p id="wb-hexagon-desc" class="card-text"></p>
-      <p id="wb-hexagon-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">Geom</span><span class="badge badge-pill text-primary border border-primary ml-1">polygon</span></p>
+      <p id="wb-hexagon-tags" class="card-text"><span class="badge_1 badge-pill1 text-primary border border-primary ml-1">Geom</span><span class="badge_1 badge-pill1 text-primary border border-primary ml-1">polygon</span></p>
     </div>
   </a>
 </div>
@@ -787,7 +808,7 @@
 
 <div class="He_core">
     <h4 class="text-center mt-6 mb-2">He_core</h4>
-    <div class="card-columns m-5">
+    <div class="card-cols m-5">
       <!-- Local Projects -->
         <div class="wow animated fadeIn" data-wow-delay=".15s">
   <a href="/404/hemesh/he-edgeiterator" class="project card text-themed"><div class="card-body">
@@ -795,7 +816,7 @@
       </h5>
 
       <p id="he-edgeiterator-desc" class="card-text"></p>
-      <p id="he-edgeiterator-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_core</span></p>
+      <p id="he-edgeiterator-tags" class="card-text"><span class="badge_1 badge-pill1 text-primary border border-primary ml-1">He_core</span></p>
     </div>
   </a>
 </div>
@@ -805,7 +826,7 @@
       </h5>
 
       <p id="he-element-desc" class="card-text"></p>
-      <p id="he-element-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_core</span></p>
+      <p id="he-element-tags" class="card-text"><span class="badge_1 badge-pill1 text-primary border border-primary ml-1">He_core</span></p>
     </div>
   </a>
 </div>
@@ -815,7 +836,7 @@
       </h5>
 
       <p id="he-face-desc" class="card-text"></p>
-      <p id="he-face-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_core</span></p>
+      <p id="he-face-tags" class="card-text"><span class="badge_1 badge-pill1 text-primary border border-primary ml-1">He_core</span></p>
     </div>
   </a>
 </div>
@@ -825,7 +846,7 @@
       </h5>
 
       <p id="he-faceedgecirculator-desc" class="card-text"></p>
-      <p id="he-faceedgecirculator-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_core</span></p>
+      <p id="he-faceedgecirculator-tags" class="card-text"><span class="badge_1 badge-pill1 text-primary border border-primary ml-1">He_core</span></p>
     </div>
   </a>
 </div>
@@ -835,7 +856,7 @@
       </h5>
 
       <p id="he-faceedgerevcirculator-desc" class="card-text"></p>
-      <p id="he-faceedgerevcirculator-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_core</span></p>
+      <p id="he-faceedgerevcirculator-tags" class="card-text"><span class="badge_1 badge-pill1 text-primary border border-primary ml-1">He_core</span></p>
     </div>
   </a>
 </div>
@@ -845,7 +866,7 @@
       </h5>
 
       <p id="he-facefacecirculator-desc" class="card-text"></p>
-      <p id="he-facefacecirculator-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_core</span></p>
+      <p id="he-facefacecirculator-tags" class="card-text"><span class="badge_1 badge-pill1 text-primary border border-primary ml-1">He_core</span></p>
     </div>
   </a>
 </div>
@@ -855,7 +876,7 @@
       </h5>
 
       <p id="he-facefacerevcirculator-desc" class="card-text"></p>
-      <p id="he-facefacerevcirculator-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_core</span></p>
+      <p id="he-facefacerevcirculator-tags" class="card-text"><span class="badge_1 badge-pill1 text-primary border border-primary ml-1">He_core</span></p>
     </div>
   </a>
 </div>
@@ -865,7 +886,7 @@
       </h5>
 
       <p id="he-facehalfedgeinnercirculator-desc" class="card-text"></p>
-      <p id="he-facehalfedgeinnercirculator-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_core</span></p>
+      <p id="he-facehalfedgeinnercirculator-tags" class="card-text"><span class="badge_1 badge-pill1 text-primary border border-primary ml-1">He_core</span></p>
     </div>
   </a>
 </div>
@@ -875,7 +896,7 @@
       </h5>
 
       <p id="he-facehalfedgeinnerrevcirculator-desc" class="card-text"></p>
-      <p id="he-facehalfedgeinnerrevcirculator-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_core</span></p>
+      <p id="he-facehalfedgeinnerrevcirculator-tags" class="card-text"><span class="badge_1 badge-pill1 text-primary border border-primary ml-1">He_core</span></p>
     </div>
   </a>
 </div>
@@ -885,7 +906,7 @@
       </h5>
 
       <p id="he-facehalfedgeoutercirculator-desc" class="card-text"></p>
-      <p id="he-facehalfedgeoutercirculator-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_core</span></p>
+      <p id="he-facehalfedgeoutercirculator-tags" class="card-text"><span class="badge_1 badge-pill1 text-primary border border-primary ml-1">He_core</span></p>
     </div>
   </a>
 </div>
@@ -895,7 +916,7 @@
       </h5>
 
       <p id="he-facehalfedgeouterrevcirculator-desc" class="card-text"></p>
-      <p id="he-facehalfedgeouterrevcirculator-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_core</span></p>
+      <p id="he-facehalfedgeouterrevcirculator-tags" class="card-text"><span class="badge_1 badge-pill1 text-primary border border-primary ml-1">He_core</span></p>
     </div>
   </a>
 </div>
@@ -905,7 +926,7 @@
       </h5>
 
       <p id="he-faceiterator-desc" class="card-text"></p>
-      <p id="he-faceiterator-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_core</span></p>
+      <p id="he-faceiterator-tags" class="card-text"><span class="badge_1 badge-pill1 text-primary border border-primary ml-1">He_core</span></p>
     </div>
   </a>
 </div>
@@ -915,7 +936,7 @@
       </h5>
 
       <p id="he-facesort-desc" class="card-text"></p>
-      <p id="he-facesort-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_core</span></p>
+      <p id="he-facesort-tags" class="card-text"><span class="badge_1 badge-pill1 text-primary border border-primary ml-1">He_core</span></p>
     </div>
   </a>
 </div>
@@ -925,7 +946,7 @@
       </h5>
 
       <p id="he-facevertexcirculator-desc" class="card-text"></p>
-      <p id="he-facevertexcirculator-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_core</span></p>
+      <p id="he-facevertexcirculator-tags" class="card-text"><span class="badge_1 badge-pill1 text-primary border border-primary ml-1">He_core</span></p>
     </div>
   </a>
 </div>
@@ -935,7 +956,7 @@
       </h5>
 
       <p id="he-facevertexrevcirculator-desc" class="card-text"></p>
-      <p id="he-facevertexrevcirculator-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_core</span></p>
+      <p id="he-facevertexrevcirculator-tags" class="card-text"><span class="badge_1 badge-pill1 text-primary border border-primary ml-1">He_core</span></p>
     </div>
   </a>
 </div>
@@ -945,7 +966,7 @@
       </h5>
 
       <p id="he-halfedge-desc" class="card-text"></p>
-      <p id="he-halfedge-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_core</span></p>
+      <p id="he-halfedge-tags" class="card-text"><span class="badge_1 badge-pill1 text-primary border border-primary ml-1">He_core</span></p>
     </div>
   </a>
 </div>
@@ -955,7 +976,7 @@
       </h5>
 
       <p id="he-halfedgeiterator-desc" class="card-text"></p>
-      <p id="he-halfedgeiterator-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_core</span></p>
+      <p id="he-halfedgeiterator-tags" class="card-text"><span class="badge_1 badge-pill1 text-primary border border-primary ml-1">He_core</span></p>
     </div>
   </a>
 </div>
@@ -965,7 +986,7 @@
       </h5>
 
       <p id="he-halfedgestructure-desc" class="card-text"></p>
-      <p id="he-halfedgestructure-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_core</span></p>
+      <p id="he-halfedgestructure-tags" class="card-text"><span class="badge_1 badge-pill1 text-primary border border-primary ml-1">He_core</span></p>
     </div>
   </a>
 </div>
@@ -975,7 +996,7 @@
       </h5>
 
       <p id="he-machine-desc" class="card-text"></p>
-      <p id="he-machine-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_core</span></p>
+      <p id="he-machine-tags" class="card-text"><span class="badge_1 badge-pill1 text-primary border border-primary ml-1">He_core</span></p>
     </div>
   </a>
 </div>
@@ -985,7 +1006,7 @@
       </h5>
 
       <p id="he-mesh-desc" class="card-text"></p>
-      <p id="he-mesh-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_core</span></p>
+      <p id="he-mesh-tags" class="card-text"><span class="badge_1 badge-pill1 text-primary border border-primary ml-1">He_core</span></p>
     </div>
   </a>
 </div>
@@ -995,7 +1016,7 @@
       </h5>
 
       <p id="he-meshcollection-desc" class="card-text"></p>
-      <p id="he-meshcollection-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_core</span></p>
+      <p id="he-meshcollection-tags" class="card-text"><span class="badge_1 badge-pill1 text-primary border border-primary ml-1">He_core</span></p>
     </div>
   </a>
 </div>
@@ -1005,7 +1026,7 @@
       </h5>
 
       <p id="he-meshelement-desc" class="card-text"></p>
-      <p id="he-meshelement-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_core</span></p>
+      <p id="he-meshelement-tags" class="card-text"><span class="badge_1 badge-pill1 text-primary border border-primary ml-1">He_core</span></p>
     </div>
   </a>
 </div>
@@ -1015,7 +1036,7 @@
       </h5>
 
       <p id="he-meshiterator-desc" class="card-text"></p>
-      <p id="he-meshiterator-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_core</span></p>
+      <p id="he-meshiterator-tags" class="card-text"><span class="badge_1 badge-pill1 text-primary border border-primary ml-1">He_core</span></p>
     </div>
   </a>
 </div>
@@ -1025,7 +1046,7 @@
       </h5>
 
       <p id="he-meshop-desc" class="card-text"></p>
-      <p id="he-meshop-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_core</span></p>
+      <p id="he-meshop-tags" class="card-text"><span class="badge_1 badge-pill1 text-primary border border-primary ml-1">He_core</span></p>
     </div>
   </a>
 </div>
@@ -1035,7 +1056,7 @@
 
 <div class="He_creators">
     <h4 class="text-center mt-6 mb-2">He_creators</h4>
-    <div class="card-columns m-5">
+    <div class="card-cols m-5">
       <!-- Local Projects -->
         <div class="wow animated fadeIn" data-wow-delay=".15s">
   <a href="/404/hemesh/hec-prism" class="project card text-themed"><div class="card-body">
@@ -1043,7 +1064,7 @@
       </h5>
 
       <p id="hec-prism-desc" class="card-text"></p>
-      <p id="hec-prism-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_creators</span><span class="badge badge-pill text-primary border border-primary ml-1">primitives</span></p>
+      <p id="hec-prism-tags" class="card-text"><span class="badge_1 badge-pill1 text-primary border border-primary ml-1">He_creators</span><span class="badge_1 badge-pill1 text-primary border border-primary ml-1">primitives</span></p>
     </div>
   </a>
 </div>
@@ -1053,7 +1074,7 @@
       </h5>
 
       <p id="hec-ring-desc" class="card-text"></p>
-      <p id="hec-ring-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_creators</span><span class="badge badge-pill text-primary border border-primary ml-1">primitives</span></p>
+      <p id="hec-ring-tags" class="card-text"><span class="badge_1 badge-pill1 text-primary border border-primary ml-1">He_creators</span><span class="badge_1 badge-pill1 text-primary border border-primary ml-1">primitives</span></p>
     </div>
   </a>
 </div>
@@ -1063,7 +1084,7 @@
       </h5>
 
       <p id="hec-torus-desc" class="card-text"></p>
-      <p id="hec-torus-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_creators</span><span class="badge badge-pill text-primary border border-primary ml-1">primitives</span></p>
+      <p id="hec-torus-tags" class="card-text"><span class="badge_1 badge-pill1 text-primary border border-primary ml-1">He_creators</span><span class="badge_1 badge-pill1 text-primary border border-primary ml-1">primitives</span></p>
     </div>
   </a>
 </div>
@@ -1073,7 +1094,7 @@
 
 <div class="He_modifiers">
     <h4 class="text-center mt-6 mb-2">He_modifiers</h4>
-    <div class="card-columns m-5">
+    <div class="card-cols m-5">
       <!-- Local Projects -->
         <div class="wow animated fadeIn" data-wow-delay=".15s">
   <a href="/404/hemesh/hem-smooth" class="project card text-themed"><div class="card-body">
@@ -1081,7 +1102,7 @@
       </h5>
 
       <p id="hem-smooth-desc" class="card-text"></p>
-      <p id="hem-smooth-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_modifiers</span></p>
+      <p id="hem-smooth-tags" class="card-text"><span class="badge_1 badge-pill1 text-primary border border-primary ml-1">He_modifiers</span></p>
     </div>
   </a>
 </div>
@@ -1091,7 +1112,7 @@
       </h5>
 
       <p id="hem-smoothinset-desc" class="card-text"></p>
-      <p id="hem-smoothinset-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_modifiers</span></p>
+      <p id="hem-smoothinset-tags" class="card-text"><span class="badge_1 badge-pill1 text-primary border border-primary ml-1">He_modifiers</span></p>
     </div>
   </a>
 </div>
@@ -1101,7 +1122,7 @@
       </h5>
 
       <p id="hem-stretch-desc" class="card-text"></p>
-      <p id="hem-stretch-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_modifiers</span></p>
+      <p id="hem-stretch-tags" class="card-text"><span class="badge_1 badge-pill1 text-primary border border-primary ml-1">He_modifiers</span></p>
     </div>
   </a>
 </div>
@@ -1111,7 +1132,7 @@
 
 <div class="He_subdividors">
     <h4 class="text-center mt-6 mb-2">He_subdividors</h4>
-    <div class="card-columns m-5">
+    <div class="card-cols m-5">
       <!-- Local Projects -->
         <div class="wow animated fadeIn" data-wow-delay=".15s">
   <a href="/404/hemesh/hes-catmullclark" class="project card text-themed"><div class="card-body">
@@ -1119,7 +1140,7 @@
       </h5>
 
       <p id="hes-catmullclark-desc" class="card-text"></p>
-      <p id="hes-catmullclark-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_subdividors</span></p>
+      <p id="hes-catmullclark-tags" class="card-text"><span class="badge_1 badge-pill1 text-primary border border-primary ml-1">He_subdividors</span></p>
     </div>
   </a>
 </div>
@@ -1129,7 +1150,7 @@
       </h5>
 
       <p id="hes-doosabin-desc" class="card-text"></p>
-      <p id="hes-doosabin-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_subdividors</span></p>
+      <p id="hes-doosabin-tags" class="card-text"><span class="badge_1 badge-pill1 text-primary border border-primary ml-1">He_subdividors</span></p>
     </div>
   </a>
 </div>
@@ -1139,7 +1160,7 @@
 
 <div class="He_tools">
     <h4 class="text-center mt-6 mb-2">He_tools</h4>
-    <div class="card-columns m-5">
+    <div class="card-cols m-5">
       <!-- Local Projects -->
         <div class="wow animated fadeIn" data-wow-delay=".15s">
   <a href="/404/hemesh/het-infoface" class="project card text-themed"><div class="card-body">
@@ -1147,7 +1168,7 @@
       </h5>
 
       <p id="het-infoface-desc" class="card-text"></p>
-      <p id="het-infoface-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_tools</span></p>
+      <p id="het-infoface-tags" class="card-text"><span class="badge_1 badge-pill1 text-primary border border-primary ml-1">He_tools</span></p>
     </div>
   </a>
 </div>
@@ -1157,7 +1178,7 @@
       </h5>
 
       <p id="het-infohalfedge-desc" class="card-text"></p>
-      <p id="het-infohalfedge-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">He_tools</span></p>
+      <p id="het-infohalfedge-tags" class="card-text"><span class="badge_1 badge-pill1 text-primary border border-primary ml-1">He_tools</span></p>
     </div>
   </a>
 </div>
@@ -1167,7 +1188,7 @@
 
 <div class="Core">
     <h4 class="text-center mt-6 mb-2">Core</h4>
-    <div class="card-columns m-5">
+    <div class="card-cols m-5">
       <!-- Local Projects -->
         
     </div>
@@ -1175,7 +1196,7 @@
 
 <div class="Processing">
     <h4 class="text-center mt-6 mb-2">Processing</h4>
-    <div class="card-columns m-5">
+    <div class="card-cols m-5">
       <!-- Local Projects -->
         
     </div>
@@ -1183,7 +1204,7 @@
 
 <div class="Math">
     <h4 class="text-center mt-6 mb-2">Math</h4>
-    <div class="card-columns m-5">
+    <div class="card-cols m-5">
       <!-- Local Projects -->
         <div class="wow animated fadeIn" data-wow-delay=".15s">
   <a href="/404/hemesh/wb-horner" class="project card text-themed"><div class="card-body">
@@ -1191,7 +1212,7 @@
       </h5>
 
       <p id="wb-horner-desc" class="card-text"></p>
-      <p id="wb-horner-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">Math</span></p>
+      <p id="wb-horner-tags" class="card-text"><span class="badge_1 badge-pill1 text-primary border border-primary ml-1">Math</span></p>
     </div>
   </a>
 </div>
@@ -1201,7 +1222,7 @@
       </h5>
 
       <p id="wb-interpolate-desc" class="card-text"></p>
-      <p id="wb-interpolate-tags" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">Math</span></p>
+      <p id="wb-interpolate-tags" class="card-text"><span class="badge_1 badge-pill1 text-primary border border-primary ml-1">Math</span></p>
     </div>
   </a>
 </div>
@@ -1211,7 +1232,7 @@
 
 <div class="Nurbs">
     <h4 class="text-center mt-6 mb-2">Nurbs</h4>
-    <div class="card-columns m-5">
+    <div class="card-cols m-5">
       <!-- Local Projects -->
         
     </div>
@@ -1219,7 +1240,7 @@
 
 <div class="Other">
     <h4 class="text-center mt-6 mb-2">Other</h4>
-    <div class="card-columns m-5">
+    <div class="card-cols m-5">
       <!-- Local Projects -->
         
     </div>
