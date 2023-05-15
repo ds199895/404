@@ -24,7 +24,7 @@
             {%- assign project_name_cn  = project.title_cn -%}
             {%- assign project_desc  = project.description -%}
             {%- assign project_url   = project.html_url -%}
-            {%- assign project_tools = project.topics -%}
+            {%- assign project_tags = project.tags -%}
             {%- assign external      = true -%}
 
             {% include projects/project-card.html %}
@@ -50,7 +50,7 @@
       {%- assign project_location  = project.location -%}
       {%- assign project_location_cn  = project.location_cn -%}
       {%- assign project_desc  = project.description -%}
-      {%- assign project_tools = project.tools -%}
+      {%- assign project_tags = project.tags -%}
 
       {%- if project.external_url -%}
         {%- assign project_url = project.external_url -%}
