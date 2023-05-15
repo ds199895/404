@@ -3,17 +3,19 @@ layout: null
 permalink: /search_project.json
 ---
 [
-  {% for project in site.projects %}
-    {%- if project.navs contains "template" -%}
+  {% for proj in site.projects %}
+    {% if proj.navs contains "template" %}
+      {
+      } {% unless forloop.last %},{% endunless %}
     {% else %}
       {
-        "title"    : "{{ project.title | escape }}",
-        "title_cn"  : "{{ project.title_cn | escape | default: ' '}}",
-        "tags"     : "{{ project.tags | join: ', ' }}",
-        "url"      : "{{ project.external_url | default: project.url | relative_url }}",
-        "location" : "{{ project.location | escape}}",
-        "team"     : "{{ project.team | join: ', '}}"
+        "title"    : "{{ proj.title | escape }}",
+        "title_cn"  : "{{ proj.title_cn | escape | default: ' '}}",
+        "tags"     : "{{ proj.tags | join: ', ' }}",
+        "url"      : "{{ proj.external_url | default: proj.url | relative_url }}",
+        "location" : "{{ proj.location | escape}}",
+        "team"     : "{{ proj.team | join: ', '}}"
       } {% unless forloop.last %},{% endunless %}
-    {%- endif -%}
+    {% endif %}
   {% endfor %}
 ]

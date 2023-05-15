@@ -5,6 +5,7 @@ tags: [Integer Programming,Parking Layouts,Generative Design]
 image: https://archialgo-com-sources.oss-cn-hangzhou.aliyuncs.com/images/integerparking.jpg
 # Paper Information
 title: 基于整数规划的停车场车位排布优化算法研究
+title_cn: 
 subtitle: Research on Optimization Algorithm of parking lot layout based on Integer Programming
 paper_type: Conferece Paper
 authors: [He Siyuan, Biao Li]

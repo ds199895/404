@@ -10,15 +10,6 @@
       } ,
     
   
-      {
-        "title"    : "Search and original text processing of ancient book library based on web crawler and OpenCV",
-        "title_cn"  : "简牍：基于爬虫与OpenCV的古籍库搜索与原文处理",
-        "tags"     : "OpenCV, python, OCR",
-        "url"      : "/404/algorithms/2022-jiandu",
-        "location" : "",
-        "team"     : "He Siyuan"
-      } ,
-    
   
       {
         "title"    : "Extending and implementing graph using NeoVis",

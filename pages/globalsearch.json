@@ -5,27 +5,38 @@ permalink: /globalsearch.json
 [
 
   {% for post in site.posts %}
-    {
-      "title"    : "{{ post.title | escape }}",
-      "category" : "{{ post.category }}",
-      "tags"     : "{{ post.tags | join: ', ' }}",
-      "url"      : "{{ post.external_url | default: post.url | relative_url }}",
-      "date"     : "{{ post.date }}"
-    } {% unless forloop.last %},{% endunless %}
+    {%- if post.navs contains "template" -%}
+    {% else %}
+      {
+        "title"    : "{{ post.title | escape }}",
+        "title_cn"  : "{{ post.title_cn | escape | default: ' '}}",
+        "category" : "{{ post.category }}",
+        "tags"     : "{{ post.tags | join: ', ' }}",
+        "url"      : "{{ post.external_url | default: post.url | relative_url }}",
+        "date"     : "{{ post.date }}"
+      } {% unless forloop.last %},{% endunless %}
+    {% endif %}
   {% endfor %}
   ,  
   {% for project in site.algorithms %}
-  {
-    "title"    : "{{ project.title | escape }}",
-    "title_cn"  : "{{ project.title_cn | escape | default: ' '}}",
-    "tags"     : "{{ project.tags | join: ', ' }}",
-    "url"      : "{{ project.external_url | default: project.url | relative_url }}",
-    "location" : "{{ project.location | escape}}",
-    "team"     : "{{ project.team | join: ', '}}"
-  } {% unless forloop.last %},{% endunless %}
-{% endfor %}
+    {%- if project.navs contains "template" -%}
+    {% else %}
+      {
+        "title"    : "{{ project.title | escape }}",
+        "title_cn"  : "{{ project.title_cn | escape | default: ' '}}",
+        "tags"     : "{{ project.tags | join: ', ' }}",
+        "url"      : "{{ project.external_url | default: project.url | relative_url }}",
+        "location" : "{{ project.location | escape}}",
+        "team"     : "{{ project.team | join: ', '}}"
+      } {% unless forloop.last %},{% endunless %}
+    {% endif %}
+  {% endfor %}
 ,
   {% for project in site.projects %}
+  {%- if project.navs contains "template" -%}
+    {
+    } {% unless forloop.last %},{% endunless %}
+  {% else %}
     {
       "title"    : "{{ project.title | escape }}",
       "title_cn"  : "{{ project.title_cn | escape | default: ' '}}",
@@ -34,17 +45,23 @@ permalink: /globalsearch.json
       "location" : "{{ project.location | escape}}",
       "team"     : "{{ project.team | join: ', '}}"
     } {% unless forloop.last %},{% endunless %}
+  {% endif %}
   {% endfor %}
   ,
   {% for publication in site.publications %}
-    {
-        "title"    : "{{ publication.title | escape }}",
-        "subtitle" : "{{ publication.subtitle | escape }}",
-        "url"      : "{{ publication.external_url | default: publication.url | relative_url }}",
-        "tags"     : "{{ publication.tags | join: ', ' }}",
-        "authors"  : "{{ publication.authors }}",
-        "keywords" : "{{ publication.keywords | join: ', ' }}"
-    } {% unless forloop.last %},{% endunless %}
+    {%- if publication.navs contains "template" -%}
+    {% else %}
+
+      {
+          "title"    : "{{ publication.title | escape }}",
+          "title_cn"  : "{{ publication.title_cn | escape | default: ' '}}",
+          "subtitle" : "{{ publication.subtitle | escape }}",
+          "url"      : "{{ publication.external_url | default: publication.url | relative_url }}",
+          "tags"     : "{{ publication.tags | join: ', ' }}",
+          "authors"  : "{{ publication.authors }}",
+          "keywords" : "{{ publication.keywords | join: ', ' }}"
+      } {% unless forloop.last %},{% endunless %}
+    {% endif %}
   {% endfor %}    
   
 ]

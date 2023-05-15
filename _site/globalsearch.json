@@ -1,43 +1,39 @@
 [
 
   
-    {
-      "title"    : "Non-uniform Offset",
-      "category" : "",
-      "tags"     : "Software Development",
-      "url"      : "/404/blog/offset",
-      "date"     : "2022-07-23 00:00:00 +0800"
-    } 
+      {
+        "title"    : "Non-uniform Offset",
+        "title_cn"  : "Non-uniform Offset",
+        "category" : "",
+        "tags"     : "Software Development",
+        "url"      : "/404/blog/offset",
+        "date"     : "2022-07-23 00:00:00 +0800"
+      } 
+    
   
   ,  
   
-  {
-    "title"    : "HE_Mesh Library",
-    "title_cn"  : "HE_Mesh程序包整理",
-    "tags"     : "Java, HalfEdge Data, Program",
-    "url"      : "/404/algorithms/he-mesh",
-    "location" : "",
-    "team"     : "Biao Li, Siyuan He, Xuelu Zhang, Bei Wang, Jiajun Li"
-  } ,
-
-  {
-    "title"    : "Search and original text processing of ancient book library based on web crawler and OpenCV",
-    "title_cn"  : "简牍：基于爬虫与OpenCV的古籍库搜索与原文处理",
-    "tags"     : "OpenCV, python, OCR",
-    "url"      : "/404/algorithms/2022-jiandu",
-    "location" : "",
-    "team"     : "He Siyuan"
-  } ,
-
-  {
-    "title"    : "Extending and implementing graph using NeoVis",
-    "title_cn"  : "基于NeoVis的HE_Mesh类库继承图谱",
-    "tags"     : "Data Analysis, Neo4j",
-    "url"      : "/404/algorithms/2023-neovis-display-hemesh-relationship",
-    "location" : "",
-    "team"     : "He Siyuan"
-  } 
-
+      {
+        "title"    : "HE_Mesh Library",
+        "title_cn"  : "HE_Mesh程序包整理",
+        "tags"     : "Java, HalfEdge Data, Program",
+        "url"      : "/404/algorithms/he-mesh",
+        "location" : "",
+        "team"     : "Biao Li, Siyuan He, Xuelu Zhang, Bei Wang, Jiajun Li"
+      } ,
+    
+  
+  
+      {
+        "title"    : "Extending and implementing graph using NeoVis",
+        "title_cn"  : "基于NeoVis的HE_Mesh类库继承图谱",
+        "tags"     : "Data Analysis, Neo4j",
+        "url"      : "/404/algorithms/2023-neovis-display-hemesh-relationship",
+        "location" : "",
+        "team"     : "He Siyuan"
+      } 
+    
+  
 ,
   
     {
@@ -49,6 +45,7 @@
       "team"     : "He Siyuan, Yao Xiuning"
     } ,
   
+  
     {
       "title"    : "Latterns of Montain Fan",
       "title_cn"  : "矾灵灯彩",
@@ -58,43 +55,24 @@
       "team"     : "Zhang Xuelu Li Jiajun He Siyuan"
     } ,
   
-    {
-      "title"    : "local project template",
-      "title_cn"  : "模板",
-      "tags"     : "",
-      "url"      : "/404/projects/local-project-template",
-      "location" : "Nanjing, Jiangsu, China",
-      "team"     : "personA, personB"
-    } ,
-  
-    {
-      "title"    : "Detail-Preserving Fluid Simulation",
-      "title_cn"  : " ",
-      "tags"     : "Taichi, Fluid Simulation, Cerp, RK3, MacCormack",
-      "url"      : "https://github.com/amomorning/pbs-fluid",
-      "location" : "",
-      "team"     : "Yichen Mo, Haitao Yu, Jingyu Wang"
+  {
     } 
+  
   
   ,
   
-    {
-        "title"    : "Publications Template",
-        "subtitle" : "",
-        "url"      : "/404/publications/2000-01-01-publications-template",
-        "tags"     : "",
-        "authors"  : "AAABBB",
-        "keywords" : "关键词1, 关键词2, Keywords1, Keywords2"
-    } ,
   
-    {
-        "title"    : "基于整数规划的停车场车位排布优化算法研究",
-        "subtitle" : "Research on Optimization Algorithm of parking lot layout based on Integer Programming",
-        "url"      : "/404/publications/2022-11-27-integer-programming-parkinglot",
-        "tags"     : "Integer Programming, Parking Layouts, Generative Design",
-        "authors"  : "He SiyuanBiao Li",
-        "keywords" : "停车场, 整数规划, 车位排布, 区域划分, Parking Lot, Integer Programming, Parking Place Arrangements"
-    } 
+
+      {
+          "title"    : "基于整数规划的停车场车位排布优化算法研究",
+          "title_cn"  : " ",
+          "subtitle" : "Research on Optimization Algorithm of parking lot layout based on Integer Programming",
+          "url"      : "/404/publications/2022-11-27-integer-programming-parkinglot",
+          "tags"     : "Integer Programming, Parking Layouts, Generative Design",
+          "authors"  : "He SiyuanBiao Li",
+          "keywords" : "停车场, 整数规划, 车位排布, 区域划分, Parking Lot, Integer Programming, Parking Place Arrangements"
+      } 
+    
       
   
 ]

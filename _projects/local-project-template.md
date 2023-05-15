@@ -1,8 +1,8 @@
 ---
 # Global Default Varaibles
-navs: [template]
-tags: []
-image: 
+navs: [test,template]
+tags: [temp]
+image: ""
 # Project Information
 title: local project template
 title_cn: 模板
