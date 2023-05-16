@@ -20,6 +20,9 @@ permalink: /globalsearch.json
   ,  
   {% for project in site.algorithms %}
     {%- if project.navs contains "template" -%}
+    {
+    } {% unless forloop.last %},{% endunless %}
+
     {% else %}
       {
         "title"    : "{{ project.title | escape }}",
