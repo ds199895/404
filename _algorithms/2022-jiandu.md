@@ -1,5 +1,5 @@
 ---
-navs: [news,program,banner,template]
+navs: [news,program,banner]
 tags: [OpenCV, python,OCR]
 image: https://archialgo-com-sources.oss-cn-hangzhou.aliyuncs.com/images/jiandu3.jpg
 title: Search and original text processing of ancient book library based on web crawler and OpenCV
