@@ -18,19 +18,18 @@ permalink: /globalsearch.json
     {% endif %}
   {% endfor %}
   ,  
-  {% for project in site.algorithms %}
-    {%- if project.navs contains "template" -%}
+  {% for algo in site.algorithms %}
+    {%- if algo.navs contains "template" -%}
     {
     } {% unless forloop.last %},{% endunless %}
 
     {% else %}
       {
-        "title"    : "{{ project.title | escape }}",
-        "title_cn"  : "{{ project.title_cn | escape | default: ' '}}",
-        "tags"     : "{{ project.tags | join: ', ' }}",
-        "url"      : "{{ project.external_url | default: project.url | relative_url }}",
-        "location" : "{{ project.location | escape}}",
-        "team"     : "{{ project.team | join: ', '}}"
+        "title"    : "{{ algo.title | escape }}",
+        "title_cn"  : "{{ algo.title_cn | escape | default: ' '}}",
+        "tags"     : "{{ algo.tags | join: ', ' }}",
+        "url"      : "{{ algo.external_url | default: algo.url | relative_url }}",
+        "team"     : "{{ algo.team | join: ', '}}"
       } {% unless forloop.last %},{% endunless %}
     {% endif %}
   {% endfor %}
