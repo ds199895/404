@@ -85,7 +85,7 @@ integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 crossorigin="anonymous"></script>
 
 <script type="text/javascript" src="{{ '/assets/js/neovis.js' | relative_url }}"></script>
-
+<script src="https://unpkg.com/neo4j-driver/lib/browser/neo4j-web.min.js"></script>
 <script type="text/javascript">
 	// define config car
 	// instantiate nodevis object
@@ -198,13 +198,22 @@ crossorigin="anonymous"></script>
 	// }
 	
 	function draw() {
+		const driver = neo4j.driver('neo4j+ssc://11.tcp.cpolar.top:10107', neo4j.auth.basic('username', 'password'), {
+			// encrypted: 'ENCRYPTION_ON',
+			// trust: 'TRUST_ALL_CERTIFICATES',
+			ws: 'wss://11.tcp.cpolar.top:10107'
+		      });
 			var config = {
 				containerId: "viz",
-				neo4j: {
-					serverUrl: "bolt://11.tcp.cpolar.top:10107",
-					serverUser: "neo4j",
-					serverPassword: "12345678"
-				},
+				// neo4j: {
+				// 	serverUrl: "bolt://11.tcp.cpolar.top:10107",
+				// 	serverUser: "neo4j",
+				// 	serverPassword: "12345678"
+					
+				// },
+				//server_url: "neo4j+ssc://11.tcp.cpolar.top:10107",
+		
+				neo4j:driver,
 				visConfig: {
 					nodes: {
 						shape: 'triangle',
