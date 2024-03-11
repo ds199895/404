@@ -198,22 +198,22 @@ crossorigin="anonymous"></script>
 	// }
 	
 	function draw() {
-		// const driver = neo4j.driver('neo4j+ssc://124.222.79.56:7200', neo4j.auth.basic('username', 'password'), {
-		// 	// encrypted: 'ENCRYPTION_ON',
-		// 	// trust: 'TRUST_ALL_CERTIFICATES',
-		// 	ws: 'wss://124.222.79.56:7200'
-		//       });
+		const driver = neo4j.driver('neo4j+ssc://124.222.79.56:7200', neo4j.auth.basic('username', 'password'), {
+			// encrypted: 'ENCRYPTION_ON',
+			// trust: 'TRUST_ALL_CERTIFICATES',
+			ws: 'wss://124.222.79.56:7200'
+		      });
 			var config = {
 				containerId: "viz",
-				neo4j: {
-					serverUrl: "https://124.222.79.56:7300",
-					serverUser: "neo4j",
-					serverPassword: "neo4j"
+				// neo4j: {
+				// 	serverUrl: "https://124.222.79.56:7300",
+				// 	serverUser: "neo4j",
+				// 	serverPassword: "neo4j"
 					
-				},
+				// },
 				//server_url: "neo4j+ssc://11.tcp.cpolar.top:10107",
 		
-				// neo4j:driver,
+				neo4j:driver,
 				visConfig: {
 					nodes: {
 						shape: 'triangle',
