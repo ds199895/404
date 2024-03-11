@@ -198,10 +198,10 @@ crossorigin="anonymous"></script>
 	// }
 	
 	function draw() {
-		const driver = neo4j.driver('neo4j+ssc://124.222.79.56:7200', neo4j.auth.basic('username', 'password'), {
+		const driver = neo4j.driver('neo4j+ssc://124.222.79.56:7683', neo4j.auth.basic('username', 'password'), {
 			// encrypted: 'ENCRYPTION_ON',
 			// trust: 'TRUST_ALL_CERTIFICATES',
-			ws: 'wss://124.222.79.56:7200'
+			ws: 'wss://124.222.79.56:7683'
 		      });
 			var config = {
 				containerId: "viz",
